@@ -2,5 +2,9 @@
 .venv/
 __pycache__/
 .pytest_cache/
-.cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache/*
+!.cache/classifier/
+!.cache/heldout/
 .DS_Store
