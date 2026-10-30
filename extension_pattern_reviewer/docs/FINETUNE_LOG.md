@@ -243,3 +243,16 @@ Limitaciones del generador: varios casos difíciles (taxi tras cena, viaje real,
 Examen independiente E6 (Kimi): NO se generó (K2.6 sin respuesta en ~35 min, proceso detenido). Sin E6 no hay comparación con Opus 4.5.
 
 Corrección §27: la compuerta oficial (v2/gate.py, usada por la notebook 03) da 0.657 para el set final de 290 historiales (0.734 para el set chico de 109); el 0.634 citado antes venía de otra validación cruzada del constructor y NO es el número válido. Sigue fallando (>0.60).
+
+## §28 Resultados v2 en GPU rentada y comparación con la frontera (2026-10-29 noche, Claude)
+Primer intento en Modal (9B y 27B): recall 0/32 y 23/26 falsas alarmas: ERROR MIO del script: la pérdida se calculaba sobre toda la secuencia y no solo sobre la respuesta; el modelo copiaba el '...' del ejemplo. Corrección: prompt/completion con pérdida solo sobre la respuesta, mismo prompt en entrenamiento y evaluación, lr 2e-4 (logs del intento fallido conservados).
+Set: 290 historiales (158 fraude / 128 limpios), 232 entrenamiento / 58 validación por esquema; compuerta 0.657 (FALLA, >0.60). QLoRA 4-bit r=16, 3 épocas, A100 80GB.
+Mismos 58 historiales y mismo prompt para todos (frontier_eval.py, vía OpenRouter, sin ejemplos; costo total $1.23):
+| sistema | recall | falsas alarmas |
+| Opus 4.5 (zero-shot) | 25/32 | 19/26 |
+| Sonnet 5.5 (zero-shot) | 20/32 | 8/26 |
+| Qwen3.5-9B antes | 22/32 | 19/26 |
+| Qwen3.5-27B antes | 20/32 | 15/26 |
+| Qwen3.5-9B tuneado | 25/32 | 2/26 |
+| Qwen3.5-27B tuneado | 25/32 | 5/26 |
+Lectura: con el mismo recall que Opus 4.5, el 9B tuneado baja las falsas alarmas de 73% a 8%; el 27B no mejora al 9B (el límite son los datos). LIMITES: el frontier vio el prompt una vez sin ejemplos; examen del mismo estilo/autores del entrenamiento (favorece al tuneado); no es examen independiente (E6 no existió); intervalos anchos. No se afirma que supere a la frontera en general. Mac mini (Qwen3-4B, set chico): entrenamiento terminado, no evaluado (se traslapa con la validación).

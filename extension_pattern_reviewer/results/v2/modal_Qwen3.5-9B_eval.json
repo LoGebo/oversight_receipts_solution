@@ -1,8 +1,8 @@
 {
  "base": "Qwen/Qwen3.5-9B",
  "epochs": 3,
- "history_recall": "0/32",
- "clean_false_alarms": "23/26",
+ "history_recall": "25/32",
+ "clean_false_alarms": "2/26",
  "rows": [
   {
    "gold": [
@@ -13,8 +13,13 @@
     "V0001-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0001-R03",
+    "V0001-R04",
+    "V0001-R06",
+    "V0001-R07",
+    "V0001-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0001-R03\",\"reason\":\"Three team and client events at the same hotel are billed as room/day-use charges plus food, with no lodging or travel anywhere in the month, so room fees look like a recurring venue rental.\"},{\"receipt_id\":\"V0001-R04\",\"reason\":\"Three team and client "
   },
   {
    "gold": [
@@ -23,8 +28,11 @@
     "V0002-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0002-R04",
+    "V0002-R06",
+    "V0002-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0002-R04\",\"reason\":\"The one-night trip shows a shared airport transfer for four passengers, a nine-seat van rental, hotel parking for three cars and a Saturday caf\u00e9, quantities that do not fit one traveler.\"},{\"receipt_id\":\"V0002-R06\",\"reason\":\"The one-night trip shows a"
   },
   {
    "gold": [
@@ -33,7 +41,13 @@
     "V0003-R07",
     "V0003-R09"
    ],
-   "pred": null
+   "pred": [
+    "V0003-R02",
+    "V0003-R04",
+    "V0003-R07",
+    "V0003-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0003-R02\",\"reason\":\"Four client-entertainment receipts list 2 to 4 tickets each while the attendee count is only 2 to 3 people, so the line quantities do not fit the party size.\"},{\"receipt_id\":\"V0003-R04\",\"reason\":\"Four client-entertainment receipts list 2 to 4 tickets "
   },
   {
    "gold": [
@@ -43,8 +57,11 @@
     "V0004-R09"
    ],
    "pred": [
-    "..."
-   ]
+    "V0004-R06",
+    "V0004-R08",
+    "V0004-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0004-R06\",\"reason\":\"The same trip is supported by three separate lodging claims at three different hotels, plus a taxi and a Shinkansen, so one trip appears to be claimed as several independent stays.\"},{\"receipt_id\":\"V0004-R08\",\"reason\":\"The same trip is supported by th"
   },
   {
    "gold": [
@@ -55,8 +72,11 @@
     "V0005-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0005-R03",
+    "V0005-R05",
+    "V0005-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0005-R03\",\"reason\":\"Two rental cars are rented for the same trips, one on the departure weekend and one on the return weekend, so the employee is driving two cars at the same time.\"},{\"receipt_id\":\"V0005-R05\",\"reason\":\"Two rental cars are rented for the same trips, one o"
   },
   {
    "gold": [
@@ -65,8 +85,11 @@
     "V0006-R11"
    ],
    "pred": [
-    "..."
-   ]
+    "V0006-R01",
+    "V0006-R06",
+    "V0006-R11"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0006-R01\",\"reason\":\"The same Opp-7731 kickoff dinner with Pacific Meridian Group is claimed as a client meal on three different dates at three different restaurants, each with three attendees, so one event is being claimed repeatedly.\"},{\"receipt_id\":\"V0006-R06\",\"reason\""
   },
   {
    "gold": [
@@ -75,8 +98,11 @@
     "V0007-R07"
    ],
    "pred": [
-    "..."
-   ]
+    "V0007-R03",
+    "V0007-R06",
+    "V0007-R07"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0007-R03\",\"reason\":\"Three gift receipts, each under the $50 named-recipient limit, buy 3 to 5 identical units for the same client contact, so the real outlay is a small group gift split across receipts.\"},{\"receipt_id\":\"V0007-R06\",\"reason\":\"Three gift receipts, each unde"
   },
   {
    "gold": [
@@ -86,7 +112,8 @@
     "V0008-R11",
     "V0008-R13"
    ],
-   "pred": null
+   "pred": null,
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0008-R02\",\"reason\":\"The pre-approval PA-2026-5120, issued for a single USB-C docking station, is also cited on a Sunday client dinner, a Saturday team meal, two more team meals and a late-night taco run, where it has no business.\"},{\"receipt_id\":\"V0008-R03\",\"reason\":\"The"
   },
   {
    "gold": [
@@ -95,8 +122,12 @@
     "V0009-R07"
    ],
    "pred": [
-    "..."
-   ]
+    "V0009-R01",
+    "V0009-R05",
+    "V0009-R06",
+    "V0009-R07"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0009-R05\",\"reason\":\"Four office-supply receipts from four different shops in three weeks all cite the same internal purchase order BC-0457, which cannot be valid for separate purchases.\"},{\"receipt_id\":\"V0009-R06\",\"reason\":\"Four office-supply receipts from four different"
   },
   {
    "gold": [
@@ -105,8 +136,11 @@
     "V0010-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0010-R02",
+    "V0010-R05",
+    "V0010-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0010-R02\",\"reason\":\"Three separate computer purchases at the same vendor, each under $300, carry consecutive pre-approval numbers (PA-2026-3301 to 3303) that were never applied for, so approvals appear to have been obtained in advance of the fact.\"},{\"receipt_id\":\"V0010-"
   },
   {
    "gold": [
@@ -115,9 +149,8 @@
     "V0011-R11",
     "V0011-R12"
    ],
-   "pred": [
-    "..."
-   ]
+   "pred": null,
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0011-R01\",\"reason\":\"Four computer-accessory purchases from two different shops, each under the $200 pre-approval cap, carry consecutive pre-approval numbers (PA-2026-5500 to 5530) in sequence, as if one approval had been stretched over several items.\"},{\"receipt_id\":\"V00"
   },
   {
    "gold": [
@@ -127,8 +160,12 @@
     "V0012-R06"
    ],
    "pred": [
-    "..."
-   ]
+    "V0012-R01",
+    "V0012-R02",
+    "V0012-R04",
+    "V0012-R06"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0012-R01\",\"reason\":\"Four computer purchases from different shops in one month all cite the same quotation number DV-26-0417, which cannot be valid for four separate items.\"},{\"receipt_id\":\"V0012-R02\",\"reason\":\"Four computer purchases from different shops in one month all"
   },
   {
    "gold": [
@@ -136,8 +173,10 @@
     "V0013-R06"
    ],
    "pred": [
-    "..."
-   ]
+    "V0013-R02",
+    "V0013-R06"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0013-R02\",\"reason\":\"The car rental and its return are claimed as two separate receipts on the rental days, one at check-in and one at check-out, so the same rental period is billed twice.\"},{\"receipt_id\":\"V0013-R06\",\"reason\":\"The car rental and its return are claimed as "
   },
   {
    "gold": [
@@ -147,9 +186,8 @@
     "V0014-R09",
     "V0014-R12"
    ],
-   "pred": [
-    "..."
-   ]
+   "pred": null,
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0014-R01\",\"reason\":\"Five gifts of $29 to $44, each with a different merchant, all cite the same pre-approval number MKT-0826-04, so one approval is stretched over several recipients.\"},{\"receipt_id\":\"V0014-R02\",\"reason\":\"Five gifts of $29 to $44, each with a different me"
   },
   {
    "gold": [
@@ -158,8 +196,11 @@
     "V0015-R06"
    ],
    "pred": [
-    "..."
-   ]
+    "V0015-R01",
+    "V0015-R02",
+    "V0015-R06"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0015-R01\",\"reason\":\"Three team meals for three people are sized like a small office party (8 to 12 pastries and sandwiches) and include extra drinks and desserts, quantities that do not fit a two-person team.\"},{\"receipt_id\":\"V0015-R02\",\"reason\":\"Three team meals for thr"
   },
   {
    "gold": [
@@ -170,8 +211,13 @@
     "V0016-R06"
    ],
    "pred": [
-    "..."
-   ]
+    "V0016-R01",
+    "V0016-R02",
+    "V0016-R03",
+    "V0016-R05",
+    "V0016-R06"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0016-R01\",\"reason\":\"Five gift receipts at two boutique hotel gift shops, one on a Saturday, each buy three identical amenity sets for the same named client contact, quantities that do not fit one recipient and suggest stocking up for personal use.\"},{\"receipt_id\":\"V0016-"
   },
   {
    "gold": [
@@ -182,8 +228,13 @@
     "V0017-R09"
    ],
    "pred": [
-    "..."
-   ]
+    "V0017-R01",
+    "V0017-R02",
+    "V0017-R03",
+    "V0017-R08",
+    "V0017-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0017-R01\",\"reason\":\"Five client-entertainment outings each buy five admission tickets or slots while only two attendees are recorded, so the quantities do not fit the headcount.\"},{\"receipt_id\":\"V0017-R02\",\"reason\":\"Five client-entertainment outings each buy five admissi"
   },
   {
    "gold": [
@@ -192,8 +243,10 @@
     "V0018-R11"
    ],
    "pred": [
-    "..."
-   ]
+    "V0018-R08",
+    "V0018-R11"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0018-R08\",\"reason\":\"The same pre-approval reference PA-2026-3068 is attached to a monitor stand bought on July 14 and a webcam bought on July 29, after the trip that the approval was issued for had ended.\"},{\"receipt_id\":\"V0018-R11\",\"reason\":\"The same pre-approval refere"
   },
   {
    "gold": [
@@ -201,96 +254,85 @@
     "V0019-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0019-R07",
+    "V0019-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0019-R07\",\"reason\":\"Two gift receipts of $46 and $47 are bought at the same gift shop on consecutive days, one on a Friday and one on a Saturday, which looks like one larger gift split to stay under the $50 per-recipient limit.\"},{\"receipt_id\":\"V0019-R08\",\"reason\":\"Two g"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": null
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [
@@ -299,8 +341,11 @@
     "V0035-R05"
    ],
    "pred": [
-    "..."
-   ]
+    "V0035-R03",
+    "V0035-R04",
+    "V0035-R05"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0035-R03\",\"reason\":\"Three separate workstation parts (monitor, dock, arm) from the same vendor each carry their own approval reference, so no single pre-approval covers the complete desk setup.\"},{\"receipt_id\":\"V0035-R04\",\"reason\":\"Three separate workstation parts (monit"
   },
   {
    "gold": [
@@ -310,8 +355,12 @@
     "V0036-R05"
    ],
    "pred": [
-    "..."
-   ]
+    "V0036-R01",
+    "V0036-R03",
+    "V0036-R04",
+    "V0036-R05"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0036-R01\",\"reason\":\"Four computer-equipment receipts from four different merchants over two weeks all buy parts for the same monitor serial number MX4471 (arm, monitor, adapter, screen hood), so one device is claimed as four separate purchases.\"},{\"receipt_id\":\"V0036-R03"
   },
   {
    "gold": [
@@ -321,7 +370,13 @@
     "V0037-R07",
     "V0037-R09"
    ],
-   "pred": null
+   "pred": [
+    "V0037-R01",
+    "V0037-R03",
+    "V0037-R07",
+    "V0037-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0037-R01\",\"reason\":\"Two gift receipts name the same client contact (Kenji Sato) as the recipient, one from a gift shop and one from a gift plaza, so the employee appears to be giving two separate gifts to one person within weeks.\"},{\"receipt_id\":\"V0037-R03\",\"reason\":\"Two"
   },
   {
    "gold": [
@@ -331,7 +386,14 @@
     "V0038-R08",
     "V0038-R09"
    ],
-   "pred": null
+   "pred": [
+    "V0038-R05",
+    "V0038-R06",
+    "V0038-R07",
+    "V0038-R08",
+    "V0038-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0038-R05\",\"reason\":\"Five office-supply receipts at five different stores within ten days each buy dozens of reams, boxes and packs of paper, pens, staples and other consumables, far more than one traveling consultant uses.\"},{\"receipt_id\":\"V0038-R06\",\"reason\":\"Five offic"
   },
   {
    "gold": [
@@ -339,7 +401,12 @@
     "V0039-R05",
     "V0039-R07"
    ],
-   "pred": null
+   "pred": [
+    "V0039-R03",
+    "V0039-R05",
+    "V0039-R07"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0039-R03\",\"reason\":\"Three gifts of $29.50, $34.90 and $38.00 were bought at three different shops on the same day (10-11 April) for three different named clients, each just under the $50 limit, so no single receipt triggers the cap but the pattern keeps one recipient jus"
   },
   {
    "gold": [
@@ -347,64 +414,67 @@
     "V0040-R09"
    ],
    "pred": [
-    "..."
-   ]
+    "V0040-R04",
+    "V0040-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0040-R04\",\"reason\":\"Two monitor purchases of $329 and $337.90 are made three days apart, one with a pre-approval reference and one without, so the first approval appears to have been reused to cover a second identical item.\"},{\"receipt_id\":\"V0040-R09\",\"reason\":\"Two monit"
+  },
+  {
+   "gold": [],
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
+  },
+  {
+   "gold": [],
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
+  },
+  {
+   "gold": [],
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
    "pred": [
-    "..."
-   ]
+    "V0044-R02",
+    "V0044-R03",
+    "V0044-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0044-R02\",\"reason\":\"Two taxi rides to the same hotel in Osaka are claimed on different trips (TRIP-4674 and TRIP-1898) with overlapping dates, so the employee is paid twice for ground transport to one stay.\"},{\"receipt_id\":\"V0044-R03\",\"reason\":\"Two taxi rides to the same"
+  },
+  {
+   "gold": [],
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
+  },
+  {
+   "gold": [],
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
    "pred": [
-    "..."
-   ]
+    "V0047-R03",
+    "V0047-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0047-R03\",\"reason\":\"The same stationery merchant is claimed twice, one week apart, with an identical line quantity (six reams of A4 paper) and near-identical total ($32.40 each), as if one purchase had been split into two receipts.\"},{\"receipt_id\":\"V0047-R08\",\"reason\":\"T"
   },
   {
    "gold": [],
-   "pred": null
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
-  },
-  {
-   "gold": [],
-   "pred": null
-  },
-  {
-   "gold": [],
-   "pred": [
-    "..."
-   ]
-  },
-  {
-   "gold": [],
-   "pred": [
-    "..."
-   ]
-  },
-  {
-   "gold": [],
-   "pred": [
-    "..."
-   ]
-  },
-  {
-   "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [
@@ -414,8 +484,12 @@
     "V0051-R10"
    ],
    "pred": [
-    "..."
-   ]
+    "V0051-R07",
+    "V0051-R08",
+    "V0051-R09",
+    "V0051-R10"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0051-R07\",\"reason\":\"Four docking-station purchases at four different electronics retailers, each just under the $200 pre-approval threshold, were all made on the same day (Aug 20) and the next day, quantities that no single manager could use.\"},{\"receipt_id\":\"V0051-R08\","
   },
   {
    "gold": [
@@ -425,18 +499,16 @@
     "V0052-R09",
     "V0052-R11"
    ],
-   "pred": [
-    "..."
-   ]
+   "pred": null,
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0052-R02\",\"reason\":\"Four Computer Equipment receipts from four different shops in three weeks each buy the same 12-in-1 USB-C dock for $189, and one shop's first purchase is a two-unit pack at $378, so the employee ends up with five identical docks.\"},{\"receipt_id\":\"V005"
   },
   {
    "gold": [
     "V0053-R03",
     "V0053-R11"
    ],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [
@@ -445,7 +517,8 @@
     "V0054-R04",
     "V0054-R05"
    ],
-   "pred": null
+   "pred": null,
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0054-R01\",\"reason\":\"Four computer-accessory receipts each name a different person (\u4f50\u3005\u6728 \u5065, \u4e2d\u6751 \u7531\u7d00, \u5927\u91ce \u307f\u306a\u307f, \u5409\u7530 \u6dbc\u592a) on the item description, as if each were a separate gift recipient, while the employee is the only claimant.\"},{\"receipt_id\":\"V0054-R02\",\"reason\":\"Four compute"
   },
   {
    "gold": [
@@ -453,8 +526,10 @@
     "V0055-R09"
    ],
    "pred": [
-    "..."
-   ]
+    "V0055-R08",
+    "V0055-R09"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0055-R08\",\"reason\":\"Two office-supply receipts from different shops, one on a Saturday, buy the same printer-cartridge model in quantities larger than a single user needs, as if one rep was stocking up for several.\"},{\"receipt_id\":\"V0055-R09\",\"reason\":\"Two office-supply "
   },
   {
    "gold": [
@@ -462,9 +537,8 @@
     "V0056-R07",
     "V0056-R08"
    ],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   },
   {
    "gold": [
@@ -473,14 +547,16 @@
     "V0057-R08"
    ],
    "pred": [
-    "..."
-   ]
+    "V0057-R03",
+    "V0057-R07",
+    "V0057-R08"
+   ],
+   "raw": "{\"escalate\":[{\"receipt_id\":\"V0057-R03\",\"reason\":\"The same one-person dinner receipt at Bistro Lumen, with an identical line-by-line total of $72.00, is claimed on three different trips (two of them on a weekend) as if it were a separate meal.\"},{\"receipt_id\":\"V0057-R07\",\"reason\":\"The same one-person"
   },
   {
    "gold": [],
-   "pred": [
-    "..."
-   ]
+   "pred": [],
+   "raw": "{\"escalate\":[]}"
   }
  ]
 }

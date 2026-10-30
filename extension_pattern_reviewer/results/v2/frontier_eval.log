@@ -1,0 +1,5 @@
+anthropic/claude-opus-4.5 25/32 19/26 unparsed 0 spend 0.5591
+anthropic/claude-sonnet-5.5 20/32 8/26 unparsed 0 spend 0.6169
+qwen/qwen3.5-9b 22/32 19/26 unparsed 2 spend 0.0105
+qwen/qwen3.5-27b 20/32 15/26 unparsed 2 spend 0.0448
+total spend 1.2313

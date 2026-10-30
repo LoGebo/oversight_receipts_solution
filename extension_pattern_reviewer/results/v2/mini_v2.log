@@ -1,0 +1,55 @@
+Loading configuration file sft_config.yaml
+Loading pretrained model
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 2013.15it/s]
+Loading datasets
+Training
+[34m╭─[0m[34m [0m[1;35mmlx_lm.lora[0m[34m [0m[34m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[34m─╮[0m
+[34m│[0m    [39mmodel        [0m   [1mmlx-community/Qwen3-4B-Instruct-2507-4bit[0m                                                         [34m│[0m
+[34m│[0m    [39mtype         [0m   [1mlora · 16 layers · rank 16[0m                                                                        [34m│[0m
+[34m│[0m    [39mdataset      [0m   [1mreviewer_sft_v2[0m                                                                                   [34m│[0m
+[34m│[0m    [39moptimizer    [0m   [1madam · lr 1.0e-04[0m                                                                                 [34m│[0m
+[34m│[0m    [39mbatch · iters[0m   [1m4 · 150[0m                                                                                           [34m│[0m
+[34m│[0m    [39mmax seq      [0m   [1m2,048[0m                                                                                             [34m│[0m
+[34m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+Trainable parameters: 0.365% (14.680M/4022.468M)
+  [1miter   train_loss     tok/s     tokens[0m
+  [38;5;244m   1[0m    [1;35mval[0m [1m1.631[0m    [38;5;244m94.67s[0m
+  [38;5;244m  10[0m    [1;32m1.357 ▼[0m    [1m   11[0m    [38;5;244m  4.7k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m  20[0m    [1;32m1.213 ▼[0m    [1m    8[0m    [38;5;244m  9.3k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m  25[0m    [1;35mval[0m [1m0.729[0m    [38;5;244m98.56s[0m
+  [38;5;244m  30[0m    [1;32m1.149 ▼[0m    [1m   10[0m    [38;5;244m 15.7k[0m
+  [38;5;244m  40[0m    [1;32m0.733 ▼[0m    [1m    9[0m    [38;5;244m 19.7k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m  50[0m    [1;35mval[0m [1m0.787[0m    [38;5;244m96.77s[0m
+  [38;5;244m  50[0m    [1;33m0.885 ▲[0m    [1m   11[0m    [38;5;244m 24.9k[0m
+  [1;32msave[0m  [38;5;244m0000050_adapters.safetensors[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m  60[0m    [1;32m0.590 ▼[0m    [1m   11[0m    [38;5;244m 30.5k[0m
+  [38;5;244m  70[0m    [1;32m0.548 ▼[0m    [1m   10[0m    [38;5;244m 35.2k[0m
+  [38;5;244m  75[0m    [1;35mval[0m [1m0.739[0m    [38;5;244m96.80s[0m
+  [38;5;244m  80[0m    [1;32m0.316 ▼[0m    [1m   12[0m    [38;5;244m 40.4k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m  90[0m    [1;33m0.377 ▲[0m    [1m    9[0m    [38;5;244m 44.9k[0m
+  [38;5;244m 100[0m    [1;35mval[0m [1m0.841[0m    [38;5;244m97.09s[0m
+  [38;5;244m 100[0m    [1;32m0.261 ▼[0m    [1m   10[0m    [38;5;244m 49.0k[0m
+  [1;32msave[0m  [38;5;244m0000100_adapters.safetensors[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m 110[0m    [1;32m0.179 ▼[0m    [1m   13[0m    [38;5;244m 55.0k[0m
+  [38;5;244m 120[0m    [1;32m0.149 ▼[0m    [1m   10[0m    [38;5;244m 59.0k[0m
+  [38;5;244m 125[0m    [1;35mval[0m [1m0.817[0m    [38;5;244m97.61s[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m 130[0m    [1;32m0.084 ▼[0m    [1m   14[0m    [38;5;244m 65.1k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2146 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m 140[0m    [1;33m0.102 ▲[0m    [1m   12[0m    [38;5;244m 70.4k[0m
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2106 will be truncated to 2048. Consider pre-splitting your data to save memory.
+  [38;5;244m 150[0m    [1;35mval[0m [1m0.886[0m    [38;5;244m97.57s[0m
+  [38;5;244m 150[0m    [1;32m0.083 ▼[0m    [1m   12[0m    [38;5;244m 75.8k[0m
+  [1;32msave[0m  [38;5;244m0000150_adapters.safetensors[0m
+[1;34mtrain[0m [34m██████████████████████████████[0m [1;34m100%[0m [38;5;244m·[0m [1;34m  150[0m[38;5;244m/150[0m

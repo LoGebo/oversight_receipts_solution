@@ -1,0 +1,2410 @@
+{
+ "anthropic/claude-opus-4.5": {
+  "history_recall": "25/32",
+  "recall_ci": [
+   61.2,
+   89.0
+  ],
+  "clean_false_alarms": "19/26",
+  "fa_ci": [
+   53.9,
+   86.3
+  ],
+  "receipt_precision": 0.6,
+  "receipt_recall": 0.63,
+  "unparsed": 0,
+  "spend_usd": 0.5591,
+  "rows": [
+   {
+    "gold": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "pred": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0001-R06\",\"reason\":\"Client entertainment on a Sunday with hotel room/lounge rental is unusual for legitimate business use and may indicate personal spending disguised as c"
+   },
+   {
+    "gold": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "pred": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0002-R04\",\"reason\":\"Shared airport transfer for 4 passengers claimed alongside a 9-seat van rental on the same day of the same 1-night trip, suggesting redundant or overla"
+   },
+   {
+    "gold": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "pred": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0003-R02\",\"reason\":\"3 tickets purchased for only 2 attendees; extra ticket may be personal or recipient undocumented.\"},{\"receipt_id\":\"V0003-R04\",\"reason\":\"4 tickets purch"
+   },
+   {
+    "gold": [
+     "V0004-R06",
+     "V0004-R07",
+     "V0004-R08",
+     "V0004-R09"
+    ],
+    "pred": [
+     "V0004-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0004-R09\",\"reason\":\"Three separate hotels on consecutive nights within the same 3-night trip is unusual and may indicate personal-stay mixing or unjustified hotel changes."
+   },
+   {
+    "gold": [
+     "V0005-R03",
+     "V0005-R04",
+     "V0005-R05",
+     "V0005-R07",
+     "V0005-R08"
+    ],
+    "pred": [
+     "V0005-R05",
+     "V0005-R08"
+    ],
+    "raw": "Looking at the receipt history, I need to analyze patterns across receipts for potential policy circumvention or anomalies.\n\n**Analysis:**\n\n1. **TRIP-2051 (4 nights):** Hotel check-in Oct 16 (Fri), ca"
+   },
+   {
+    "gold": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "pred": [
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0006-R06\",\"reason\":\"Description says 'Opp-7731 kickoff dinner' but R01 on July 6 already claimed a kickoff dinner for the same opportunity and client (Pacific Meridian Gro"
+   },
+   {
+    "gold": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "pred": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0007-R03\",\"reason\":\"Client gift of $42.50 for 5 items does not name the recipient(s), and gifts of $10 or more require naming the recipient.\"},{\"receipt_id\":\"V0007-R06\",\"r"
+   },
+   {
+    "gold": [
+     "V0008-R02",
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "pred": [
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0008-R03\",\"reason\":\"Pre-approval PA-2026-5120 was issued for a computer accessory (docking station) but is being reused to justify a client entertainment meal, suggesting "
+   },
+   {
+    "gold": [
+     "V0009-R05",
+     "V0009-R06",
+     "V0009-R07"
+    ],
+    "pred": [
+     "V0009-R04",
+     "V0009-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0009-R04\",\"reason\":\"Lodging shows a 'chambre double' (double room) for a business trip, which may indicate personal companion travel being expensed.\"},{\"receipt_id\":\"V0009"
+   },
+   {
+    "gold": [
+     "V0010-R02",
+     "V0010-R05",
+     "V0010-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0011-R01",
+     "V0011-R02",
+     "V0011-R11",
+     "V0011-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0012-R01",
+     "V0012-R02",
+     "V0012-R04",
+     "V0012-R06"
+    ],
+    "pred": [
+     "V0012-R01, V0012-R02, V0012-R04, V0012-R06",
+     "V0012-R03"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0012-R03\",\"reason\":\"Client gift of $34 is above the $10 threshold requiring a named recipient, but no recipient is documented.\"},{\"receipt_id\":\"V0012-R01, V0012-R02, V0012"
+   },
+   {
+    "gold": [
+     "V0013-R02",
+     "V0013-R06"
+    ],
+    "pred": [
+     "V0013-R02",
+     "V0013-R10",
+     "V0013-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0013-R02\",\"reason\":\"Possible duplicate charge: rental contract RA-558210 for 3 days appears both here ($144) and in R06 ($153 for same contract plus return fee), suggestin"
+   },
+   {
+    "gold": [
+     "V0014-R01",
+     "V0014-R02",
+     "V0014-R06",
+     "V0014-R09",
+     "V0014-R12"
+    ],
+    "pred": [
+     "V0014-R06",
+     "V0014-R07",
+     "V0014-R13"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0014-R06\",\"reason\":\"Client gift purchased on a Sunday with no named recipient, raising concern about personal use disguised as a business gift.\"},{\"receipt_id\":\"V0014-R07\""
+   },
+   {
+    "gold": [
+     "V0015-R01",
+     "V0015-R02",
+     "V0015-R06"
+    ],
+    "pred": [
+     "V0015-R04",
+     "V0015-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0015-R04\",\"reason\":\"Lodging shows 'Chambre double, 2 nuits (x2)' totaling two double rooms for a 2-night solo business trip, suggesting possible personal companion or dupl"
+   },
+   {
+    "gold": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "pred": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0016-R01\",\"reason\":\"Gift receipt shows quantity x3 but no named recipients; gifts \u2265$10 require recipient names, and pattern of multiple similar bath/amenity sets across 6 "
+   },
+   {
+    "gold": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "pred": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0017-R01\",\"reason\":\"Attendee count is 2 but 5 cinema tickets purchased, suggesting undisclosed attendees or personal guests included.\"},{\"receipt_id\":\"V0017-R02\",\"reason\":"
+   },
+   {
+    "gold": [
+     "V0018-R08",
+     "V0018-R10",
+     "V0018-R11"
+    ],
+    "pred": [
+     "V0018-R11"
+    ],
+    "raw": "Looking at the receipt history, I need to analyze patterns across receipts for potential policy circumvention.\n\n**Analysis:**\n\n1. **Pre-approval PA-2026-3068 used twice**: This approval code is attach"
+   },
+   {
+    "gold": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "pred": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0019-R07\",\"reason\":\"Two client gift baskets from the same merchant on consecutive days (R07 $46, R08 $47) each just under the $50 limit, with neither naming a recipient\u2014pa"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0020-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0020-R09\",\"reason\":\"Computer equipment totals $268 for two items without itemized per-unit pricing; if either the dock or keyboard exceeds $200 individually, a pre-approva"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0021-R02",
+     "V0021-R03",
+     "V0021-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0021-R02\",\"reason\":\"Gift of $38 lacks the named recipient; policy requires gifts \u2265$10 to identify the recipient by name.\"},{\"receipt_id\":\"V0021-R03\",\"reason\":\"Gift of $29 "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0022-R06",
+     "V0022-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0022-R06\",\"reason\":\"Gift of $34 lacks a named recipient, which is required for gifts of $10 or more.\"},{\"receipt_id\":\"V0022-R09\",\"reason\":\"Office supplies purchased on a S"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0023-R03",
+     "V0023-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0023-R03\",\"reason\":\"Lodging total $269 for 2 nights ($134.50/night) appears reasonable, but receipt is above $75 and lists only two line items (room x2, tourist tax x2) wi"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0024-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0024-R08\",\"reason\":\"Client gift of $48 is $10 or more but does not name the recipient, violating the gift documentation requirement.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0025-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0025-R10\",\"reason\":\"Computer accessory total ($232) exceeds the $200 per-item limit and no pre-approval reference (PA-...) is attached.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0026-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0026-R08\",\"reason\":\"Fountain pen set described as a client gift exceeds $10 but does not name the recipient as required by policy.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0027-R05",
+     "V0027-R07",
+     "V0027-R08",
+     "V0027-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0027-R05\",\"reason\":\"Client gift of $38 for '\u5c31\u4efb\u795d\u3044' (inauguration celebration) does not name the specific recipient, violating the policy that gifts of $10 or more must name"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0029-R01",
+     "V0029-R04",
+     "V0029-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0029-R01\",\"reason\":\"Gift of $40 lacks named recipient; policy requires gifts \u2265$10 to identify the recipient.\"},{\"receipt_id\":\"V0029-R10\",\"reason\":\"Gift of $35 lacks named "
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0031-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0031-R05\",\"reason\":\"Client gift of $35 is \u2265$10 but does not name the recipient as required by policy.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0032-R04"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0032-R04\",\"reason\":\"Item described as a gift ('thank-you for contract renewal') categorized as Office Supplies; gifts \u2265$10 must name the recipient, and this $64.90 item la"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0033-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0033-R08\",\"reason\":\"Parking fee for a rental car claimed on a 2-night trip where the employee also claimed a taxi from the train station, suggesting inconsistent transport"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0034-R01",
+     "V0034-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0034-R01\",\"reason\":\"Computer accessories total $215 for two items without itemized breakdown showing each item is \u2264$200, and no pre-approval attached.\"},{\"receipt_id\":\"V00"
+   },
+   {
+    "gold": [
+     "V0035-R03",
+     "V0035-R04",
+     "V0035-R05"
+    ],
+    "pred": [
+     "V0035-R03",
+     "V0035-R04",
+     "V0035-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0035-R03\",\"reason\":\"Three sequential pre-approvals (PA-2026-0417/0418/0419) for items labeled 'Arbeitsplatzpaket Teil 1/3, 2/3, 3/3' at the same vendor suggest a single wo"
+   },
+   {
+    "gold": [
+     "V0036-R01",
+     "V0036-R03",
+     "V0036-R04",
+     "V0036-R05"
+    ],
+    "pred": [
+     "V0036-R01",
+     "V0036-R03",
+     "V0036-R04",
+     "V0036-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0036-R01\",\"reason\":\"Monitor arm purchased the day before the monitor itself (R03), and both reference serial MX4471\u2014sequence suggests the arm may have been bought for pers"
+   },
+   {
+    "gold": [
+     "V0037-R01",
+     "V0037-R03",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "pred": [
+     "V0037-R03",
+     "V0037-R04",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0037-R03\",\"reason\":\"Client gift totals $75.80 but no recipient is named; gifts of $10 or more require naming the recipient.\"},{\"receipt_id\":\"V0037-R04\",\"reason\":\"27-inch 4"
+   },
+   {
+    "gold": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "pred": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0038-R05\",\"reason\":\"Cluster of six office-supply purchases totaling $168.60 across two days from different vendors suggests possible split-purchasing to keep individual am"
+   },
+   {
+    "gold": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "pred": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0039-R03\",\"reason\":\"Client gift of $38 does not name the recipient, which is required for gifts of $10 or more.\"},{\"receipt_id\":\"V0039-R05\",\"reason\":\"Client gift of $29.50"
+   },
+   {
+    "gold": [
+     "V0040-R04",
+     "V0040-R09"
+    ],
+    "pred": [
+     "V0040-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0040-R09\",\"reason\":\"Second 27-inch QHD monitor purchase ($337.90) within 10 days of first ($329.00), split into panel + base to appear as accessories; likely duplicate/per"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0041-R03",
+     "V0041-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0041-R03\",\"reason\":\"Client entertainment on a Sunday evening is unusual for business purposes and may represent personal dining.\"},{\"receipt_id\":\"V0041-R08\",\"reason\":\"Clie"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0044-R04",
+     "V0044-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0044-R09\",\"reason\":\"Taxi dated 2026-03-13 is tagged to TRIP-4674 (Mar 9-12, 4 nights) but falls after that trip's expected end date, while the employee was actually on TRI"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0045-R02",
+     "V0045-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0045-R02\",\"reason\":\"Gift \u2265$10 but no named recipient documented as required by policy.\"},{\"receipt_id\":\"V0045-R07\",\"reason\":\"Gift \u2265$10 but no named recipient documented; a"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0046-R04",
+     "V0046-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0046-R04\",\"reason\":\"Client gift of $36 exceeds the $10 threshold requiring a named recipient, but no recipient is documented.\"},{\"receipt_id\":\"V0046-R08\",\"reason\":\"Client "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0047-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0047-R10\",\"reason\":\"Client gift of $28.50 exceeds the $10 threshold requiring a named recipient, but no recipient is documented on the receipt.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "pred": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0051-R07\",\"reason\":\"Four nearly identical USB-C docking stations purchased from different vendors over 10 days suggests splitting to stay under the $200 accessory limit wi"
+   },
+   {
+    "gold": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "pred": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0052-R02\",\"reason\":\"Two USB-C docking stations at $189 each on one receipt totals $378, exceeding the $200 per-item limit for computer accessories without an attached pre-"
+   },
+   {
+    "gold": [
+     "V0053-R03",
+     "V0053-R11"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "pred": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0054-R02\",\"reason\":\"Personalized item engraved with a specific individual's name (\u4f50\u3005\u6728 \u5065) suggests this may be a gift rather than computer equipment for the employee's own "
+   },
+   {
+    "gold": [
+     "V0055-R08",
+     "V0055-R09"
+    ],
+    "pred": [
+     "V0055-R04",
+     "V0055-R05",
+     "V0055-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0055-R09\",\"reason\":\"Weekend office-supplies purchase with items (HP 664 cartridges, A4 paper reams, filing folders) nearly identical to V0055-R08 from the day before, sugg"
+   },
+   {
+    "gold": [
+     "V0056-R06",
+     "V0056-R07",
+     "V0056-R08"
+    ],
+    "pred": [
+     "V0056-R02",
+     "V0056-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0056-R02\",\"reason\":\"Gift of $38 to a client does not name the recipient, which is required for gifts of $10 or more.\"},{\"receipt_id\":\"V0056-R05\",\"reason\":\"Gift of $42 to a"
+   },
+   {
+    "gold": [
+     "V0057-R03",
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "pred": [
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0057-R07\",\"reason\":\"Identical $72.00 meal at Bistro Lumen with same itemization as V0057-R03 from a different trip, suggesting a duplicated or templated receipt rather tha"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0058-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0058-R11\",\"reason\":\"At $106.00 for 4 attendees ($26.50 per person), this receipt alone is fine, but combined with the pattern of six team meals at Caf\u00e9 Centralia totaling "
+   }
+  ]
+ },
+ "anthropic/claude-sonnet-5.5": {
+  "history_recall": "20/32",
+  "recall_ci": [
+   45.3,
+   77.1
+  ],
+  "clean_false_alarms": "8/26",
+  "fa_ci": [
+   16.5,
+   50.0
+  ],
+  "receipt_precision": 0.77,
+  "receipt_recall": 0.51,
+  "unparsed": 0,
+  "spend_usd": 0.6169,
+  "rows": [
+   {
+    "gold": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "pred": [
+     "V0001-R06",
+     "V0001-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0001-R06\",\"reason\":\"Sunday private-lounge rental plus afternoon tea at the same hotel used for the employee's other day-use room claims, with no trip or client named, whic"
+   },
+   {
+    "gold": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "pred": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0002-R04\",\"reason\":\"Shared airport transfer for 4 passengers on a trip where the lodging and meals cover only one traveler, so it may include other people's travel.\"},{\"re"
+   },
+   {
+    "gold": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "pred": [
+     "V0003-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0003-R09\",\"reason\":\"Saturday afternoon handball tickets booked as client entertainment, the only weekend receipt in the month and with no trip or business context, so it m"
+   },
+   {
+    "gold": [
+     "V0004-R06",
+     "V0004-R07",
+     "V0004-R08",
+     "V0004-R09"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0005-R03",
+     "V0005-R04",
+     "V0005-R05",
+     "V0005-R07",
+     "V0005-R08"
+    ],
+    "pred": [
+     "V0005-R05",
+     "V0005-R08",
+     "V0005-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0005-R08\",\"reason\":\"A one-day Saturday rental car from a second new vendor, dated on the checkout day of TRIP-8239 (4 nights from Oct 20), suggests personal weekend use ra"
+   },
+   {
+    "gold": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "pred": [
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0006-R06\",\"reason\":\"A second 'Opp-7731 kickoff dinner' with the same client group and headcount nine days after R01, though a kickoff happens only once, so this may be a d"
+   },
+   {
+    "gold": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0008-R02",
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "pred": [
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0008-R03\",\"reason\":\"Approval PA-2026-5120, which covers the USB-C docking station purchase, is cited again on a Sunday client meal where it does not apply, and weekend tim"
+   },
+   {
+    "gold": [
+     "V0009-R05",
+     "V0009-R06",
+     "V0009-R07"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0010-R02",
+     "V0010-R05",
+     "V0010-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0011-R01",
+     "V0011-R02",
+     "V0011-R11",
+     "V0011-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0012-R01",
+     "V0012-R02",
+     "V0012-R04",
+     "V0012-R06"
+    ],
+    "pred": [
+     "V0012-R03"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0012-R03\",\"reason\":\"A $34 client gift is over the $10 threshold, so the policy requires a named recipient, but the receipt names none and the engine still passed it.\"}]}"
+   },
+   {
+    "gold": [
+     "V0013-R02",
+     "V0013-R06"
+    ],
+    "pred": [
+     "V0013-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0013-R06\",\"reason\":\"The return invoice bills the same 3 daily rental charges on contract RA-558210 that were already claimed in R02 ($144), so the rental days appear to be"
+   },
+   {
+    "gold": [
+     "V0014-R01",
+     "V0014-R02",
+     "V0014-R06",
+     "V0014-R09",
+     "V0014-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0015-R01",
+     "V0015-R02",
+     "V0015-R06"
+    ],
+    "pred": [
+     "V0015-R01",
+     "V0015-R02",
+     "V0015-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0015-R01\",\"reason\":\"21 pastries plus 3 coffees for 3 attendees is far more food than the headcount explains, which suggests an inflated headcount or personal purchases.\"},"
+   },
+   {
+    "gold": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "pred": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0016-R01\",\"reason\":\"Bath amenity set (x3) bought at a hotel boutique and claimed as a client gift is the first of a repeating pattern of toiletry purchases that look like "
+   },
+   {
+    "gold": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "pred": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0017-R01\",\"reason\":\"Only 2 attendees are declared but the cinema tickets are for 5 people, so the headcount does not match and some of the spend may be personal.\"},{\"recei"
+   },
+   {
+    "gold": [
+     "V0018-R08",
+     "V0018-R10",
+     "V0018-R11"
+    ],
+    "pred": [
+     "V0018-R08",
+     "V0018-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0018-R08\",\"reason\":\"Pre-approval PA-2026-3068 covers this $249 item, and the same approval is cited again on a different $229 purchase (R11), so one approval may be stretc"
+   },
+   {
+    "gold": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "pred": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0019-R07\",\"reason\":\"Client gift of $46 (just under the $50 cap) with no named recipient, bought the day before another near-cap gift at the same shop, which suggests a spl"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0024-R05",
+     "V0024-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0024-R08\",\"reason\":\"The $48 client gift (a gourmet basket) does not name a recipient, but gifts of $10 or more must name one, so the per-recipient $50 limit cannot be veri"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0026-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0026-R08\",\"reason\":\"A fountain pen set in a gift box 'thank-you for a client' is a client gift filed as Office Supplies; it names no recipient, and the $57 total is above "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0027-R07",
+     "V0027-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0027-R07\",\"reason\":\"This $32 gift and the $28 tea gift (R08) were bought 35 minutes apart on the same morning at different shops, and neither names a recipient; together t"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0031-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0031-R09\",\"reason\":\"Same merchant, same 'monthly replenishment' of 6 packs of A4 copy paper and the identical $39.20 total as V0031-R02 three weeks earlier, billed on a Su"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0032-R04"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0032-R04\",\"reason\":\"An engraved pen in a gift box, described as a thank-you for a contract renewal, was filed as Office Supplies on a Saturday; it looks like a client gift"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0035-R03",
+     "V0035-R04",
+     "V0035-R05"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0036-R01",
+     "V0036-R03",
+     "V0036-R04",
+     "V0036-R05"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0037-R01",
+     "V0037-R03",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "pred": [
+     "V0037-R03",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0037-R03\",\"reason\":\"A client gift of $75.80 made up of a mouse and PC stand (items that duplicate the employee's own office purchases) has no named recipient and exceeds t"
+   },
+   {
+    "gold": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "pred": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0038-R05\",\"reason\":\"Sao Paulo office-supply purchase on Oct 5 while the employee was on TRIP-5621 in Curitiba (hotel nights Oct 2-6, Curitiba meal on Oct 4), so the locati"
+   },
+   {
+    "gold": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "pred": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0039-R03\",\"reason\":\"A Madrid (Retiro) florist receipt timed 10:35 on 10 April, an hour after the 09:30 Madrid-Valencia train left, with no named recipient on a gift over $"
+   },
+   {
+    "gold": [
+     "V0040-R04",
+     "V0040-R09"
+    ],
+    "pred": [
+     "V0040-R03",
+     "V0040-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0040-R09\",\"reason\":\"A second 27-inch QHD monitor, bought from the same merchant as the pre-approved monitor in R04 ten days earlier, is split into panel and base. This has"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0043-R03",
+     "V0043-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0043-R11\",\"reason\":\"Client gift of $10 or more has no named recipient (only 'thank-you for contract renewal'), which the policy requires.\"},{\"receipt_id\":\"V0043-R03\",\"reas"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0044-R03",
+     "V0044-R05",
+     "V0044-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0044-R03\",\"reason\":\"Four nights of Osaka lodging under TRIP-4674 (3/9 to 3/13) overlap the nights of 3/12 and 3/13 that are also claimed as lodging under TRIP-1898, so the"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "pred": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "raw": "The pattern is in R07\u2013R10: four identical USB-C docking station bundles from four different merchants within about a week. Each is just under the $200 per-item accessory cap, and none has a pre-approv"
+   },
+   {
+    "gold": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "pred": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0052-R02\",\"reason\":\"Two 12-in-1 docking stations at $189 each, just under the $200 per-item limit, start a run of identical purchases.\"},{\"receipt_id\":\"V0052-R05\",\"reason\""
+   },
+   {
+    "gold": [
+     "V0053-R03",
+     "V0053-R11"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "pred": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0054-R02\",\"reason\":\"Mouse and mousepad engraved with a named individual (\u4f50\u3005\u6728 \u5065) are claimed as Computer Equipment, which looks like a personalized gift for another person "
+   },
+   {
+    "gold": [
+     "V0055-R08",
+     "V0055-R09"
+    ],
+    "pred": [
+     "V0055-R03",
+     "V0055-R04",
+     "V0055-R08",
+     "V0055-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0055-R03\",\"reason\":\"Team lunch of $148.00 sits just under the $150 attendee-documentation threshold, and the same employee claimed a separate individual lunch 27 minutes l"
+   },
+   {
+    "gold": [
+     "V0056-R06",
+     "V0056-R07",
+     "V0056-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0057-R03",
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0058-R01"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0058-R01\",\"reason\":\"A team lunch claimed with 3 attendees on a Sunday with no trip, and only 2 main dishes were ordered, so the weekend timing and the headcount do not fit"
+   }
+  ]
+ },
+ "qwen/qwen3.5-9b": {
+  "history_recall": "22/32",
+  "recall_ci": [
+   51.4,
+   82.0
+  ],
+  "clean_false_alarms": "19/26",
+  "fa_ci": [
+   53.9,
+   86.3
+  ],
+  "receipt_precision": 0.53,
+  "receipt_recall": 0.57,
+  "unparsed": 2,
+  "spend_usd": 0.0105,
+  "rows": [
+   {
+    "gold": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "pred": [
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0001-R06\",\"reason\":\"Client Entertainment receipt lacks a named recipient despite the $132 amount exceeding the $10 threshold requiring identification, and the high frequen"
+   },
+   {
+    "gold": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "pred": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08",
+     "V0002-R12"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0002-R04\", \"reason\": \"The shared airport transfer for 4 passengers ($72.00) is claimed under a trip with only 1 night of lodging, suggesting the other 3 passengers may b"
+   },
+   {
+    "gold": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "pred": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0003-R02\",\"reason\":\"Client entertainment receipt lists 3 tickets but only 2 attendees, suggesting a mismatch between headcount and items claimed or potential personal use."
+   },
+   {
+    "gold": [
+     "V0004-R06",
+     "V0004-R07",
+     "V0004-R08",
+     "V0004-R09"
+    ],
+    "pred": [
+     "V0004-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0004-R05\",\"reason\":\"Client Entertainment total of $141.00 for 3 attendees averages $47 per person, which is suspiciously close to the $50 per recipient limit, suggesting p"
+   },
+   {
+    "gold": [
+     "V0005-R03",
+     "V0005-R04",
+     "V0005-R05",
+     "V0005-R07",
+     "V0005-R08"
+    ],
+    "pred": [
+     "V0005-R02",
+     "V0005-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0005-R02\",\"reason\":\"Lodging receipt shows a quantity of 4 nights but the total amount ($416.00) is exactly 4 times the per-night rate of $104, suggesting the receipt was s"
+   },
+   {
+    "gold": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "pred": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0006-R01\",\"reason\":\"The receipt description explicitly lists 'Sparkling water and tea' as separate line items, which suggests the inclusion of non-meal personal beverages "
+   },
+   {
+    "gold": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "pred": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0007-R03\", \"reason\": \"Client gift receipt totaling $42.50 does not name the recipient, violating the policy requirement that gifts of $10 or more must name the recipient"
+   },
+   {
+    "gold": [
+     "V0008-R02",
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "pred": [
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R10",
+     "V0008-R13"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0008-R03\", \"reason\": \"Client entertainment total of $114.00 for 4 attendees exceeds the $50 per named recipient limit, and the receipt description does not explicitly na"
+   },
+   {
+    "gold": [
+     "V0009-R05",
+     "V0009-R06",
+     "V0009-R07"
+    ],
+    "pred": [
+     "V0009-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0009-R12\",\"reason\":\"Client Entertainment total of $112.50 for 3 attendees exceeds the $50 per named recipient limit, and the receipt does not list the specific recipient n"
+   },
+   {
+    "gold": [
+     "V0010-R02",
+     "V0010-R05",
+     "V0010-R08"
+    ],
+    "pred": [
+     "V0010-R01",
+     "V0010-R02",
+     "V0010-R05",
+     "V0010-R06",
+     "V0010-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0010-R01\",\"reason\":\"Client entertainment total of $127.00 for 3 attendees implies ~$42.33 per person, which exceeds the $25/person threshold often associated with high-val"
+   },
+   {
+    "gold": [
+     "V0011-R01",
+     "V0011-R02",
+     "V0011-R11",
+     "V0011-R12"
+    ],
+    "pred": [
+     "V0011-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0011-R11\",\"reason\":\"Receipt lists two distinct items (external SSD and USB-C cables) totaling $215.00, which exceeds the $200 per item limit for computer accessories witho"
+   },
+   {
+    "gold": [
+     "V0012-R01",
+     "V0012-R02",
+     "V0012-R04",
+     "V0012-R06"
+    ],
+    "pred": [
+     "V0012-R01",
+     "V0012-R02",
+     "V0012-R03",
+     "V0012-R04",
+     "V0012-R05",
+     "V0012-R06",
+     "V0012-R07",
+     "V0012-R08",
+     "V0012-R09",
+     "V0012-R10",
+     "V0012-R11",
+     "V0012-R12"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0012-R01\", \"reason\": \"Computer accessory receipt lacks a pre-approval reference (PA-...) despite being part of a series of related purchases that likely exceed the $200 "
+   },
+   {
+    "gold": [
+     "V0013-R02",
+     "V0013-R06"
+    ],
+    "pred": [
+     "V0013-R01",
+     "V0013-R08",
+     "V0013-R10",
+     "V0013-R11"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0013-R01\", \"reason\": \"Client entertainment total of $115.00 for 3 attendees exceeds the $75 per person per day limit ($225 total cap), suggesting a potential circumventi"
+   },
+   {
+    "gold": [
+     "V0014-R01",
+     "V0014-R02",
+     "V0014-R06",
+     "V0014-R09",
+     "V0014-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [
+     "V0015-R01",
+     "V0015-R02",
+     "V0015-R06"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "pred": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06",
+     "V0016-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0016-R01\",\"reason\":\"Multiple high-frequency client gift receipts from the same merchant within a single week suggest circumventing the $50 per recipient per receipt limit "
+   },
+   {
+    "gold": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "pred": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0017-R01\", \"reason\": \"5 tickets for 2 attendees suggests 3rd party tickets or split payment not matching headcount, and total exceeds $50 gift limit if considered a clie"
+   },
+   {
+    "gold": [
+     "V0018-R08",
+     "V0018-R10",
+     "V0018-R11"
+    ],
+    "pred": [
+     "V0018-R02",
+     "V0018-R04",
+     "V0018-R08",
+     "V0018-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0018-R02\",\"reason\":\"Lodging receipt lists '3 nights' in description but the trip duration is 3 nights, implying the charge covers the full stay rather than a single night'"
+   },
+   {
+    "gold": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "pred": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0019-R07\",\"reason\":\"Client gift receipt lacks a named recipient, which is required for gifts of $10 or more under policy.\"},{\"receipt_id\":\"V0019-R08\",\"reason\":\"Client gift"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0020-R09"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0020-R09\", \"reason\": \"Computer equipment total of $268.00 exceeds the $200 per item limit and lacks a pre-approval reference (PA-...).\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0021-R09",
+     "V0021-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0021-R09\",\"reason\":\"Client Entertainment total of $339.00 for 6 attendees implies ~$56.50 per person, which exceeds the $50 per named recipient gift limit, and the receipt"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0022-R04",
+     "V0022-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0022-R04\",\"reason\":\"Lodging receipt shows 4 nights and 4 rooms (4x Einzelzimmer) for a single-trip traveler, suggesting potential double-claiming or unauthorized headcount"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0024-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0024-R07\",\"reason\":\"Team meal of $133.60 for 8 attendees exceeds the $150 threshold requiring documented attendees, yet no attendee list is provided on the receipt.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0025-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0025-R10\",\"reason\":\"Computer equipment total of $232.00 exceeds the $200 per item limit and lacks a required pre-approval reference (PA-...).\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0026-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0026-R08\",\"reason\":\"Gift item (fountain pen set) exceeds the $50 per recipient limit and lacks a named recipient on the receipt, violating the gift policy.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0027-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0027-R06\",\"reason\":\"Client Entertainment total of $267.50 for 5 attendees averages $53.50 per person, which exceeds the $50 per named recipient limit for gifts, and the re"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\": []}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0029-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0029-R09\",\"reason\":\"Receipt amount ($78.50) exceeds the $75 itemization threshold but lacks an itemized list, violating the policy requirement for receipts above $75.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0030-R03"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0030-R03\",\"reason\":\"Lodging receipt for 2 nights shows 'x2' multiplier but the trip duration is only 2 nights total, suggesting a potential double-claim for the same stay "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0031-R01",
+     "V0031-R03",
+     "V0031-R08",
+     "V0031-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0031-R01\",\"reason\":\"Client entertainment total of $96.00 for 3 attendees exceeds the $75 per person per day limit ($25/person), suggesting potential circumvention of meal "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0032-R04"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0032-R04\",\"reason\":\"Gift item (engraved fountain pen) exceeds the $50 per recipient limit and lacks a named recipient, violating the gift policy.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0034-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0034-R06\",\"reason\":\"Team meal total of $136.50 for 3 attendees ($45.50/person) exceeds the $150 threshold requiring documented attendees, and the receipt description does "
+   },
+   {
+    "gold": [
+     "V0035-R03",
+     "V0035-R04",
+     "V0035-R05"
+    ],
+    "pred": [
+     "V0035-R01",
+     "V0035-R02"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0035-R01\",\"reason\":\"USB-C charging cable and laptop stand purchased on a Saturday likely constitute personal items rather than business computer equipment, especially give"
+   },
+   {
+    "gold": [
+     "V0036-R01",
+     "V0036-R03",
+     "V0036-R04",
+     "V0036-R05"
+    ],
+    "pred": [
+     "V0036-R01"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0036-R01\",\"reason\":\"Computer accessories totaling $328.88 across four receipts for a single monitor (MX4471) suggest circumventing the $200 per item limit by splitting a s"
+   },
+   {
+    "gold": [
+     "V0037-R01",
+     "V0037-R03",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "pred": [
+     "V0037-R01",
+     "V0037-R03",
+     "V0037-R04",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0037-R01\",\"reason\":\"Itemized computer accessories (keyboard, stand, hub) totaling $115.40 exceed the $200 per item limit only if considered a single item, but more critica"
+   },
+   {
+    "gold": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "pred": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0039-R03\",\"reason\":\"Gift receipt ($38.00) exceeds the $10 threshold but lacks a named recipient as required by policy for gifts of $10 or more.\"},{\"receipt_id\":\"V0039-R05\""
+   },
+   {
+    "gold": [
+     "V0040-R04",
+     "V0040-R09"
+    ],
+    "pred": [
+     "V0040-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0040-R09\",\"reason\":\"The monitor panel and base purchased here, combined with the monitor and base from V0040-R04, constitute a single computer accessory item exceeding the"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0041-R03",
+     "V0041-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0041-R03\",\"reason\":\"Client entertainment receipt of $101.50 for 3 attendees exceeds the $75 per person per day meal limit ($25/person), suggesting potential circumvention "
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\": []}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0044-R03",
+     "V0044-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0044-R03\",\"reason\":\"Lodging receipt for 4 nights shows only 1 night charged (x1) while the trip summary indicates 4 nights were claimed, suggesting a potential split-claim"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0045-R06",
+     "V0045-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0045-R06\",\"reason\":\"Client entertainment total of $160.50 for 3 attendees exceeds the $75 per person per day limit ($225 total), suggesting potential circumvention of per-"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0046-R01",
+     "V0046-R02",
+     "V0046-R03",
+     "V0046-R07",
+     "V0046-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0046-R01\",\"reason\":\"Team meal of $98.00 for 6 attendees exceeds the $75 per person daily limit ($450 total cap), and the per-person average ($16.33) is well below the limi"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [],
+    "pred": null,
+    "raw": "{\"escalate\":[]"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0049-R07"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0049-R07\", \"reason\": \"Client Entertainment receipt of $96.00 exceeds the $75 itemization threshold and lacks an itemized breakdown, violating the policy requirement for "
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0050-R04"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0050-R04\",\"reason\":\"Lodging cost of $352 for 4 nights ($88/night) exceeds the APAC per-person daily limit of $60, and no justification for exceeding the limit is provided."
+   },
+   {
+    "gold": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "pred": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0051-R07\",\"reason\":\"Four identical USB-C docking station bundles totaling $774.50 were purchased from different merchants within a 10-day window, suggesting a pattern of s"
+   },
+   {
+    "gold": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "pred": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0052-R02\",\"reason\":\"Receipt for $378.00 of computer equipment exceeds the $200 per item limit without a pre-approval code (PA-...), and the line item description suggests "
+   },
+   {
+    "gold": [
+     "V0053-R03",
+     "V0053-R11"
+    ],
+    "pred": [
+     "V0053-R11"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0053-R11\", \"reason\": \"Client entertainment total of $112.00 for 3 attendees averages $37.33 per person, which is acceptable, but the pattern of two high-value client ent"
+   },
+   {
+    "gold": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "pred": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0054-R02\",\"reason\":\"Personalized computer accessories (mouse and mousepad) with a specific name engraved ($118.00) are claimed as business equipment without a pre-approval"
+   },
+   {
+    "gold": [
+     "V0055-R08",
+     "V0055-R09"
+    ],
+    "pred": [
+     "V0055-R09"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0055-R09\", \"reason\": \"Receipt dated Saturday (2026-05-16) contains office supplies totaling $146.90, which suggests potential weekend personal spending or circumvention "
+   },
+   {
+    "gold": [
+     "V0056-R06",
+     "V0056-R07",
+     "V0056-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}\""
+   },
+   {
+    "gold": [
+     "V0057-R03",
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "pred": null,
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0057-R06\",\"reason\":\"Lodging receipt for 4 nights totaling $616.60 implies a per-night rate of $154.15, which exceeds the $150 team meal threshold logic only if misclassifi"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0058-R06",
+     "V0058-R10",
+     "V0058-R11"
+    ],
+    "raw": "{\"escalate\": [{\"receipt_id\": \"V0058-R06\", \"reason\": \"Client entertainment receipt of $169.55 for 4 attendees exceeds the $150 threshold requiring documented attendees, yet no attendee list is provided"
+   }
+  ]
+ },
+ "qwen/qwen3.5-27b": {
+  "history_recall": "20/32",
+  "recall_ci": [
+   45.3,
+   77.1
+  ],
+  "clean_false_alarms": "15/26",
+  "fa_ci": [
+   38.9,
+   74.5
+  ],
+  "receipt_precision": 0.61,
+  "receipt_recall": 0.52,
+  "unparsed": 2,
+  "spend_usd": 0.0448,
+  "rows": [
+   {
+    "gold": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "pred": [
+     "V0001-R03",
+     "V0001-R04",
+     "V0001-R06",
+     "V0001-R07",
+     "V0001-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0001-R03\",\"reason\":\"Receipt exceeds $75 but lacks a detailed itemized breakdown separating room rental from food costs.\"},{\"receipt_id\":\"V0001-R04\",\"reason\":\"Receipt excee"
+   },
+   {
+    "gold": [
+     "V0002-R04",
+     "V0002-R06",
+     "V0002-R08"
+    ],
+    "pred": [
+     "V0002-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0002-R06\",\"reason\":\"Receipt exceeds $75 threshold but lacks a required itemized breakdown.\"}]}"
+   },
+   {
+    "gold": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "pred": [
+     "V0003-R02",
+     "V0003-R04",
+     "V0003-R07",
+     "V0003-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0003-R02\",\"reason\":\"Receipt lists 3 tickets but only 2 attendees documented, suggesting potential double-claiming or unaccounted personal attendance.\"},{\"receipt_id\":\"V000"
+   },
+   {
+    "gold": [
+     "V0004-R06",
+     "V0004-R07",
+     "V0004-R08",
+     "V0004-R09"
+    ],
+    "pred": [
+     "V0004-R05",
+     "V0004-R06"
+    ],
+    "raw": "{\n\"escalate\": [\n{\n\"receipt_id\": \"V0004-R05\",\n\"reason\": \"Client entertainment receipt exceeds $75 but lacks itemized details for individual attendees to verify per-person meal limits.\"\n},\n{\n\"receipt_id"
+   },
+   {
+    "gold": [
+     "V0005-R03",
+     "V0005-R04",
+     "V0005-R05",
+     "V0005-R07",
+     "V0005-R08"
+    ],
+    "pred": [
+     "V0005-R02",
+     "V0005-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0005-R02\",\"reason\":\"Lodging receipt for 4 nights ($416) is dated Oct 16, but the associated trip (TRIP-2051) has no receipts covering the subsequent nights, suggesting pot"
+   },
+   {
+    "gold": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "pred": [
+     "V0006-R01",
+     "V0006-R06",
+     "V0006-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0006-R01\",\"reason\":\"Meal cost of $38 per person exceeds the $60 APAC limit but the receipt lacks a detailed itemized breakdown required for amounts over $75.\"},{\"receipt_i"
+   },
+   {
+    "gold": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "pred": [
+     "V0007-R03",
+     "V0007-R06",
+     "V0007-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0007-R03\",\"reason\":\"Gift receipt for 5 items lacks the required named recipients for gifts over $10.\"},{\"receipt_id\":\"V0007-R06\",\"reason\":\"Gift receipt for 4 items lacks t"
+   },
+   {
+    "gold": [
+     "V0008-R02",
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "pred": [
+     "V0008-R03",
+     "V0008-R06",
+     "V0008-R11",
+     "V0008-R13"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0008-R03\",\"reason\":\"The receipt references approval PA-2026-5120, which was originally issued for a computer accessory in R02, suggesting potential misuse of an approval c"
+   },
+   {
+    "gold": [
+     "V0009-R05",
+     "V0009-R06",
+     "V0009-R07"
+    ],
+    "pred": [
+     "V0009-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0009-R12\",\"reason\":\"The client entertainment receipt of $112.50 for 3 attendees lacks the required attendee documentation because the total exceeds the $150 threshold for "
+   },
+   {
+    "gold": [
+     "V0010-R02",
+     "V0010-R05",
+     "V0010-R08"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0011-R01",
+     "V0011-R02",
+     "V0011-R11",
+     "V0011-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0012-R01",
+     "V0012-R02",
+     "V0012-R04",
+     "V0012-R06"
+    ],
+    "pred": [
+     "V0012-R03"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0012-R03\",\"reason\":\"Client gift of $34 lacks the required named recipient as per policy for gifts over $10.\"}]}"
+   },
+   {
+    "gold": [
+     "V0013-R02",
+     "V0013-R06"
+    ],
+    "pred": [
+     "V0013-R01",
+     "V0013-R02",
+     "V0013-R06",
+     "V0013-R10",
+     "V0013-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0013-R01\",\"reason\":\"Client entertainment receipt exceeds $75 but lacks a detailed itemized breakdown of the menu.\"},{\"receipt_id\":\"V0013-R02\",\"reason\":\"Car rental receipt "
+   },
+   {
+    "gold": [
+     "V0014-R01",
+     "V0014-R02",
+     "V0014-R06",
+     "V0014-R09",
+     "V0014-R12"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0015-R01",
+     "V0015-R02",
+     "V0015-R06"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06"
+    ],
+    "pred": [
+     "V0016-R01",
+     "V0016-R02",
+     "V0016-R03",
+     "V0016-R05",
+     "V0016-R06",
+     "V0016-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0016-R01\",\"reason\":\"Gift receipt lacks the required named recipient for an amount over $10.\"},{\"receipt_id\":\"V0016-R02\",\"reason\":\"Gift receipt lacks the required named rec"
+   },
+   {
+    "gold": [
+     "V0017-R01",
+     "V0017-R02",
+     "V0017-R03",
+     "V0017-R08",
+     "V0017-R09"
+    ],
+    "pred": [
+     "V0017-R03",
+     "V0017-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0017-R03\",\"reason\":\"Receipt exceeds $75 threshold but lacks required itemization.\"},{\"receipt_id\":\"V0017-R09\",\"reason\":\"Receipt equals $75 threshold and requires itemizati"
+   },
+   {
+    "gold": [
+     "V0018-R08",
+     "V0018-R10",
+     "V0018-R11"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "pred": [
+     "V0019-R07",
+     "V0019-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0019-R07\",\"reason\":\"Client gift receipt lacks the required named recipient for an amount over $10.\"},{\"receipt_id\":\"V0019-R08\",\"reason\":\"Client gift receipt lacks the requ"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0020-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0020-R09\",\"reason\":\"Computer equipment item exceeds the $200 limit without an attached pre-approval reference.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0021-R09",
+     "V0021-R12"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0021-R09\",\"reason\":\"The receipt exceeds $75 but lacks a detailed itemized breakdown of individual costs.\"},{\"receipt_id\":\"V0021-R12\",\"reason\":\"The client gift receipt does"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0022-R05",
+     "V0022-R06"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0022-R05\",\"reason\":\"Client entertainment receipt exceeds the $75 per person limit ($50.50 per attendee) and lacks documented attendees required for team meals over $150.\"}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0024-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0024-R07\",\"reason\":\"Team meal exceeds $150 threshold but lacks documented attendee list.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0025-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0025-R10\",\"reason\":\"Computer equipment item exceeds the $200 limit without an attached pre-approval reference.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0027-R06",
+     "V0027-R07",
+     "V0027-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0027-R06\",\"reason\":\"Team meal exceeds $150 threshold but lacks documented attendees.\"},{\"receipt_id\":\"V0027-R07\",\"reason\":\"Client gift receipt lacks a named recipient as r"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0029-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0029-R09\",\"reason\":\"Receipt exceeds $75 but lacks a required itemized breakdown of individual line items.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0031-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0031-R05\",\"reason\":\"Gift receipt of $35.00 lacks the required named recipient as per policy for gifts $10 or more.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0032-R04",
+     "V0032-R08"
+    ],
+    "raw": "{\n\"escalate\": [\n{\n\"receipt_id\": \"V0032-R04\",\n\"reason\": \"Receipt classified as Office Supplies contains an engraved fountain pen described as a client gift, which violates the policy requiring gifts ov"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0034-R01"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0034-R01\",\"reason\":\"Computer accessory cost of $215 exceeds the $200 per item limit without an attached pre-approval reference.\"}]}"
+   },
+   {
+    "gold": [
+     "V0035-R03",
+     "V0035-R04",
+     "V0035-R05"
+    ],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0036-R01",
+     "V0036-R03",
+     "V0036-R04",
+     "V0036-R05"
+    ],
+    "pred": null,
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0036-R01\",\"reason\":\"Receipt exceeds the $75 threshold for itemization but lists multiple items without a detailed breakdown.\"},{\"receipt_id\":\"V0036-R02\",\"reason\":\"Team mea"
+   },
+   {
+    "gold": [
+     "V0037-R01",
+     "V0037-R03",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R09"
+    ],
+    "pred": [
+     "V0037-R01",
+     "V0037-R02",
+     "V0037-R03",
+     "V0037-R04",
+     "V0037-R06",
+     "V0037-R07",
+     "V0037-R08",
+     "V0037-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0037-R01\",\"reason\":\"Receipt exceeds $75 threshold but lacks a detailed itemized breakdown of individual prices.\"},{\"receipt_id\":\"V0037-R02\",\"reason\":\"Meal cost per attende"
+   },
+   {
+    "gold": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "pred": [
+     "V0038-R05",
+     "V0038-R06",
+     "V0038-R07",
+     "V0038-R08",
+     "V0038-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0038-R05\",\"reason\":\"Multiple small office supply receipts across different vendors on the same day suggest splitting purchases to avoid itemization or limit thresholds.\"},"
+   },
+   {
+    "gold": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "pred": [
+     "V0039-R03",
+     "V0039-R05",
+     "V0039-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0039-R03\",\"reason\":\"Client gift of $38.00 lacks a named recipient as required for gifts over $10.\"},{\"receipt_id\":\"V0039-R05\",\"reason\":\"Client gift of $29.50 lacks a named"
+   },
+   {
+    "gold": [
+     "V0040-R04",
+     "V0040-R09"
+    ],
+    "pred": [
+     "V0040-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0040-R09\",\"reason\":\"Receipt lacks required pre-approval for a computer accessory exceeding the $200 limit, and splitting the purchase with R004 suggests circumvention of t"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0044-R03"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0044-R03\",\"reason\":\"Lodging receipt for a single room lists 4 nights but the item description indicates a single night stay, suggesting potential double-claiming or misall"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0045-R02",
+     "V0045-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0045-R02\",\"reason\":\"Client gift of $34.00 lacks a named recipient as required for gifts over $10.\"},{\"receipt_id\":\"V0045-R07\",\"reason\":\"Client gift of $27.50 lacks a named"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0046-R04",
+     "V0046-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0046-R04\",\"reason\":\"Gift receipt of $36.00 lacks a named recipient as required for gifts over $10.\"},{\"receipt_id\":\"V0046-R08\",\"reason\":\"Gift receipt of $46.00 lacks a nam"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0049-R07"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0049-R07\",\"reason\":\"Client entertainment receipt of $96.00 exceeds the $75 threshold but lacks a required itemized breakdown.\"}]}"
+   },
+   {
+    "gold": [],
+    "pred": [],
+    "raw": "{\"escalate\":[]}"
+   },
+   {
+    "gold": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "pred": [
+     "V0051-R07",
+     "V0051-R08",
+     "V0051-R09",
+     "V0051-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0051-R07\",\"reason\":\"Receipt for a $189 docking station lacks the required pre-approval code (PA-...) for computer accessories under $200.\"},{\"receipt_id\":\"V0051-R08\",\"reas"
+   },
+   {
+    "gold": [
+     "V0052-R02",
+     "V0052-R05",
+     "V0052-R07",
+     "V0052-R09",
+     "V0052-R11"
+    ],
+    "pred": null,
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0052-R02\",\"reason\":\"Receipt for two docking stations totaling $378 lacks a required pre-approval reference for computer accessories exceeding $200 per item.\"},{\"receipt_id"
+   },
+   {
+    "gold": [
+     "V0053-R03",
+     "V0053-R11"
+    ],
+    "pred": [
+     "V0053-R03",
+     "V0053-R11"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0053-R03\",\"reason\":\"Receipt exceeds the $75 threshold but lacks a detailed itemized breakdown of individual costs.\"},{\"receipt_id\":\"V0053-R11\",\"reason\":\"Receipt exceeds th"
+   },
+   {
+    "gold": [
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "pred": [
+     "V0054-R01",
+     "V0054-R02",
+     "V0054-R03",
+     "V0054-R04",
+     "V0054-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0054-R01\",\"reason\":\"Receipt lacks itemization despite exceeding the $75 threshold.\"},{\"receipt_id\":\"V0054-R02\",\"reason\":\"Receipt lacks itemization despite exceeding the $7"
+   },
+   {
+    "gold": [
+     "V0055-R08",
+     "V0055-R09"
+    ],
+    "pred": [
+     "V0055-R09"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0055-R09\",\"reason\":\"Receipt dated Saturday for office supplies suggests potential personal spending or circumvention of business-day procurement policies.\"}]}"
+   },
+   {
+    "gold": [
+     "V0056-R06",
+     "V0056-R07",
+     "V0056-R08"
+    ],
+    "pred": [
+     "V0056-R02",
+     "V0056-R05"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0056-R02\",\"reason\":\"Gift amount exceeds $10 but the receipt description does not name the recipient.\"},{\"receipt_id\":\"V0056-R05\",\"reason\":\"Gift amount exceeds $10 but the "
+   },
+   {
+    "gold": [
+     "V0057-R03",
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "pred": [
+     "V0057-R03",
+     "V0057-R07",
+     "V0057-R08"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0057-R03\",\"reason\":\"Receipt exceeds $75 threshold but lacks required itemization despite listing line items in the description.\"},{\"receipt_id\":\"V0057-R07\",\"reason\":\"Recei"
+   },
+   {
+    "gold": [],
+    "pred": [
+     "V0058-R06",
+     "V0058-R07",
+     "V0058-R10"
+    ],
+    "raw": "{\"escalate\":[{\"receipt_id\":\"V0058-R06\",\"reason\":\"Client entertainment receipt exceeds $150 but lacks documented attendee names as required by policy.\"},{\"receipt_id\":\"V0058-R07\",\"reason\":\"Client enter"
+   }
+  ]
+ }
+}
