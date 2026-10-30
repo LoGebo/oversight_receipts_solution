@@ -1,0 +1,1042 @@
+{
+ "RCP-001": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "Harvest Table Kitchen",
+  "total_usd": 48.2,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Baseline clean receipt.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-001-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-001-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-001-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-001-L4",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-002": {
+  "type": "Client Entertainment",
+  "entity": "GLOBAL",
+  "merchant": "Verona Grill",
+  "total_usd": 234.0,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "False-positive trap.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-002-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-002-L2",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-002-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-003": {
+  "type": "Office Supplies",
+  "entity": "GLOBAL",
+  "merchant": "Cornerstone Office Supply",
+  "total_usd": 41.47,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Clean.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-003-L1",
+    "category": "computer_accessory",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-003-L2",
+    "category": "office_supplies",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-003-L3",
+    "category": "office_supplies",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-004": {
+  "type": "Meals - Team",
+  "entity": "GLOBAL",
+  "merchant": "Dockside Tavern & Grill",
+  "total_usd": 49.0,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Keyword trap, four ways.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-004-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-004-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-004-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "es"
+   },
+   {
+    "id": "RCP-004-L4",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-005": {
+  "type": "Lodging",
+  "entity": "GLOBAL",
+  "merchant": "Riverside Inn",
+  "total_usd": 701.04,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Large total but entirely compliant.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-005-L1",
+    "category": "lodging",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-005-L2",
+    "category": "lodging",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-005-L3",
+    "category": "ground_transport",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-006": {
+  "type": "Computer Equipment",
+  "entity": "GLOBAL",
+  "merchant": "Cornerstone Office Supply",
+  "total_usd": 189.0,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Threshold near-miss: $189 against the TECH-02 $200 per-item ceiling, so no pre-approval is required.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-006-L1",
+    "category": "computer_accessory",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-007": {
+  "type": "Meals - Team",
+  "entity": "GLOBAL",
+  "merchant": "Bluebird Cafe",
+  "total_usd": 212.0,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Cap near-miss: $53.00 per person against the $75 cap.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-007-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-007-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-007-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-008": {
+  "type": "Meals - Team",
+  "entity": "EMEA",
+  "merchant": "Le Petit Marche",
+  "total_usd": 49.68,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "Multilingual clean receipt.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-008-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "fr"
+   },
+   {
+    "id": "RCP-008-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "fr"
+   },
+   {
+    "id": "RCP-008-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "fr"
+   }
+  ]
+ },
+ "RCP-009": {
+  "type": "Travel - Other",
+  "entity": "GLOBAL",
+  "merchant": "Crisp Cleaners",
+  "total_usd": 34.0,
+  "disposition": "pass",
+  "exceptions": [],
+  "signals": [],
+  "trap": "LAUNDRY-01 near-miss in the compliant direction: a 5-night trip clears the 4-night minimum.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-009-L1",
+    "category": "laundry_service",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-010": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "The Anchor House",
+  "total_usd": 64.4,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "ALC-01",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "The canonical alcohol violation.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-010-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-010-L2",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-010-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-011": {
+  "type": "Client Entertainment",
+  "entity": "GLOBAL",
+  "merchant": "Cellar Door Fine Wines",
+  "total_usd": 79.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "MCC-01",
+    "high"
+   ],
+   [
+    "ALC-03",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "Two independent high exceptions.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-011-L1",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "es"
+   },
+   {
+    "id": "RCP-011-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-012": {
+  "type": "Office Supplies",
+  "entity": "GLOBAL",
+  "merchant": "Pacific Electronics",
+  "total_usd": 348.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "TECH-01",
+    "high"
+   ],
+   [
+    "DOC-03",
+    "medium"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "Misclassification is reported in addition to the item violation, per DOC-03.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-012-L1",
+    "category": "personal_electronics",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-013": {
+  "type": "Client Gifts",
+  "entity": "GLOBAL",
+  "merchant": "MarketPlace Retail",
+  "total_usd": 104.99,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "GIFT-02",
+    "high"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "The greeting card is a restricted category but sits under the GIFT-01 $50 cap, so it raises nothing.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-013-L1",
+    "category": "gift_card",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-013-L2",
+    "category": "gift",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-014": {
+  "type": "Office Supplies",
+  "entity": "GLOBAL",
+  "merchant": "FreshMart Supermarket",
+  "total_usd": 47.76,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "HOUSE-01",
+    "medium"
+   ],
+   [
+    "ALC-03",
+    "high"
+   ],
+   [
+    "DOC-03",
+    "medium"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "Reverse keyword trap: cooking wine reads as an ingredient but is alcohol bought at retail, so ALC-03 applies and ALC-01 does not.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-014-L1",
+    "category": "household_goods",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-014-L2",
+    "category": "household_goods",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-014-L3",
+    "category": "household_goods",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-014-L4",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-015": {
+  "type": "Client Entertainment",
+  "entity": "GLOBAL",
+  "merchant": "Sterling Chophouse",
+  "total_usd": 429.6,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "MEAL-01",
+    "medium"
+   ],
+   [
+    "ALC-02",
+    "medium"
+   ]
+  ],
+  "signals": [],
+  "trap": "Alcohol is permitted here (ALC-01 satisfied by the attendee count) but breaches the per-attendee cap, so the correct exception is ALC-02 and not ALC-01.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-015-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-015-L2",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-015-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-016": {
+  "type": "Client Entertainment",
+  "entity": "APAC",
+  "merchant": "Taj Spice House",
+  "total_usd": 65.34,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "REG-01",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "Rule-precedence test.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-016-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-016-L2",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-016-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-017": {
+  "type": "Lodging",
+  "entity": "GLOBAL",
+  "merchant": "Serenity Spa at Grand Hotel",
+  "total_usd": 140.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "MCC-01",
+    "high"
+   ],
+   [
+    "PERS-01",
+    "medium"
+   ],
+   [
+    "DOC-03",
+    "medium"
+   ]
+  ],
+  "signals": [],
+  "trap": "A spa charge folded into a hotel stay.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-017-L1",
+    "category": "personal_care",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-017-L2",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-018": {
+  "type": "Client Gifts",
+  "entity": "GLOBAL",
+  "merchant": "Aurora Fine Jewelers",
+  "total_usd": 180.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "MCC-01",
+    "high"
+   ],
+   [
+    "GIFT-01",
+    "medium"
+   ]
+  ],
+  "signals": [],
+  "trap": "The recipient is named, so the identifiability half of GIFT-01 is satisfied and only the cap is breached.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-018-L1",
+    "category": "jewelry",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-019": {
+  "type": "Computer Equipment",
+  "entity": "APAC",
+  "merchant": "Bic Camera Shinjuku",
+  "total_usd": 650.57,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "TECH-01",
+    "high"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "Japanese-language line items plus a JPY conversion.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-019-L1",
+    "category": "personal_electronics",
+    "restricted": true,
+    "language": "ja"
+   },
+   {
+    "id": "RCP-019-L2",
+    "category": "personal_electronics",
+    "restricted": true,
+    "language": "ja"
+   }
+  ]
+ },
+ "RCP-020": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "Copper Skillet",
+  "total_usd": 74.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "TIME-03",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "Cross-receipt rule: this receipt is compliant in isolation and only becomes an exception when grouped with RCP-021.",
+  "in_scope": false,
+  "lines": [
+   {
+    "id": "RCP-020-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-020-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-020-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-020-L4",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-021": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "Copper Skillet",
+  "total_usd": 71.5,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "TIME-03",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "The second half of the split pair.",
+  "in_scope": false,
+  "lines": [
+   {
+    "id": "RCP-021-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-021-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-021-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-021-L4",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-022": {
+  "type": "Client Entertainment",
+  "entity": "GLOBAL",
+  "merchant": "Harbor View Restaurant",
+  "total_usd": 113.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "GIFT-04",
+    "critical"
+   ]
+  ],
+  "signals": [],
+  "trap": "The only critical exception in the set, and it routes to Compliance rather than the audit queue.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-022-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-022-L2",
+    "category": "gift",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-023": {
+  "type": "Meals - Team",
+  "entity": "GLOBAL",
+  "merchant": "Lakeside Grill",
+  "total_usd": 186.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "DOC-01",
+    "medium"
+   ]
+  ],
+  "signals": [],
+  "trap": "Non-itemized receipt.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-023-L1",
+    "category": "other",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-024": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "QuickStop Market",
+  "total_usd": 20.5,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "PERS-03",
+    "high"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "A high exception hiding inside a $20.50 breakfast receipt.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-024-L1",
+    "category": "tobacco",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-024-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-024-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-025": {
+  "type": "Meals - Individual",
+  "entity": "EMEA",
+  "merchant": "Gasthaus Zur Linde",
+  "total_usd": 37.8,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "ALC-01",
+    "high"
+   ]
+  ],
+  "signals": [],
+  "trap": "German-language alcohol with no English token to match.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-025-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "de"
+   },
+   {
+    "id": "RCP-025-L2",
+    "category": "alcohol",
+    "restricted": true,
+    "language": "de"
+   },
+   {
+    "id": "RCP-025-L3",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "de"
+   }
+  ]
+ },
+ "RCP-026": {
+  "type": "Computer Equipment",
+  "entity": "GLOBAL",
+  "merchant": "Cornerstone Office Supply",
+  "total_usd": 343.99,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "TECH-02",
+    "medium"
+   ]
+  ],
+  "signals": [],
+  "trap": "A monitor is an unrestricted category and still breaches policy on amount.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-026-L1",
+    "category": "computer_accessory",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-026-L2",
+    "category": "computer_accessory",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-027": {
+  "type": "Travel - Other",
+  "entity": "GLOBAL",
+  "merchant": "Grandview Department Store",
+  "total_usd": 86.0,
+  "disposition": "flag",
+  "exceptions": [
+   [
+    "PERS-02",
+    "medium"
+   ]
+  ],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "The baggage-delay carve-out in PERS-02 would permit this up to $150, but no delay reference is present, so the carve-out does not apply.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-027-L1",
+    "category": "clothing",
+    "restricted": true,
+    "language": "en"
+   },
+   {
+    "id": "RCP-027-L2",
+    "category": "clothing",
+    "restricted": true,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-028": {
+  "type": "Travel - Other",
+  "entity": "GLOBAL",
+  "merchant": "Cornerhealth Pharmacy",
+  "total_usd": 14.48,
+  "disposition": "review",
+  "exceptions": [],
+  "signals": [
+   "MCC-02"
+  ],
+  "trap": "Nothing is wrong here: $14.48 of OTC medication on a trip, against the $25 HEALTH-01 allowance.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-028-L1",
+    "category": "health_otc",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-028-L2",
+    "category": "health_otc",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-029": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "Night Owl Diner",
+  "total_usd": 20.5,
+  "disposition": "review",
+  "exceptions": [],
+  "signals": [
+   "TIME-01"
+  ],
+  "trap": "An overnight meal with unremarkable contents.",
+  "in_scope": false,
+  "lines": [
+   {
+    "id": "RCP-029-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-029-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-029-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-030": {
+  "type": "Meals - Individual",
+  "entity": "GLOBAL",
+  "merchant": "Pier 9 Seafood",
+  "total_usd": 28.0,
+  "disposition": "review",
+  "exceptions": [],
+  "signals": [
+   "TIME-02"
+  ],
+  "trap": "A travel meal with no trip attached, dated on a Saturday.",
+  "in_scope": false,
+  "lines": [
+   {
+    "id": "RCP-030-L1",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-030-L2",
+    "category": "food_beverage",
+    "restricted": false,
+    "language": "en"
+   },
+   {
+    "id": "RCP-030-L3",
+    "category": "service_fee",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ },
+ "RCP-031": {
+  "type": "Travel - Other",
+  "entity": "EMEA",
+  "merchant": "Lavandaria Central",
+  "total_usd": 21.6,
+  "disposition": "review",
+  "exceptions": [
+   [
+    "LAUNDRY-01",
+    "low"
+   ]
+  ],
+  "signals": [],
+  "trap": "One of two receipts (with RCP-032) where a single low-severity exception stands alone, so EXC-01 puts the receipt in review rather than flag.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-031-L1",
+    "category": "laundry_service",
+    "restricted": false,
+    "language": "pt"
+   }
+  ]
+ },
+ "RCP-032": {
+  "type": "Software",
+  "entity": "GLOBAL",
+  "merchant": "Figma Inc",
+  "total_usd": 144.0,
+  "disposition": "review",
+  "exceptions": [
+   [
+    "TECH-04",
+    "low"
+   ]
+  ],
+  "signals": [],
+  "trap": "A documentation gap rather than a spend violation.",
+  "in_scope": true,
+  "lines": [
+   {
+    "id": "RCP-032-L1",
+    "category": "software_subscription",
+    "restricted": false,
+    "language": "en"
+   }
+  ]
+ }
+}

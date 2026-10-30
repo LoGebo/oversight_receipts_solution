@@ -1,0 +1,3911 @@
+[
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "en",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-01-R01",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Petal & Stem Florists",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-05T10:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 46.0,
+    "total_amount_usd": 46.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R01-L1",
+      "description_raw": "Congratulations bouquet for Daniel Whitford - new office",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 46.0,
+      "amount": 46.0,
+      "amount_usd": 46.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-01-R01-L1": [
+      "client",
+      "Daniel Whitford"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-01-R02",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Harbor Lane Bistro",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-06T12:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 51.5,
+    "total_amount_usd": 51.5,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R02-L1",
+      "description_raw": "Grilled chicken sandwich",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 14.5,
+      "amount": 29.0,
+      "amount_usd": 29.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-01-R02-L2",
+      "description_raw": "Caesar salad",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 12.0,
+      "amount": 12.0,
+      "amount_usd": 12.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-01-R02-L3",
+      "description_raw": "Iced tea",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 3.5,
+      "amount": 10.5,
+      "amount_usd": 10.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R03",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Clearline Stationers",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-07T15:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 28.98,
+    "total_amount_usd": 28.98,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R03-L1",
+      "description_raw": "Spiral notebooks, 5-pack",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 11.99,
+      "amount": 11.99,
+      "amount_usd": 11.99,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-01-R03-L2",
+      "description_raw": "Gel pens, black, 12 ct",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 8.49,
+      "amount": 8.49,
+      "amount_usd": 8.49,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-01-R03-L3",
+      "description_raw": "Sticky notes 3x3",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 4.25,
+      "amount": 8.5,
+      "amount_usd": 8.5,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R04",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Chapter House Books",
+    "mcc": "5942",
+    "mcc_description": "Book stores",
+    "transaction_datetime": "2026-05-12T16:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 44.0,
+    "total_amount_usd": 44.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R04-L1",
+      "description_raw": "Hardcover leadership book, gift-wrapped, for Daniel Whitford - thank-you",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 44.0,
+      "amount": 44.0,
+      "amount_usd": 44.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-01-R04-L1": [
+      "client",
+      "Daniel Whitford"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-01-R05",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Riverside Suites Columbus",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-15T08:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 305.8,
+    "total_amount_usd": 305.8,
+    "attendee_count": null,
+    "trip_id": "TRIP-5102",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R05-L1",
+      "description_raw": "Room charge, 2 nights",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 139.0,
+      "amount": 278.0,
+      "amount_usd": 278.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-01-R05-L2",
+      "description_raw": "Occupancy tax",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 27.8,
+      "amount": 27.8,
+      "amount_usd": 27.8,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R06",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Buckeye Cab Co",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-13T09:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 31.4,
+    "total_amount_usd": 31.4,
+    "attendee_count": null,
+    "trip_id": "TRIP-5102",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R06-L1",
+      "description_raw": "Taxi airport to hotel",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 31.4,
+      "amount": 31.4,
+      "amount_usd": 31.4,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R07",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Short North Grill",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-14T19:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 29.5,
+    "total_amount_usd": 29.5,
+    "attendee_count": 1,
+    "trip_id": "TRIP-5102",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R07-L1",
+      "description_raw": "Dinner: salmon plate",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 26.0,
+      "amount": 26.0,
+      "amount_usd": 26.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-01-R07-L2",
+      "description_raw": "Sparkling water",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 3.5,
+      "amount": 3.5,
+      "amount_usd": 3.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R08",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Cocoa Atelier",
+    "mcc": "5441",
+    "mcc_description": "Candy, nut and confectionery stores",
+    "transaction_datetime": "2026-05-19T11:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 48.0,
+    "total_amount_usd": 48.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R08-L1",
+      "description_raw": "Assorted truffle box 24 pc for Daniel Whitford - project kickoff",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 48.0,
+      "amount": 48.0,
+      "amount_usd": 48.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-01-R08-L1": [
+      "client",
+      "Daniel Whitford"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-01-R09",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Pinnacle Peripherals",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-21T13:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 24.99,
+    "total_amount_usd": 24.99,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R09-L1",
+      "description_raw": "USB-C to HDMI adapter",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 24.99,
+      "amount": 24.99,
+      "amount_usd": 24.99,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R10",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Oak & Ember Steakhouse",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-22T19:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 169.0,
+    "total_amount_usd": 169.0,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R10-L1",
+      "description_raw": "Dinner entrees",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 38.0,
+      "amount": 114.0,
+      "amount_usd": 114.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-01-R10-L2",
+      "description_raw": "Shared appetizers",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 14.0,
+      "amount": 28.0,
+      "amount_usd": 28.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-01-R10-L3",
+      "description_raw": "Coffee and dessert",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 9.0,
+      "amount": 27.0,
+      "amount_usd": 27.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-01-R11",
+    "employee_id": "E-8411",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "The Gilded Gift Shop",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-27T14:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 47.0,
+    "total_amount_usd": 47.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-01-R11-L1",
+      "description_raw": "Walnut desk clock for Daniel Whitford - contract anniversary",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 47.0,
+      "amount": 47.0,
+      "amount_usd": 47.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-01-R11-L1": [
+      "client",
+      "Daniel Whitford"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "es",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-02-R01",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Papelería Central Supply",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-04T09:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 28.4,
+    "total_amount_usd": 28.4,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R01-L1",
+      "description_raw": "Carpetas de archivo tamaño carta, caja 50",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 15.9,
+      "amount": 15.9,
+      "amount_usd": 15.9,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-02-R01-L2",
+      "description_raw": "Grapadora de escritorio",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 12.5,
+      "amount": 12.5,
+      "amount_usd": 12.5,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R02",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Floristería Jardín del Sol",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-05T11:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 49.0,
+    "total_amount_usd": 49.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R02-L1",
+      "description_raw": "Arreglo floral para Mariana Ortega - cumpleaños",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 49.0,
+      "amount": 49.0,
+      "amount_usd": 49.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-02-R02-L1": [
+      "client",
+      "Mariana Ortega"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-02-R03",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Cocina Mesón Azul",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-08T13:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 76.0,
+    "total_amount_usd": 76.0,
+    "attendee_count": 4,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R03-L1",
+      "description_raw": "Menú del día",
+      "language": "es",
+      "quantity": 4,
+      "unit_price": 16.5,
+      "amount": 66.0,
+      "amount_usd": 66.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-02-R03-L2",
+      "description_raw": "Agua mineral",
+      "language": "es",
+      "quantity": 4,
+      "unit_price": 2.5,
+      "amount": 10.0,
+      "amount_usd": 10.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R04",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Taxis Rápidos Metro",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-11T07:50:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 38.0,
+    "total_amount_usd": 38.0,
+    "attendee_count": null,
+    "trip_id": "TRIP-6230",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R04-L1",
+      "description_raw": "Taxi al aeropuerto",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 38.0,
+      "amount": 38.0,
+      "amount_usd": 38.0,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R05",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Hotel Plaza Alameda",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-12T07:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 170.24,
+    "total_amount_usd": 170.24,
+    "attendee_count": null,
+    "trip_id": "TRIP-6230",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R05-L1",
+      "description_raw": "Habitación, 1 noche",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 152.0,
+      "amount": 152.0,
+      "amount_usd": 152.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-02-R05-L2",
+      "description_raw": "Impuesto de hospedaje",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 18.24,
+      "amount": 18.24,
+      "amount_usd": 18.24,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R06",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Café La Esquina",
+    "mcc": "5814",
+    "mcc_description": "Fast food restaurants",
+    "transaction_datetime": "2026-05-11T20:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 21.5,
+    "total_amount_usd": 21.5,
+    "attendee_count": 1,
+    "trip_id": "TRIP-6230",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R06-L1",
+      "description_raw": "Cena: enchiladas verdes",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 17.5,
+      "amount": 17.5,
+      "amount_usd": 17.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-02-R06-L2",
+      "description_raw": "Limonada",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 4.0,
+      "amount": 4.0,
+      "amount_usd": 4.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R07",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Detalles y Regalos Lumi",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-14T16:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 45.0,
+    "total_amount_usd": 45.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R07-L1",
+      "description_raw": "Set de café gourmet para Mariana Ortega - agradecimiento por la reunión",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 45.0,
+      "amount": 45.0,
+      "amount_usd": 45.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-02-R07-L1": [
+      "client",
+      "Mariana Ortega"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-02-R08",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "TecnoPeriféricos Norte",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-19T10:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 34.99,
+    "total_amount_usd": 34.99,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R08-L1",
+      "description_raw": "Ratón inalámbrico ergonómico",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 34.99,
+      "amount": 34.99,
+      "amount_usd": 34.99,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R09",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Restaurante Brasa Viva",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-21T14:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 79.0,
+    "total_amount_usd": 79.0,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R09-L1",
+      "description_raw": "Almuerzo: parrillada para dos",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 58.0,
+      "amount": 58.0,
+      "amount_usd": 58.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-02-R09-L2",
+      "description_raw": "Postres",
+      "language": "es",
+      "quantity": 2,
+      "unit_price": 7.5,
+      "amount": 15.0,
+      "amount_usd": 15.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-02-R09-L3",
+      "description_raw": "Café americano",
+      "language": "es",
+      "quantity": 2,
+      "unit_price": 3.0,
+      "amount": 6.0,
+      "amount_usd": 6.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-02-R10",
+    "employee_id": "E-8422",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Librería El Faro",
+    "mcc": "5942",
+    "mcc_description": "Book stores",
+    "transaction_datetime": "2026-05-26T17:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 42.0,
+    "total_amount_usd": 42.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-02-R10-L1",
+      "description_raw": "Libro de arte edición especial para Mariana Ortega - felicitación por ascenso",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 42.0,
+      "amount": 42.0,
+      "amount_usd": 42.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-02-R10-L1": [
+      "client",
+      "Mariana Ortega"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "fr",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-03-R01",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Fleurs de Montmartre",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-01T10:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 44.0,
+    "total_amount_usd": 44.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R01-L1",
+      "description_raw": "Bouquet de pivoines pour Hélène Marchand - fête du travail",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 44.0,
+      "amount": 44.0,
+      "amount_usd": 44.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-03-R01-L1": [
+      "client",
+      "Hélène Marchand"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-03-R02",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Brasserie du Quai",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-05T12:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 52.5,
+    "total_amount_usd": 52.5,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R02-L1",
+      "description_raw": "Plat du jour",
+      "language": "fr",
+      "quantity": 3,
+      "unit_price": 15.0,
+      "amount": 45.0,
+      "amount_usd": 45.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-03-R02-L2",
+      "description_raw": "Café",
+      "language": "fr",
+      "quantity": 3,
+      "unit_price": 2.5,
+      "amount": 7.5,
+      "amount_usd": 7.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-03-R03",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Maison Praline",
+    "mcc": "5441",
+    "mcc_description": "Candy, nut and confectionery stores",
+    "transaction_datetime": "2026-05-08T15:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 39.0,
+    "total_amount_usd": 39.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R03-L1",
+      "description_raw": "Coffret de macarons pour Hélène Marchand - remerciement",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 39.0,
+      "amount": 39.0,
+      "amount_usd": 39.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-03-R03-L1": [
+      "client",
+      "Hélène Marchand"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-03-R04",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Papeterie Lumière",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-11T09:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 35.7,
+    "total_amount_usd": 35.7,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R04-L1",
+      "description_raw": "Cahiers A4 à spirale, lot de 4",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 13.8,
+      "amount": 13.8,
+      "amount_usd": 13.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-03-R04-L2",
+      "description_raw": "Surligneurs assortis",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 6.9,
+      "amount": 6.9,
+      "amount_usd": 6.9,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-03-R04-L3",
+      "description_raw": "Ramette papier A4",
+      "language": "fr",
+      "quantity": 2,
+      "unit_price": 7.5,
+      "amount": 15.0,
+      "amount_usd": 15.0,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-03-R05",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Librairie des Arcades",
+    "mcc": "5942",
+    "mcc_description": "Book stores",
+    "transaction_datetime": "2026-05-15T17:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 48.0,
+    "total_amount_usd": 48.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R05-L1",
+      "description_raw": "Beau livre de photographie pour Hélène Marchand - anniversaire",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 48.0,
+      "amount": 48.0,
+      "amount_usd": 48.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-03-R05-L1": [
+      "client",
+      "Hélène Marchand"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-03-R06",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Périphériques Express",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-18T11:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 42.0,
+    "total_amount_usd": 42.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R06-L1",
+      "description_raw": "Support d'ordinateur portable réglable",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 42.0,
+      "amount": 42.0,
+      "amount_usd": 42.0,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-03-R07",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Atelier Cadeaux Sauvage",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-22T14:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 46.5,
+    "total_amount_usd": 46.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R07-L1",
+      "description_raw": "Bougie parfumée et carnet en cuir pour Hélène Marchand - signature du devis",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 46.5,
+      "amount": 46.5,
+      "amount_usd": 46.5,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-03-R07-L1": [
+      "client",
+      "Hélène Marchand"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-03-R08",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Le Comptoir Saint-Jean",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-26T13:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 80.0,
+    "total_amount_usd": 80.0,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R08-L1",
+      "description_raw": "Déjeuner : menu entrée-plat",
+      "language": "fr",
+      "quantity": 2,
+      "unit_price": 29.0,
+      "amount": 58.0,
+      "amount_usd": 58.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-03-R08-L2",
+      "description_raw": "Eau minérale",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 5.0,
+      "amount": 5.0,
+      "amount_usd": 5.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-03-R08-L3",
+      "description_raw": "Café gourmand",
+      "language": "fr",
+      "quantity": 2,
+      "unit_price": 8.5,
+      "amount": 17.0,
+      "amount_usd": 17.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-03-R09",
+    "employee_id": "E-8433",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Fromagerie des Halles",
+    "mcc": "5499",
+    "mcc_description": "Miscellaneous food stores",
+    "transaction_datetime": "2026-05-29T16:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 47.0,
+    "total_amount_usd": 47.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-03-R09-L1",
+      "description_raw": "Panier de fromages affinés pour Hélène Marchand - fin de trimestre",
+      "language": "fr",
+      "quantity": 1,
+      "unit_price": 47.0,
+      "amount": 47.0,
+      "amount_usd": 47.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-03-R09-L1": [
+      "client",
+      "Hélène Marchand"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "de",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-04-R01",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Gasthaus Lindenhof",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-04T12:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 62.4,
+    "total_amount_usd": 62.4,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R01-L1",
+      "description_raw": "Mittagsmenü",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 17.0,
+      "amount": 51.0,
+      "amount_usd": 51.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-04-R01-L2",
+      "description_raw": "Apfelschorle",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 3.8,
+      "amount": 11.4,
+      "amount_usd": 11.4,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R02",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Blumenhaus Morgentau",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-06T10:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 48.5,
+    "total_amount_usd": 48.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R02-L1",
+      "description_raw": "Blumenstrauß für Klaus Brenner - Glückwunsch zum Umzug",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 48.5,
+      "amount": 48.5,
+      "amount_usd": 48.5,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-04-R02-L1": [
+      "client",
+      "Klaus Brenner"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-04-R03",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Bürobedarf Kessler",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-07T09:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 22.8,
+    "total_amount_usd": 22.8,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R03-L1",
+      "description_raw": "Ordner A4, breit",
+      "language": "de",
+      "quantity": 4,
+      "unit_price": 3.9,
+      "amount": 15.6,
+      "amount_usd": 15.6,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-04-R03-L2",
+      "description_raw": "Kugelschreiber blau, 10er",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 7.2,
+      "amount": 7.2,
+      "amount_usd": 7.2,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R04",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Taxi Zentrale Süd",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-11T08:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 42.6,
+    "total_amount_usd": 42.6,
+    "attendee_count": null,
+    "trip_id": "TRIP-7314",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R04-L1",
+      "description_raw": "Taxifahrt Flughafen - Hotel",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 42.6,
+      "amount": 42.6,
+      "amount_usd": 42.6,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R05",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Bäckerei am Markt",
+    "mcc": "5462",
+    "mcc_description": "Bakeries",
+    "transaction_datetime": "2026-05-12T07:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 8.1,
+    "total_amount_usd": 8.1,
+    "attendee_count": 1,
+    "trip_id": "TRIP-7314",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R05-L1",
+      "description_raw": "Frühstück: Laugenbrezel mit Butter",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 4.2,
+      "amount": 4.2,
+      "amount_usd": 4.2,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-04-R05-L2",
+      "description_raw": "Milchkaffee",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 3.9,
+      "amount": 3.9,
+      "amount_usd": 3.9,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R06",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Restaurant Zum Hafen",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-13T19:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 31.5,
+    "total_amount_usd": 31.5,
+    "attendee_count": 1,
+    "trip_id": "TRIP-7314",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R06-L1",
+      "description_raw": "Abendessen: Zanderfilet",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 27.5,
+      "amount": 27.5,
+      "amount_usd": 27.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-04-R06-L2",
+      "description_raw": "Mineralwasser",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 4.0,
+      "amount": 4.0,
+      "amount_usd": 4.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R07",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Hotel Elbblick",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-14T08:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 406.35,
+    "total_amount_usd": 406.35,
+    "attendee_count": null,
+    "trip_id": "TRIP-7314",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R07-L1",
+      "description_raw": "Zimmer, 3 Nächte",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 129.0,
+      "amount": 387.0,
+      "amount_usd": 387.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-04-R07-L2",
+      "description_raw": "Beherbergungsabgabe",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 19.35,
+      "amount": 19.35,
+      "amount_usd": 19.35,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R08",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Geschenkideen Wunderbar",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-18T15:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 49.0,
+    "total_amount_usd": 49.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R08-L1",
+      "description_raw": "Füllfederhalter-Set für Klaus Brenner - Dank für Vertragsverlängerung",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 49.0,
+      "amount": 49.0,
+      "amount_usd": 49.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-04-R08-L1": [
+      "client",
+      "Klaus Brenner"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-04-R09",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "PC-Zubehör Weber",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-20T14:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 22.9,
+    "total_amount_usd": 22.9,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R09-L1",
+      "description_raw": "USB-Hub, 4 Ports",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 22.9,
+      "amount": 22.9,
+      "amount_usd": 22.9,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-04-R10",
+    "employee_id": "E-8444",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Buchhandlung Seitenwind",
+    "mcc": "5942",
+    "mcc_description": "Book stores",
+    "transaction_datetime": "2026-05-28T16:25:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 45.9,
+    "total_amount_usd": 45.9,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-04-R10-L1",
+      "description_raw": "Bildband Alpen für Klaus Brenner - Geburtstag",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 45.9,
+      "amount": 45.9,
+      "amount_usd": 45.9,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-04-R10-L1": [
+      "client",
+      "Klaus Brenner"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "ja",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-05-R01",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "花工房さくら",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-07T10:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 48.0,
+    "total_amount_usd": 48.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R01-L1",
+      "description_raw": "田中浩様へ 新社屋移転祝いのフラワーアレンジメント",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 48.0,
+      "amount": 48.0,
+      "amount_usd": 48.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-05-R01-L1": [
+      "client",
+      "Tanaka Hiroshi"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-05-R02",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "定食屋 まるや",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-08T12:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 39.9,
+    "total_amount_usd": 39.9,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R02-L1",
+      "description_raw": "日替わり定食",
+      "language": "ja",
+      "quantity": 3,
+      "unit_price": 11.5,
+      "amount": 34.5,
+      "amount_usd": 34.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-05-R02-L2",
+      "description_raw": "緑茶",
+      "language": "ja",
+      "quantity": 3,
+      "unit_price": 1.8,
+      "amount": 5.4,
+      "amount_usd": 5.4,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-05-R03",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "文具のミナト",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-11T09:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 16.0,
+    "total_amount_usd": 16.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R03-L1",
+      "description_raw": "A4 クリアファイル 20枚入",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 6.8,
+      "amount": 6.8,
+      "amount_usd": 6.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-05-R03-L2",
+      "description_raw": "ボールペン 黒 10本",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 9.2,
+      "amount": 9.2,
+      "amount_usd": 9.2,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-05-R04",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "銘菓 月乃屋",
+    "mcc": "5441",
+    "mcc_description": "Candy, nut and confectionery stores",
+    "transaction_datetime": "2026-05-13T15:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 42.0,
+    "total_amount_usd": 42.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R04-L1",
+      "description_raw": "田中浩様へ 御礼の和菓子詰め合わせ",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 42.0,
+      "amount": 42.0,
+      "amount_usd": 42.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-05-R04-L1": [
+      "client",
+      "Tanaka Hiroshi"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-05-R05",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "PCパーツ 秋原堂",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-15T13:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 50.5,
+    "total_amount_usd": 50.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R05-L1",
+      "description_raw": "USB-C 充電ケーブル 2m",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 14.5,
+      "amount": 14.5,
+      "amount_usd": 14.5,
+      "category": "computer_accessory"
+     },
+     {
+      "line_id": "RTX04-05-R05-L2",
+      "description_raw": "ノートPCスタンド",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 36.0,
+      "amount": 36.0,
+      "amount_usd": 36.0,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-05-R06",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "雑貨と贈り物 こもれび",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-20T16:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 47.5,
+    "total_amount_usd": 47.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R06-L1",
+      "description_raw": "田中浩様へ ご昇進祝いの名入れ湯呑みセット",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 47.5,
+      "amount": 47.5,
+      "amount_usd": 47.5,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-05-R06-L1": [
+      "client",
+      "Tanaka Hiroshi"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-05-R07",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "炭火焼 ひいらぎ",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-22T18:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 93.0,
+    "total_amount_usd": 93.0,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R07-L1",
+      "description_raw": "夕食コース",
+      "language": "ja",
+      "quantity": 3,
+      "unit_price": 28.0,
+      "amount": 84.0,
+      "amount_usd": 84.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-05-R07-L2",
+      "description_raw": "烏龍茶",
+      "language": "ja",
+      "quantity": 3,
+      "unit_price": 3.0,
+      "amount": 9.0,
+      "amount_usd": 9.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-05-R08",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "文房具センター丸善町",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-25T10:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 16.4,
+    "total_amount_usd": 16.4,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R08-L1",
+      "description_raw": "付箋 5色セット",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 4.4,
+      "amount": 8.8,
+      "amount_usd": 8.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-05-R08-L2",
+      "description_raw": "ホワイトボードマーカー 4本",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 7.6,
+      "amount": 7.6,
+      "amount_usd": 7.6,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-05-R09",
+    "employee_id": "E-8455",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "茶舗 翠香園",
+    "mcc": "5499",
+    "mcc_description": "Miscellaneous food stores",
+    "transaction_datetime": "2026-05-28T14:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 46.0,
+    "total_amount_usd": 46.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-05-R09-L1",
+      "description_raw": "田中浩様へ 案件完了記念の高級煎茶ギフト",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 46.0,
+      "amount": 46.0,
+      "amount_usd": 46.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-05-R09-L1": [
+      "client",
+      "Tanaka Hiroshi"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "reason": "One named client receives a separate just-under-cap gift on several different dates under a different pretext each time, so each receipt is its own 'occasion' while the cumulative value to that one person is several times the $50 cap.",
+  "language": "pt",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-06-R01",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Papelaria Ponto Final",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-04T10:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 23.2,
+    "total_amount_usd": 23.2,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R01-L1",
+      "description_raw": "Caderno universitário",
+      "language": "pt",
+      "quantity": 2,
+      "unit_price": 8.9,
+      "amount": 17.8,
+      "amount_usd": 17.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-06-R01-L2",
+      "description_raw": "Marca-texto amarelo, 3 un",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 5.4,
+      "amount": 5.4,
+      "amount_usd": 5.4,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R02",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Restaurante Sabor da Terra",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-06T12:50:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 86.0,
+    "total_amount_usd": 86.0,
+    "attendee_count": 4,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R02-L1",
+      "description_raw": "Prato executivo",
+      "language": "pt",
+      "quantity": 4,
+      "unit_price": 17.0,
+      "amount": 68.0,
+      "amount_usd": 68.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-06-R02-L2",
+      "description_raw": "Suco natural",
+      "language": "pt",
+      "quantity": 4,
+      "unit_price": 4.5,
+      "amount": 18.0,
+      "amount_usd": 18.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R03",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Floricultura Ipê Roxo",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-07T09:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 49.0,
+    "total_amount_usd": 49.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R03-L1",
+      "description_raw": "Cesta de flores para Rafael Coutinho - aniversário",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 49.0,
+      "amount": 49.0,
+      "amount_usd": 49.0,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-06-R03-L1": [
+      "client",
+      "Rafael Coutinho"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-06-R04",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Empório Presentes Finos",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-10T15:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 48.5,
+    "total_amount_usd": 48.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R04-L1",
+      "description_raw": "Kit de café especial para Rafael Coutinho - agradecimento pela parceria",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 48.5,
+      "amount": 48.5,
+      "amount_usd": 48.5,
+      "category": "gift"
+     }
+    ],
+    "planted": true,
+    "gift_for": {
+     "RTX04-06-R04-L1": [
+      "client",
+      "Rafael Coutinho"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-06-R05",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Táxi Cooperativa Centro",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-18T07:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 36.8,
+    "total_amount_usd": 36.8,
+    "attendee_count": null,
+    "trip_id": "TRIP-8457",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R05-L1",
+      "description_raw": "Corrida até o aeroporto",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 36.8,
+      "amount": 36.8,
+      "amount_usd": 36.8,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R06",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Lanchonete Bom Dia",
+    "mcc": "5814",
+    "mcc_description": "Fast food restaurants",
+    "transaction_datetime": "2026-05-18T12:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 15.0,
+    "total_amount_usd": 15.0,
+    "attendee_count": 1,
+    "trip_id": "TRIP-8457",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R06-L1",
+      "description_raw": "Almoço: sanduíche de frango",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 12.5,
+      "amount": 12.5,
+      "amount_usd": 12.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-06-R06-L2",
+      "description_raw": "Água com gás",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 2.5,
+      "amount": 2.5,
+      "amount_usd": 2.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R07",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Cantina Nonna Lúcia",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-19T20:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 33.0,
+    "total_amount_usd": 33.0,
+    "attendee_count": 1,
+    "trip_id": "TRIP-8457",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R07-L1",
+      "description_raw": "Jantar: risoto de cogumelos",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 29.0,
+      "amount": 29.0,
+      "amount_usd": 29.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-06-R07-L2",
+      "description_raw": "Refrigerante",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 4.0,
+      "amount": 4.0,
+      "amount_usd": 4.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R08",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Hotel Atlântico Business",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-20T08:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 302.0,
+    "total_amount_usd": 302.0,
+    "attendee_count": null,
+    "trip_id": "TRIP-8457",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R08-L1",
+      "description_raw": "Diária, 2 noites",
+      "language": "pt",
+      "quantity": 2,
+      "unit_price": 145.0,
+      "amount": 290.0,
+      "amount_usd": 290.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-06-R08-L2",
+      "description_raw": "Taxa de turismo",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 12.0,
+      "amount": 12.0,
+      "amount_usd": 12.0,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-06-R09",
+    "employee_id": "E-8466",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "InfoAcessórios Paulista",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-25T14:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 39.9,
+    "total_amount_usd": 39.9,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-06-R09-L1",
+      "description_raw": "Teclado sem fio",
+      "language": "pt",
+      "quantity": 1,
+      "unit_price": 39.9,
+      "amount": 39.9,
+      "amount_usd": 39.9,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   }
+  ]
+ },
+ {
+  "scheme": "clean",
+  "reason": "ordinary month",
+  "language": "en",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-07-R01",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Brightdesk Office Supply",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-04T09:50:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 15.48,
+    "total_amount_usd": 15.48,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R01-L1",
+      "description_raw": "Legal pads, 6-pack",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 9.99,
+      "amount": 9.99,
+      "amount_usd": 9.99,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-07-R01-L2",
+      "description_raw": "Binder clips assorted",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 5.49,
+      "amount": 5.49,
+      "amount_usd": 5.49,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R02",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Maple Street Deli",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-06T12:25:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 43.5,
+    "total_amount_usd": 43.5,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R02-L1",
+      "description_raw": "Turkey club sandwich",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 12.5,
+      "amount": 25.0,
+      "amount_usd": 25.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R02-L2",
+      "description_raw": "Tomato soup",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 6.0,
+      "amount": 12.0,
+      "amount_usd": 12.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R02-L3",
+      "description_raw": "Lemonade",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 3.25,
+      "amount": 6.5,
+      "amount_usd": 6.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R03",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Lakeshore Taxi",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-12T10:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 29.7,
+    "total_amount_usd": 29.7,
+    "attendee_count": null,
+    "trip_id": "TRIP-9021",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R03-L1",
+      "description_raw": "Taxi from airport to client site",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 29.7,
+      "amount": 29.7,
+      "amount_usd": 29.7,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R04",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Lakefront Diner",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-12T19:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 24.0,
+    "total_amount_usd": 24.0,
+    "attendee_count": 1,
+    "trip_id": "TRIP-9021",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R04-L1",
+      "description_raw": "Dinner: pot roast plate",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 21.0,
+      "amount": 21.0,
+      "amount_usd": 21.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R04-L2",
+      "description_raw": "Iced tea",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 3.0,
+      "amount": 3.0,
+      "amount_usd": 3.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R05",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Sunrise Bagel Co",
+    "mcc": "5814",
+    "mcc_description": "Fast food restaurants",
+    "transaction_datetime": "2026-05-13T07:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 7.25,
+    "total_amount_usd": 7.25,
+    "attendee_count": 1,
+    "trip_id": "TRIP-9021",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R05-L1",
+      "description_raw": "Breakfast: everything bagel with cream cheese",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 4.75,
+      "amount": 4.75,
+      "amount_usd": 4.75,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R05-L2",
+      "description_raw": "Drip coffee",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 2.5,
+      "amount": 2.5,
+      "amount_usd": 2.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R06",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Northshore Inn Chicago",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-14T08:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 394.8,
+    "total_amount_usd": 394.8,
+    "attendee_count": null,
+    "trip_id": "TRIP-9021",
+    "trip_nights": 2,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R06-L1",
+      "description_raw": "Room charge, 2 nights",
+      "language": "en",
+      "quantity": 2,
+      "unit_price": 168.0,
+      "amount": 336.0,
+      "amount_usd": 336.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-07-R06-L2",
+      "description_raw": "Hotel tax",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 58.8,
+      "amount": 58.8,
+      "amount_usd": 58.8,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R07",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Petalworks Florist",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-18T11:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 42.0,
+    "total_amount_usd": 42.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R07-L1",
+      "description_raw": "Get-well flower arrangement for Laura Kim",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 42.0,
+      "amount": 42.0,
+      "amount_usd": 42.0,
+      "category": "gift"
+     }
+    ],
+    "planted": false,
+    "gift_for": {
+     "RTX04-07-R07-L1": [
+      "client",
+      "Laura Kim"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-07-R08",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Keystone Computer Parts",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-20T15:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 59.99,
+    "total_amount_usd": 59.99,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R08-L1",
+      "description_raw": "Webcam 1080p",
+      "language": "en",
+      "quantity": 1,
+      "unit_price": 59.99,
+      "amount": 59.99,
+      "amount_usd": 59.99,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-07-R09",
+    "employee_id": "E-8477",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Copper Kettle Kitchen",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-27T12:45:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 90.75,
+    "total_amount_usd": 90.75,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-07-R09-L1",
+      "description_raw": "Lunch entrees",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 22.0,
+      "amount": 66.0,
+      "amount_usd": 66.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R09-L2",
+      "description_raw": "Side salads",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 5.5,
+      "amount": 16.5,
+      "amount_usd": 16.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-07-R09-L3",
+      "description_raw": "Coffee",
+      "language": "en",
+      "quantity": 3,
+      "unit_price": 2.75,
+      "amount": 8.25,
+      "amount_usd": 8.25,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   }
+  ]
+ },
+ {
+  "scheme": "clean",
+  "reason": "ordinary month",
+  "language": "de",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-08-R01",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Schreibwaren Hoffmann",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-05T09:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 14.3,
+    "total_amount_usd": 14.3,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R01-L1",
+      "description_raw": "Collegeblock A4 kariert",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 2.9,
+      "amount": 8.7,
+      "amount_usd": 8.7,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-08-R01-L2",
+      "description_raw": "Textmarker, 4er-Set",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 5.6,
+      "amount": 5.6,
+      "amount_usd": 5.6,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R02",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Trattoria Da Marco",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-07T12:35:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 50.1,
+    "total_amount_usd": 50.1,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R02-L1",
+      "description_raw": "Pasta des Tages",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 13.5,
+      "amount": 40.5,
+      "amount_usd": 40.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-08-R02-L2",
+      "description_raw": "Mineralwasser",
+      "language": "de",
+      "quantity": 3,
+      "unit_price": 3.2,
+      "amount": 9.6,
+      "amount_usd": 9.6,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R03",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Technikwerk Peripherie",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-11T14:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 43.8,
+    "total_amount_usd": 43.8,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R03-L1",
+      "description_raw": "Tastatur kabelgebunden, deutsches Layout",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 34.9,
+      "amount": 34.9,
+      "amount_usd": 34.9,
+      "category": "computer_accessory"
+     },
+     {
+      "line_id": "RTX04-08-R03-L2",
+      "description_raw": "Mauspad",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 8.9,
+      "amount": 8.9,
+      "amount_usd": 8.9,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R04",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Restaurant Weinberg Stube",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-14T19:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 72.6,
+    "total_amount_usd": 72.6,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R04-L1",
+      "description_raw": "Abendessen: Hauptgerichte",
+      "language": "de",
+      "quantity": 2,
+      "unit_price": 26.5,
+      "amount": 53.0,
+      "amount_usd": 53.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-08-R04-L2",
+      "description_raw": "Vorspeisenplatte",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 14.0,
+      "amount": 14.0,
+      "amount_usd": 14.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-08-R04-L3",
+      "description_raw": "Espresso",
+      "language": "de",
+      "quantity": 2,
+      "unit_price": 2.8,
+      "amount": 5.6,
+      "amount_usd": 5.6,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R05",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Papier & Co Büroartikel",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-19T10:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 15.1,
+    "total_amount_usd": 15.1,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R05-L1",
+      "description_raw": "Druckerpapier A4, 500 Blatt",
+      "language": "de",
+      "quantity": 2,
+      "unit_price": 6.4,
+      "amount": 12.8,
+      "amount_usd": 12.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-08-R05-L2",
+      "description_raw": "Heftklammern 24/6",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 2.3,
+      "amount": 2.3,
+      "amount_usd": 2.3,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R06",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Kantine Werkhof",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-21T12:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 28.6,
+    "total_amount_usd": 28.6,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R06-L1",
+      "description_raw": "Tagesgericht vegetarisch",
+      "language": "de",
+      "quantity": 2,
+      "unit_price": 9.8,
+      "amount": 19.6,
+      "amount_usd": 19.6,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-08-R06-L2",
+      "description_raw": "Tagessuppe",
+      "language": "de",
+      "quantity": 2,
+      "unit_price": 4.5,
+      "amount": 9.0,
+      "amount_usd": 9.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R07",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Kabelwelt Online-Abholung",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-26T16:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 12.99,
+    "total_amount_usd": 12.99,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R07-L1",
+      "description_raw": "HDMI-Kabel 2 m",
+      "language": "de",
+      "quantity": 1,
+      "unit_price": 12.99,
+      "amount": 12.99,
+      "amount_usd": 12.99,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-08-R08",
+    "employee_id": "E-8488",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Café Rosengarten",
+    "mcc": "5814",
+    "mcc_description": "Fast food restaurants",
+    "transaction_datetime": "2026-05-29T15:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 27.2,
+    "total_amount_usd": 27.2,
+    "attendee_count": 4,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-08-R08-L1",
+      "description_raw": "Kuchenstück",
+      "language": "de",
+      "quantity": 4,
+      "unit_price": 3.9,
+      "amount": 15.6,
+      "amount_usd": 15.6,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-08-R08-L2",
+      "description_raw": "Kaffee",
+      "language": "de",
+      "quantity": 4,
+      "unit_price": 2.9,
+      "amount": 11.6,
+      "amount_usd": 11.6,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   }
+  ]
+ },
+ {
+  "scheme": "clean",
+  "reason": "ordinary month",
+  "language": "ja",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-09-R01",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "文具店 ことのは",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-01T10:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 13.5,
+    "total_amount_usd": 13.5,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R01-L1",
+      "description_raw": "大学ノート B5 5冊",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 7.9,
+      "amount": 7.9,
+      "amount_usd": 7.9,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-09-R01-L2",
+      "description_raw": "修正テープ",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 2.8,
+      "amount": 5.6,
+      "amount_usd": 5.6,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R02",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "老舗菓子 若葉堂",
+    "mcc": "5441",
+    "mcc_description": "Candy, nut and confectionery stores",
+    "transaction_datetime": "2026-05-08T14:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 32.0,
+    "total_amount_usd": 32.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R02-L1",
+      "description_raw": "佐藤美咲様へ 初回訪問の手土産 焼き菓子詰め合わせ",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 32.0,
+      "amount": 32.0,
+      "amount_usd": 32.0,
+      "category": "gift"
+     }
+    ],
+    "planted": false,
+    "gift_for": {
+     "RTX04-09-R02-L1": [
+      "client",
+      "Sato Misaki"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-09-R03",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "そば処 かすみ",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-12T12:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 29.0,
+    "total_amount_usd": 29.0,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R03-L1",
+      "description_raw": "天ざるそば",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 13.0,
+      "amount": 26.0,
+      "amount_usd": 26.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-09-R03-L2",
+      "description_raw": "ほうじ茶",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 1.5,
+      "amount": 3.0,
+      "amount_usd": 3.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R04",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "あおば交通タクシー",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-14T09:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 18.4,
+    "total_amount_usd": 18.4,
+    "attendee_count": null,
+    "trip_id": "TRIP-9365",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R04-L1",
+      "description_raw": "タクシー 駅から顧客先まで",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 18.4,
+      "amount": 18.4,
+      "amount_usd": 18.4,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R05",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "定食処 ふじ",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-14T19:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 16.0,
+    "total_amount_usd": 16.0,
+    "attendee_count": 1,
+    "trip_id": "TRIP-9365",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R05-L1",
+      "description_raw": "夕食 焼き魚定食",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 14.5,
+      "amount": 14.5,
+      "amount_usd": 14.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-09-R05-L2",
+      "description_raw": "味噌汁追加",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 1.5,
+      "amount": 1.5,
+      "amount_usd": 1.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R06",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "ビジネスホテル みなと",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-15T08:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 100.0,
+    "total_amount_usd": 100.0,
+    "attendee_count": null,
+    "trip_id": "TRIP-9365",
+    "trip_nights": 1,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R06-L1",
+      "description_raw": "宿泊 1泊",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 98.0,
+      "amount": 98.0,
+      "amount_usd": 98.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-09-R06-L2",
+      "description_raw": "宿泊税",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 2.0,
+      "amount": 2.0,
+      "amount_usd": 2.0,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R07",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "デジタル周辺機器 ひかり",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-19T15:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 24.0,
+    "total_amount_usd": 24.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R07-L1",
+      "description_raw": "ワイヤレスマウス",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 24.0,
+      "amount": 24.0,
+      "amount_usd": 24.0,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-09-R08",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "花屋 ひなた",
+    "mcc": "5992",
+    "mcc_description": "Florists",
+    "transaction_datetime": "2026-05-25T11:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 45.0,
+    "total_amount_usd": 45.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R08-L1",
+      "description_raw": "山本健一様へ 開店祝いのスタンド花",
+      "language": "ja",
+      "quantity": 1,
+      "unit_price": 45.0,
+      "amount": 45.0,
+      "amount_usd": 45.0,
+      "category": "gift"
+     }
+    ],
+    "planted": false,
+    "gift_for": {
+     "RTX04-09-R08-L1": [
+      "client",
+      "Yamamoto Kenichi"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-09-R09",
+    "employee_id": "E-8499",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "和食 しずく",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-27T12:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 56.0,
+    "total_amount_usd": 56.0,
+    "attendee_count": 2,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-09-R09-L1",
+      "description_raw": "昼懐石",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 26.0,
+      "amount": 52.0,
+      "amount_usd": 52.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-09-R09-L2",
+      "description_raw": "煎茶",
+      "language": "ja",
+      "quantity": 2,
+      "unit_price": 2.0,
+      "amount": 4.0,
+      "amount_usd": 4.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   }
+  ]
+ },
+ {
+  "scheme": "clean",
+  "reason": "ordinary month",
+  "language": "es",
+  "receipts": [
+   {
+    "receipt_id": "RTX04-10-R01",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Team",
+    "merchant_name": "Taquería Los Arcos",
+    "mcc": "5814",
+    "mcc_description": "Fast food restaurants",
+    "transaction_datetime": "2026-05-05T13:10:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 36.0,
+    "total_amount_usd": 36.0,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R01-L1",
+      "description_raw": "Orden de tacos al pastor",
+      "language": "es",
+      "quantity": 3,
+      "unit_price": 9.5,
+      "amount": 28.5,
+      "amount_usd": 28.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-10-R01-L2",
+      "description_raw": "Agua de jamaica",
+      "language": "es",
+      "quantity": 3,
+      "unit_price": 2.5,
+      "amount": 7.5,
+      "amount_usd": 7.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R02",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Office Supplies",
+    "merchant_name": "Distribuidora Oficina Plus",
+    "mcc": "5943",
+    "mcc_description": "Office and stationery supply",
+    "transaction_datetime": "2026-05-06T10:00:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 20.3,
+    "total_amount_usd": 20.3,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R02-L1",
+      "description_raw": "Paquete de hojas blancas carta",
+      "language": "es",
+      "quantity": 2,
+      "unit_price": 6.9,
+      "amount": 13.8,
+      "amount_usd": 13.8,
+      "category": "office_supplies"
+     },
+     {
+      "line_id": "RTX04-10-R02-L2",
+      "description_raw": "Marcadores para pizarrón",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 6.5,
+      "amount": 6.5,
+      "amount_usd": 6.5,
+      "category": "office_supplies"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R03",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Travel - Other",
+    "merchant_name": "Radio Taxi Express",
+    "mcc": "4121",
+    "mcc_description": "Taxicabs, limousines, rideshare",
+    "transaction_datetime": "2026-05-11T08:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 33.5,
+    "total_amount_usd": 33.5,
+    "attendee_count": null,
+    "trip_id": "TRIP-9580",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R03-L1",
+      "description_raw": "Traslado aeropuerto - hotel",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 33.5,
+      "amount": 33.5,
+      "amount_usd": 33.5,
+      "category": "ground_transport"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R04",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Panadería La Espiga",
+    "mcc": "5462",
+    "mcc_description": "Bakeries",
+    "transaction_datetime": "2026-05-12T08:05:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 8.5,
+    "total_amount_usd": 8.5,
+    "attendee_count": 1,
+    "trip_id": "TRIP-9580",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R04-L1",
+      "description_raw": "Desayuno: cuernito de jamón y queso",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 5.5,
+      "amount": 5.5,
+      "amount_usd": 5.5,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-10-R04-L2",
+      "description_raw": "Café con leche",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 3.0,
+      "amount": 3.0,
+      "amount_usd": 3.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R05",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Meals - Individual",
+    "merchant_name": "Restaurante El Patio Colonial",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-13T20:30:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 26.5,
+    "total_amount_usd": 26.5,
+    "attendee_count": 1,
+    "trip_id": "TRIP-9580",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R05-L1",
+      "description_raw": "Cena: pescado a la talla",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 24.0,
+      "amount": 24.0,
+      "amount_usd": 24.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-10-R05-L2",
+      "description_raw": "Agua natural",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 2.5,
+      "amount": 2.5,
+      "amount_usd": 2.5,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R06",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Lodging",
+    "merchant_name": "Hotel Real del Puerto",
+    "mcc": "7011",
+    "mcc_description": "Hotels, motels, resorts",
+    "transaction_datetime": "2026-05-14T07:50:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 364.62,
+    "total_amount_usd": 364.62,
+    "attendee_count": null,
+    "trip_id": "TRIP-9580",
+    "trip_nights": 3,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R06-L1",
+      "description_raw": "Habitación, 3 noches",
+      "language": "es",
+      "quantity": 3,
+      "unit_price": 118.0,
+      "amount": 354.0,
+      "amount_usd": 354.0,
+      "category": "lodging"
+     },
+     {
+      "line_id": "RTX04-10-R06-L2",
+      "description_raw": "Impuesto sobre hospedaje",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 10.62,
+      "amount": 10.62,
+      "amount_usd": 10.62,
+      "category": "lodging"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R07",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Gifts",
+    "merchant_name": "Regalos Artesanales Quetzal",
+    "mcc": "5947",
+    "mcc_description": "Gift, card, novelty and souvenir shops",
+    "transaction_datetime": "2026-05-20T16:40:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 38.0,
+    "total_amount_usd": 38.0,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R07-L1",
+      "description_raw": "Libreta de piel artesanal para Jorge Salinas - cierre de proyecto",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 38.0,
+      "amount": 38.0,
+      "amount_usd": 38.0,
+      "category": "gift"
+     }
+    ],
+    "planted": false,
+    "gift_for": {
+     "RTX04-10-R07-L1": [
+      "client",
+      "Jorge Salinas"
+     ]
+    }
+   },
+   {
+    "receipt_id": "RTX04-10-R08",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Computer Equipment",
+    "merchant_name": "Accesorios Cómputo Delta",
+    "mcc": "5045",
+    "mcc_description": "Computers and peripheral equipment",
+    "transaction_datetime": "2026-05-22T12:15:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 29.9,
+    "total_amount_usd": 29.9,
+    "attendee_count": null,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R08-L1",
+      "description_raw": "Base para laptop con ventilador",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 29.9,
+      "amount": 29.9,
+      "amount_usd": 29.9,
+      "category": "computer_accessory"
+     }
+    ],
+    "planted": false
+   },
+   {
+    "receipt_id": "RTX04-10-R09",
+    "employee_id": "E-8510",
+    "employee_country": "US",
+    "entity": "GLOBAL",
+    "submitted_expense_type": "Client Entertainment",
+    "merchant_name": "Asador La Herradura",
+    "mcc": "5812",
+    "mcc_description": "Eating places and restaurants",
+    "transaction_datetime": "2026-05-28T14:20:00",
+    "currency": "USD",
+    "fx_rate_to_usd": 1,
+    "total_amount": 114.0,
+    "total_amount_usd": 114.0,
+    "attendee_count": 3,
+    "trip_id": null,
+    "trip_nights": null,
+    "pre_approval_ref": null,
+    "itemized": true,
+    "line_items": [
+     {
+      "line_id": "RTX04-10-R09-L1",
+      "description_raw": "Comida: cortes a la parrilla",
+      "language": "es",
+      "quantity": 3,
+      "unit_price": 32.0,
+      "amount": 96.0,
+      "amount_usd": 96.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-10-R09-L2",
+      "description_raw": "Guacamole para compartir",
+      "language": "es",
+      "quantity": 1,
+      "unit_price": 9.0,
+      "amount": 9.0,
+      "amount_usd": 9.0,
+      "category": "food_beverage"
+     },
+     {
+      "line_id": "RTX04-10-R09-L3",
+      "description_raw": "Refrescos",
+      "language": "es",
+      "quantity": 3,
+      "unit_price": 3.0,
+      "amount": 9.0,
+      "amount_usd": 9.0,
+      "category": "food_beverage"
+     }
+    ],
+    "planted": false
+   }
+  ]
+ }
+]

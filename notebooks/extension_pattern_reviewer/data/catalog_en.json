@@ -1,0 +1,506 @@
+[
+ {
+  "scheme": "gift_splitting",
+  "readable_name": "Gifts Split Below Limit",
+  "what_it_does": "Buys several gifts for the same named client on different days, each just under the $50 per-receipt cap.",
+  "why_it_passes": "Every receipt is under the per-receipt cap, so none is flagged on its own.",
+  "what_gives_it_away": "The same client's name keeps appearing, and the gifts together far exceed the cap."
+ },
+ {
+  "scheme": "gift_under_naming",
+  "readable_name": "Unnamed Gifts Under Threshold",
+  "what_it_does": "Files many gifts without naming a recipient, each priced just under $10.",
+  "why_it_passes": "Under $10 a recipient does not have to be named, so each receipt is acceptable.",
+  "what_gives_it_away": "A pile of small, anonymous gifts that all sit just below the naming threshold."
+ },
+ {
+  "scheme": "tech_just_under",
+  "readable_name": "Equipment Priced Below Approval",
+  "what_it_does": "Repeatedly buys equipment priced just under $200, the per-item level that needs pre-approval.",
+  "why_it_passes": "Each item is below the amount that requires approval, so no approval is asked for.",
+  "what_gives_it_away": "Several similar gadgets, all priced just under the limit, bought close together."
+ },
+ {
+  "scheme": "itemize_just_under",
+  "readable_name": "Unitemized Receipts Under Limit",
+  "what_it_does": "Submits repeated receipts with only a total, each just under $75, the amount above which an itemized list is required.",
+  "why_it_passes": "Each total is below the itemization threshold, so a bare total is allowed.",
+  "what_gives_it_away": "The same kind of vendor and the same near-limit totals keep recurring with no detail."
+ },
+ {
+  "scheme": "meal_cap_hugging",
+  "readable_name": "Meals At The Daily Cap",
+  "what_it_does": "Claims individual meals that repeatedly land at 96-99% of the per-person daily meal cap.",
+  "why_it_passes": "Each meal is within the daily cap.",
+  "what_gives_it_away": "Meal after meal lands almost exactly at the cap, which real eating rarely does."
+ },
+ {
+  "scheme": "meal_just_under_doc",
+  "readable_name": "Team Meals Below Documentation Line",
+  "what_it_does": "Files team meals repeatedly just under $150, the receipt total above which attendee details are needed.",
+  "why_it_passes": "Each total is below the amount that triggers attendee documentation.",
+  "what_gives_it_away": "Repeated team meals at the same place all sit just below the documentation threshold."
+ },
+ {
+  "scheme": "duplicate_submission",
+  "readable_name": "Same Expense Submitted Twice",
+  "what_it_does": "Submits the same expense two times under different receipt ids to get paid twice.",
+  "why_it_passes": "The two submissions have different ids, so neither looks like a repeat by itself.",
+  "what_gives_it_away": "Two claims show the same merchant, date, amount and items."
+ },
+ {
+  "scheme": "pa_reuse",
+  "readable_name": "One Approval Used Repeatedly",
+  "what_it_does": "Reuses a single pre-approval reference to cover several separate large purchases.",
+  "why_it_passes": "Each large purchase shows an approval reference, so it looks pre-approved.",
+  "what_gives_it_away": "The same approval reference is attached to several different purchases."
+ },
+ {
+  "scheme": "weekend_client_entertainment_no_trip",
+  "readable_name": "Weekend Client Dinners, No Trip",
+  "what_it_does": "Repeatedly claims client entertainment on Saturdays and Sundays when there is no trip or client visit, likely personal outings.",
+  "why_it_passes": "Each dinner is a normal amount for client entertainment.",
+  "what_gives_it_away": "The claims cluster on weekends with no trip or client visit behind them."
+ },
+ {
+  "scheme": "overlapping_lodging_same_night",
+  "readable_name": "Two Hotels Same Night",
+  "what_it_does": "Claims two different hotels for the same night or nights within one trip.",
+  "why_it_passes": "Each hotel bill looks like a normal night's stay.",
+  "what_gives_it_away": "Two hotels are billed for the same night, so one is a double claim or a personal stay."
+ },
+ {
+  "scheme": "recurring_item_merchant_rotation",
+  "readable_name": "Same Item From Rotating Shops",
+  "what_it_does": "Buys the identical office item every week but from a different stationery shop each time.",
+  "why_it_passes": "No single merchant repeats, so checks for repeat purchases at one merchant never trigger.",
+  "what_gives_it_away": "The same item at the same price shows up weekly, which looks like stockpiling or resale."
+ },
+ {
+  "scheme": "trip_id_stretched_over_month",
+  "readable_name": "Short Trip Stretched Over Month",
+  "what_it_does": "Attaches meals and transport dated across almost the whole month to one trip that lasts only 1-2 nights.",
+  "why_it_passes": "Each meal or ride looks like ordinary trip spending.",
+  "what_gives_it_away": "The dates run far beyond the trip's length, so everyday local spending is being tied to a trip."
+ },
+ {
+  "scheme": "team_label_for_solo_meals",
+  "readable_name": "Solo Lunches Labelled Team Meals",
+  "what_it_does": "Files solo lunches as two-person team meals at one restaurant to gain extra room under the per-person cap, never naming the attendees.",
+  "why_it_passes": "The total divided by two stays under the per-person cap.",
+  "what_gives_it_away": "The same restaurant repeats with 'lunch for two' and no names are ever given."
+ },
+ {
+  "scheme": "personal_goods_as_office_supplies",
+  "readable_name": "Personal Items As Office Supplies",
+  "what_it_does": "Files household and personal items under the office supplies category.",
+  "why_it_passes": "The category says office supplies and the amounts are small.",
+  "what_gives_it_away": "The item descriptions, such as a yoga mat or cushion covers, are not office items."
+ },
+ {
+  "scheme": "gift_baskets_as_team_meals",
+  "readable_name": "Gift Baskets Filed As Meals",
+  "what_it_does": "Buys gourmet gift hampers at gift shops and files them as team meals with token attendee counts.",
+  "why_it_passes": "It is filed as a meal, so gift recipient naming and per-recipient limits are never applied.",
+  "what_gives_it_away": "The merchants are gift shops and the item is a gift basket, not a meal."
+ },
+ {
+  "scheme": "weekend_rides_under_trip_id",
+  "readable_name": "Weekend Rides Under Trip Id",
+  "what_it_does": "Files evening and weekend ride-shares of a personal nature as travel under a business trip id.",
+  "why_it_passes": "Each ride has a trip id and a modest fare.",
+  "what_gives_it_away": "The ride dates do not match the dates of the trip and fall on evenings and weekends."
+ },
+ {
+  "scheme": "sequential_invoice_amounts",
+  "readable_name": "Invoice Amounts In Step Pattern",
+  "what_it_does": "Bills the same vendor in amounts that rise in an exact arithmetic progression, as if drawing down a made-up invoice series.",
+  "why_it_passes": "Each invoice is a plausible amount for office supplies.",
+  "what_gives_it_away": "The amounts rise by the same fixed step each time."
+ },
+ {
+  "scheme": "cloned_fare_rotating_cab_companies",
+  "readable_name": "Same Fare, Changing Cab Firms",
+  "what_it_does": "Claims an identical taxi fare to the cent at the same hour, each time from a different cab company, as if copying a template receipt.",
+  "why_it_passes": "Each fare is ordinary and each company appears only once.",
+  "what_gives_it_away": "The fare matches to the cent and the time repeats while only the company name changes."
+ },
+ {
+  "scheme": "round_dollar_rotating_restaurants",
+  "readable_name": "Round Dinner Totals Everywhere",
+  "what_it_does": "Submits dinners that are always whole-dollar amounts, each at a different restaurant.",
+  "why_it_passes": "Each amount is reasonable for a dinner.",
+  "what_gives_it_away": "Real bills rarely come out to whole dollars every time."
+ },
+ {
+  "scheme": "team_meal_split_across_food_hall_stalls",
+  "readable_name": "Team Meal Split By Stall",
+  "what_it_does": "Splits one large team meal into several receipts from different stalls of the same food hall on the same day.",
+  "why_it_passes": "Each receipt is under the team meal cap.",
+  "what_gives_it_away": "Same day, same food hall and same headcount on every receipt."
+ },
+ {
+  "scheme": "gifts_to_clients_family_members",
+  "readable_name": "Gifts For Clients' Relatives",
+  "what_it_does": "Buys gifts for a client's relatives, such as a wife, child or mother, rather than for the client contact.",
+  "why_it_passes": "Each gift is small and looks like relationship building.",
+  "what_gives_it_away": "Every gift goes to a different family member for personal occasions, not to a business contact."
+ },
+ {
+  "scheme": "identical_gift_rotating_recipients",
+  "readable_name": "Same Gift, Many Recipients",
+  "what_it_does": "Buys the same item at about the cap for many different clients from different shops.",
+  "why_it_passes": "Each gift is within the per-recipient cap.",
+  "what_gives_it_away": "The identical item keeps recurring, which looks like bulk personal shopping spread across names."
+ },
+ {
+  "scheme": "entertainment_headcount_vs_items_mismatch",
+  "readable_name": "Headcount Larger Than Food",
+  "what_it_does": "Records a large attendee count on client entertainment so the cost per head looks low.",
+  "why_it_passes": "The cost per head is low enough to pass.",
+  "what_gives_it_away": "The items billed cover only two or three people, so the attendee count looks inflated."
+ },
+ {
+  "scheme": "weekend_family_outing_as_client_entertainment",
+  "readable_name": "Family Outings As Client Events",
+  "what_it_does": "Claims weekend family outings as client entertainment.",
+  "why_it_passes": "Each total is a normal amount for entertainment.",
+  "what_gives_it_away": "The meals fall on weekends at kid-friendly places with children's menus and four attendees."
+ },
+ {
+  "scheme": "trip_id_hopping",
+  "readable_name": "One Hotel Stay, Two Trips",
+  "what_it_does": "Bills one hotel stay to two different trip ids with overlapping dates.",
+  "why_it_passes": "Each trip looks plausible by itself.",
+  "what_gives_it_away": "The same nights are claimed under both trips."
+ },
+ {
+  "scheme": "lodging_nights_exceed_trip",
+  "readable_name": "More Hotel Nights Than Trip",
+  "what_it_does": "Submits hotel bills from several hotels that add up to more nights than the declared trip length.",
+  "why_it_passes": "Each hotel bill is a normal single stay.",
+  "what_gives_it_away": "Added together the nights exceed the trip, hinting at padded or personal stays."
+ },
+ {
+  "scheme": "day_trip_with_lodging",
+  "readable_name": "Day Trip With Hotel Stay",
+  "what_it_does": "Adds an overnight hotel and evening spending to a trip declared with zero nights.",
+  "why_it_passes": "Each receipt looks like normal travel spending.",
+  "what_gives_it_away": "A trip with no nights has an overnight hotel and evening expenses."
+ },
+ {
+  "scheme": "two_places_one_day",
+  "readable_name": "Two Cities, Same Day",
+  "what_it_does": "Files meals and taxis on the same date under two different trips in different cities.",
+  "why_it_passes": "Each receipt fits its own trip.",
+  "what_gives_it_away": "The employee cannot be in two cities on the same day."
+ },
+ {
+  "scheme": "attendee_padding_vs_line_quantities",
+  "readable_name": "Inflated Team Meal Attendees",
+  "what_it_does": "Declares 7-9 attendees at recurring team meals while the items show only 2-3 portions.",
+  "why_it_passes": "The stated headcount keeps the cost per person low.",
+  "what_gives_it_away": "The portions billed do not match the number of attendees declared."
+ },
+ {
+  "scheme": "teleporting_employee",
+  "readable_name": "Employee In Two Places",
+  "what_it_does": "Claims a trip meal in one city and a team lunch with no trip in another city on the same day.",
+  "why_it_passes": "Each meal looks reasonable by itself.",
+  "what_gives_it_away": "The two cities cannot both be right on the same day."
+ },
+ {
+  "scheme": "trip_id_recycled_for_commuting",
+  "readable_name": "Trip Id Used For Commuting",
+  "what_it_does": "Reuses one short trip id for routine rides spread over many unrelated weekdays of the month.",
+  "why_it_passes": "Each ride is small and carries a trip id.",
+  "what_gives_it_away": "The rides fall on ordinary weekdays well beyond the trip, like a daily commute."
+ },
+ {
+  "scheme": "weekend_stay_beyond_trip",
+  "readable_name": "Weekend Stay After Trip",
+  "what_it_does": "Charges lodging, meals and rides on the weekend after a Monday to Thursday trip has ended.",
+  "why_it_passes": "Each charge looks like a normal travel expense.",
+  "what_gives_it_away": "The charges fall after the trip ended and bill more nights than the trip recorded."
+ },
+ {
+  "scheme": "annual_plus_monthly_double_billing",
+  "readable_name": "Annual And Monthly Software Both",
+  "what_it_does": "Claims the same software as an annual license and also as monthly plan charges in the same month.",
+  "why_it_passes": "Each charge is a normal software cost.",
+  "what_gives_it_away": "The same product is billed at two billing cycles."
+ },
+ {
+  "scheme": "standing_weekly_client_lunch",
+  "readable_name": "Standing Friday Client Lunch",
+  "what_it_does": "Claims nearly the same client lunch every Friday at one restaurant, which looks like a personal habit.",
+  "why_it_passes": "Each lunch is a modest amount.",
+  "what_gives_it_away": "It recurs on the same weekday at the same restaurant for almost the same amount."
+ },
+ {
+  "scheme": "weekly_subscription_box_as_office_supplies",
+  "readable_name": "Weekly Coffee Box As Supplies",
+  "what_it_does": "Claims a weekly coffee and tea subscription box as office supplies every week.",
+  "why_it_passes": "Each box is a small supply-type charge.",
+  "what_gives_it_away": "The identical box at the same price arrives weekly and is for personal consumption."
+ },
+ {
+  "scheme": "personal_wellness_app_weekly_pass",
+  "readable_name": "Personal Wellness App Passes",
+  "what_it_does": "Claims weekly passes for a personal meditation and sleep app as software.",
+  "why_it_passes": "Each pass is a small software-sized charge.",
+  "what_gives_it_away": "A consumer app is billed in weekly slices, which avoids a monthly review."
+ },
+ {
+  "scheme": "decorative_approval_refs_on_routine_receipts",
+  "readable_name": "Approvals On Routine Receipts",
+  "what_it_does": "Attaches approval references to routine meals, taxis and supplies that never need approval.",
+  "why_it_passes": "Each receipt carries an approval reference, so it looks authorized.",
+  "what_gives_it_away": "Approval references on everyday spending serve no purpose and lend false authority."
+ },
+ {
+  "scheme": "approval_numbers_out_of_date_order",
+  "readable_name": "Approvals Out Of Order",
+  "what_it_does": "Uses approval numbers that run in reverse order while the purchase dates run forward.",
+  "why_it_passes": "Each purchase has an approval reference.",
+  "what_gives_it_away": "Earlier purchases hold newer approvals, suggesting approvals obtained after the fact or borrowed."
+ },
+ {
+  "scheme": "overlapping_software_separate_approvals",
+  "readable_name": "Overlapping Software Subscriptions",
+  "what_it_does": "Takes out several software subscriptions with the same function, each under its own approval reference.",
+  "why_it_passes": "Each subscription has its own approval.",
+  "what_gives_it_away": "Several tools do the same job, more than one person needs."
+ },
+ {
+  "scheme": "approved_peripheral_bought_in_multiples",
+  "readable_name": "Approved Gear Bought In Multiples",
+  "what_it_does": "Buys 2 to 3 units of a single-user peripheral under one approval reference.",
+  "why_it_passes": "Each purchase has its own approval and stays inside the per-unit approval.",
+  "what_gives_it_away": "Quantities of one-person equipment far exceed what one person needs."
+ },
+ {
+  "scheme": "tip_and_service_charge_double_dip",
+  "readable_name": "Tip Added On Service Charge",
+  "what_it_does": "Claims both an included service charge and a separate tip of a similar percentage on every dinner.",
+  "why_it_passes": "Each total is a plausible dinner amount.",
+  "what_gives_it_away": "Every dinner shows both charges, so gratuity is claimed twice."
+ },
+ {
+  "scheme": "identical_booking_fee_across_rides",
+  "readable_name": "Same Booking Fee, Different Taxis",
+  "what_it_does": "Adds the exact same booking fee to rides from four different taxi companies.",
+  "why_it_passes": "Each ride and fee looks ordinary alone.",
+  "what_gives_it_away": "Independent companies would not charge the identical fee."
+ },
+ {
+  "scheme": "price_creep_same_item_weekly",
+  "readable_name": "Weekly Paper Price Creeping Up",
+  "what_it_does": "Buys the same box of paper weekly at the same shop with the unit price rising about 6% each time.",
+  "why_it_passes": "Each purchase is a modest, ordinary amount.",
+  "what_gives_it_away": "The price of the same item climbs steadily, suggesting inflated or fabricated invoices."
+ },
+ {
+  "scheme": "office_purchases_exact_multiples",
+  "readable_name": "Amounts Are Exact Multiples",
+  "what_it_does": "Has four different stationers bill exact consecutive multiples (1x, 2x, 3x, 4x) of one base amount.",
+  "why_it_passes": "Each amount is plausible for an office purchase.",
+  "what_gives_it_away": "The amounts are neat multiples of one number, as if made up from it."
+ },
+ {
+  "scheme": "repeated_single_contact_hosting",
+  "readable_name": "Same Contact Hosted Repeatedly",
+  "what_it_does": "Hosts the same named client contact at four different venues within a few weeks.",
+  "why_it_passes": "Each meal is a normal amount for hosting.",
+  "what_gives_it_away": "One person is hosted far more often than is usual."
+ },
+ {
+  "scheme": "weekly_friday_client_lunch_same_cafe",
+  "readable_name": "Friday Cafe Lunch With Nobody",
+  "what_it_does": "Files a nameless two-person client lunch every Friday at the same small cafe.",
+  "why_it_passes": "The cost per head is trivial.",
+  "what_gives_it_away": "It looks like a regular lunch with a colleague, with no client named."
+ },
+ {
+  "scheme": "internal_celebration_as_client_event",
+  "readable_name": "Office Party As Client Event",
+  "what_it_does": "Files cake, decorations and party platters for 9-14 people as client entertainment on one day.",
+  "why_it_passes": "Each receipt is a modest amount.",
+  "what_gives_it_away": "Together they match an internal birthday or farewell party, with no client named."
+ },
+ {
+  "scheme": "own_meal_double_claimed_in_entertainment",
+  "readable_name": "Own Dinner Claimed Twice",
+  "what_it_does": "Files a client dinner for three and then an individual dinner at the same restaurant minutes later, so the employee's own meal is claimed twice.",
+  "why_it_passes": "Each is a normal dinner receipt.",
+  "what_gives_it_away": "Same restaurant, same evening, minutes apart."
+ },
+ {
+  "scheme": "bulk_stationery_resale_quantities",
+  "readable_name": "Resale-Sized Stationery Orders",
+  "what_it_does": "Buys stationery in wholesale quantities, hundreds of pens or sleeves.",
+  "why_it_passes": "Each purchase is modest in dollar terms.",
+  "what_gives_it_away": "No single office worker could use such quantities."
+ },
+ {
+  "scheme": "streaming_rig_from_accessories",
+  "readable_name": "Home Streaming Studio Built Slowly",
+  "what_it_does": "Buys small accessories over the month that add up to a complete home streaming studio.",
+  "why_it_passes": "Each accessory is a small equipment purchase.",
+  "what_gives_it_away": "Together the items form a ring light, microphone, capture card and webcam setup."
+ },
+ {
+  "scheme": "leisure_resort_merchants_on_business_trip",
+  "readable_name": "Business Trip At A Resort",
+  "what_it_does": "Claims lodging, shuttles and meals at ski or beach resort venues on a business trip.",
+  "why_it_passes": "Each amount looks like normal travel spending.",
+  "what_gives_it_away": "All the merchants are leisure resorts, which makes a work purpose implausible."
+ },
+ {
+  "scheme": "grocery_stockpile_as_individual_meals",
+  "readable_name": "Grocery Hauls As Single Meals",
+  "what_it_does": "Files supermarket baskets in family-sized quantities as individual meals.",
+  "why_it_passes": "Each total is small enough to look like one meal.",
+  "what_gives_it_away": "The items, such as kilos of chicken or dozens of eggs, are not one person's meals."
+ },
+ {
+  "scheme": "month_end_office_supply_flush",
+  "readable_name": "Month-End Supply Spending Rush",
+  "what_it_does": "Makes no office-supply purchases all month, then four sizeable ones in the last three working days.",
+  "why_it_passes": "Each purchase is a normal office item.",
+  "what_gives_it_away": "The spending is bunched at month end, like using up a budget."
+ },
+ {
+  "scheme": "dinners_stamped_just_past_curfew",
+  "readable_name": "Dinners Timed Just After Cutoff",
+  "what_it_does": "Files client dinners time-stamped just after the 05:00 cutoff, between 05:01 and 05:11, on several days.",
+  "why_it_passes": "Each time is outside the 00:00-05:00 overnight check.",
+  "what_gives_it_away": "Evening dinners with dawn timestamps look back-dated or edited."
+ },
+ {
+  "scheme": "competing_saas_tool_sampling",
+  "readable_name": "Trying Many Rival Software Tools",
+  "what_it_does": "Expenses three or four competing tools with the same function as Pro monthly plans, all sampled once in the same stretch.",
+  "why_it_passes": "Each monthly plan is a small software charge.",
+  "what_gives_it_away": "Rival tools doing the same job point to sampling, not a business need."
+ },
+ {
+  "scheme": "two_dinners_same_evening",
+  "readable_name": "Two Dinners One Evening",
+  "what_it_does": "Claims both a solo dinner and a client dinner at different restaurants within 30 minutes of each other on two evenings.",
+  "why_it_passes": "Each dinner is acceptable alone.",
+  "what_gives_it_away": "Both dinners cannot be real that close together."
+ },
+ {
+  "scheme": "home_city_hotel_staycation",
+  "readable_name": "Hotel Stays Near Home",
+  "what_it_does": "Repeatedly bills one-night weekday hotel stays in the city where all their everyday receipts are.",
+  "why_it_passes": "Each stay looks like ordinary lodging.",
+  "what_gives_it_away": "There is no transport to or from anywhere, so these look like nights at a hotel near home."
+ },
+ {
+  "scheme": "rental_car_with_parallel_rides",
+  "readable_name": "Rental Car Plus Taxis",
+  "what_it_does": "Bills a rental car for every day of the trip while also claiming taxis and rideshares in the same city on the same days.",
+  "why_it_passes": "Each charge is normal ground transport.",
+  "what_gives_it_away": "The car is clearly in use, so ground transport is paid twice."
+ },
+ {
+  "scheme": "companion_travel_extras_doubled",
+  "readable_name": "Companion's Travel Extras Billed",
+  "what_it_does": "Pays airline and rail seat, bag, boarding, lounge and fare charges for two passengers on a solo trip.",
+  "why_it_passes": "Each charge looks like a normal travel extra.",
+  "what_gives_it_away": "The traveler has a single room and individual meals, but the extras are for two."
+ },
+ {
+  "scheme": "same_client_serial_occasions",
+  "readable_name": "Serial Gifts, Different Pretexts",
+  "what_it_does": "Gives one named client a separate just-under-cap gift on several dates, with a different reason each time.",
+  "why_it_passes": "Each gift is under the $50 cap as its own occasion.",
+  "what_gives_it_away": "The total to one person is several times the $50 cap."
+ },
+ {
+  "scheme": "standing_two_person_client_dinner",
+  "readable_name": "Weekly Date Night As Client Dinner",
+  "what_it_does": "Repeats the same two-person client dinner at the same restaurant on the same weekday evening.",
+  "why_it_passes": "Each dinner is a normal client entertainment amount.",
+  "what_gives_it_away": "It happens week after week, like a standing personal date night."
+ },
+ {
+  "scheme": "breakfast_claimed_on_bed_and_breakfast_rate",
+  "readable_name": "Breakfast Paid Twice",
+  "what_it_does": "Claims cafe breakfasts on mornings when the hotel rate already includes breakfast.",
+  "why_it_passes": "Each breakfast is a small, ordinary meal.",
+  "what_gives_it_away": "The hotel bill shows breakfast included every morning."
+ },
+ {
+  "scheme": "cartridges_for_many_printer_models",
+  "readable_name": "Cartridges For Many Printers",
+  "what_it_does": "Buys toner and ink for three incompatible printer families at three different stores in one month.",
+  "why_it_passes": "Each purchase is an ordinary supply.",
+  "what_gives_it_away": "One desk or office does not run that many printer types, suggesting personal printers or resale."
+ },
+ {
+  "scheme": "storage_media_stockpiling",
+  "readable_name": "Storage Drives Bought In Bulk",
+  "what_it_does": "Buys portable SSDs, external drives and flash drives in multi-unit quantities across several stores in one month.",
+  "why_it_passes": "Each unit is a cheap reimbursable accessory.",
+  "what_gives_it_away": "The quantities are far beyond any single person's need."
+ },
+ {
+  "scheme": "overnight_cutoff_edge_timestamps",
+  "readable_name": "Night Outings Timed After Cutoff",
+  "what_it_does": "Files night-out meals and rides stamped a few minutes after 05:00, just outside the overnight review window.",
+  "why_it_passes": "Each time falls outside the window.",
+  "what_gives_it_away": "Dinner and supper items are stamped at dawn, when no restaurant serves them."
+ },
+ {
+  "scheme": "tech_accessories_from_non_tech_retailers",
+  "readable_name": "Tech Items From Odd Stores",
+  "what_it_does": "Claims computer accessories bought at pet, toy, garden, sporting-goods or craft stores.",
+  "why_it_passes": "Each is labelled computer equipment at a modest price.",
+  "what_gives_it_away": "The stores' names and merchant types say they sell something else."
+ },
+ {
+  "scheme": "pa_number_mirrors_purchase_date",
+  "readable_name": "Approval Numbers Match Dates",
+  "what_it_does": "Attaches an approval reference whose number is exactly the purchase date to several large peripheral purchases.",
+  "why_it_passes": "Each purchase shows a different approval reference.",
+  "what_gives_it_away": "The references copy the purchase date, so they were made up at purchase time."
+ },
+ {
+  "scheme": "membership_sliced_into_weekly_passes",
+  "readable_name": "Membership Billed In Slices",
+  "what_it_does": "Pays an identical flex-space access pass on the same weekday every week and expenses each as a one-off.",
+  "why_it_passes": "Each pass is a small amount.",
+  "what_gives_it_away": "Together the passes amount to a standing monthly membership."
+ },
+ {
+  "scheme": "household_linens_as_trip_laundry",
+  "readable_name": "Home Linens As Trip Laundry",
+  "what_it_does": "Bills dry-cleaning of comforters, drapes and children's uniforms to a trip under the laundry allowance.",
+  "why_it_passes": "Each ticket is a modest laundry amount on a trip.",
+  "what_gives_it_away": "A traveler would not carry such items."
+ },
+ {
+  "scheme": "companion_fares_on_solo_trips",
+  "readable_name": "Transit Tickets For Two",
+  "what_it_does": "Buys every transit ticket and pass for two adults on solo business trips.",
+  "why_it_passes": "Each fare is small.",
+  "what_gives_it_away": "The company is paying a companion's fares."
+ },
+ {
+  "scheme": "meals_only_phantom_trip",
+  "readable_name": "Trip With Only Lunches",
+  "what_it_does": "Claims a two-night trip that has no hotel, no transport and only weekday lunches.",
+  "why_it_passes": "Each lunch is a small, ordinary amount.",
+  "what_gives_it_away": "The trip has no travel costs, and the lunches are at the usual spots used for team lunches."
+ },
+ {
+  "scheme": "month_end_topup_to_round_total",
+  "readable_name": "Month-End Top-Up To Round Sum",
+  "what_it_does": "Makes three odd-cent supply purchases in the last days of May that bring the month's total to exactly $1,000.00.",
+  "why_it_passes": "Each purchase is a normal supply amount.",
+  "what_gives_it_away": "The month's total lands on exactly $1,000.00, like topping up to an allowance."
+ }
+]
