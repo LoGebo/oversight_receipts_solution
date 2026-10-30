@@ -1,0 +1,18 @@
+deepseek/fraud: 27/70 valid; attempts: [1, 2, 1, 1, 1, 1, 3, 2, 1, 1, 1, 1, 1, 3, 2, 1, 1, 1, 1, 2, 3, 1, 2, 1, 1, 1, 3]
+FAIL: receipts must be exactly the skeleton slots S01.. in order, one object per slot; S08: unknown trip_id TRIP-2026-0317; unknown slot S09
+FAIL: S03: non-positive amount; S06: non-positive amount
+FAIL: exactly 1 planted receipts must be on a Saturday/Sunday
+deepseek/clean: 0/100 valid; attempts: []
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+deepseek/fraud: 0/70 valid; attempts: []
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+deepseek/clean: 0/100 valid; attempts: []
+FAIL: call failed: PROVIDER: > build · deepseek/deepseek-v4-pro
+Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+FAIL: call failed: PROVIDER: Error: Repeated insufficient-balance requests are temporarily rate limited. Add funds or wait before retrying.
+BULK1_DONE

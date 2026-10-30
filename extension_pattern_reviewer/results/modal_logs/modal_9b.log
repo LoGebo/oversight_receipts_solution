@@ -1,0 +1,110 @@
+✓ Initialized. View run at 
+https://modal.com/apps/logebo/main/ap-Wl4lwYGBZ6ALAbblF3dZ1b
+✓ Created objects.
+├── ✓ Uploaded /Users/geboou/Desktop/oversight/finetune/v2/modal_train.py
+├── ✓ Uploaded /Users/geboou/Desktop/oversight/finetune/v2/sft
+└── ✓ Created Function train.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+[1AFetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+[1AFetching 4 files:  25%|██▌       | 1/4 [00:09<00:29,  9.86s/it]
+[1AFetching 4 files:  50%|█████     | 2/4 [00:16<00:16,  8.25s/it]
+[1AFetching 4 files:  75%|███████▌  | 3/4 [00:22<00:06,  6.99s/it]
+[1AFetching 4 files: 100%|██████████| 4/4 [00:24<00:00,  4.94s/it]
+[1AFetching 4 files: 100%|██████████| 4/4 [00:24<00:00,  6.07s/it]
+
+[1ALoading weights:   0%|          | 0/427 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/427 [00:00<02:06,  3.37it/s]
+[1ALoading weights:   0%|          | 2/427 [00:00<02:09,  3.29it/s]
+[1ALoading weights:   3%|▎         | 13/427 [00:00<00:16, 25.67it/s]
+[1ALoading weights:   7%|▋         | 29/427 [00:00<00:07, 55.26it/s]
+[1ALoading weights:  11%|█         | 47/427 [00:00<00:04, 85.16it/s]
+[1ALoading weights:  16%|█▌        | 68/427 [00:01<00:03, 115.49it/s]
+[1ALoading weights:  22%|██▏       | 93/427 [00:01<00:02, 149.18it/s]
+[1ALoading weights:  26%|██▌       | 111/427 [00:01<00:02, 143.89it/s]
+[1ALoading weights:  31%|███       | 133/427 [00:01<00:01, 159.75it/s]
+[1ALoading weights:  36%|███▌      | 152/427 [00:01<00:01, 161.97it/s]
+[1ALoading weights:  41%|████      | 173/427 [00:01<00:01, 169.34it/s]
+[1ALoading weights:  46%|████▌     | 197/427 [00:01<00:01, 186.17it/s]
+[1ALoading weights:  51%|█████     | 217/427 [00:01<00:01, 181.50it/s]
+[1ALoading weights:  56%|█████▌    | 239/427 [00:01<00:01, 187.21it/s]
+[1ALoading weights:  61%|██████    | 259/427 [00:02<00:00, 168.84it/s]
+[1ALoading weights:  66%|██████▌   | 280/427 [00:02<00:00, 176.69it/s]
+[1ALoading weights:  71%|███████   | 303/427 [00:02<00:00, 189.91it/s]
+[1ALoading weights:  76%|███████▌  | 323/427 [00:02<00:00, 174.38it/s]
+[1ALoading weights:  80%|████████  | 342/427 [00:02<00:00, 178.43it/s]
+[1ALoading weights:  85%|████████▍ | 361/427 [00:02<00:00, 168.11it/s]
+[1ALoading weights:  90%|████████▉ | 384/427 [00:02<00:00, 178.19it/s]
+[1ALoading weights:  94%|█████████▍| 403/427 [00:02<00:00, 171.62it/s]
+[1ALoading weights:  99%|█████████▊| 421/427 [00:03<00:00, 164.80it/s]
+[1ALoading weights: 100%|██████████| 427/427 [00:03<00:00, 140.23it/s]
+
+[1AGenerating train split: 0 examples [00:00, ? examples/s]Generating train split: 232 examples [00:00, 49873.33 examples/s]
+
+[1AGenerating valid split: 0 examples [00:00, ? examples/s]Generating valid split: 58 examples [00:00, 16975.06 examples/s]
+
+[1AMap:   0%|          | 0/232 [00:00<?, ? examples/s]Map: 100%|██████████| 232/232 [00:00<00:00, 4030.51 examples/s]
+
+[1AMap:   0%|          | 0/58 [00:00<?, ? examples/s]Map: 100%|██████████| 58/58 [00:00<00:00, 4995.37 examples/s]
+
+[1AAdding EOS to train dataset:   0%|          | 0/232 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|██████████| 232/232 [00:00<00:00, 31344.13 examples/s]
+
+[1ATokenizing train dataset:   0%|          | 0/232 [00:00<?, ? examples/s]
+[1ATokenizing train dataset:  13%|█▎        | 30/232 [00:00<00:00, 292.46 examples/s]
+[1ATokenizing train dataset:  27%|██▋       | 63/232 [00:00<00:00, 310.97 examples/s]
+[1ATokenizing train dataset:  42%|████▏     | 97/232 [00:00<00:00, 320.78 examples/s]
+[1ATokenizing train dataset:  56%|█████▌    | 130/232 [00:00<00:00, 321.85 examples/s]
+[1ATokenizing train dataset:  70%|███████   | 163/232 [00:00<00:00, 321.58 examples/s]
+[1ATokenizing train dataset:  91%|█████████▏| 212/232 [00:00<00:00, 320.01 examples/s]Tokenizing train dataset: 100%|██████████| 232/232 [00:00<00:00, 283.75 examples/s]
+
+[1ABuilding labels for train dataset:   0%|          | 0/232 [00:00<?, ? examples/s]
+[1ABuilding labels for train dataset: 100%|██████████| 232/232 [00:00<00:00, 1995.83 examples/s]
+[1ABuilding labels for train dataset: 100%|██████████| 232/232 [00:00<00:00, 1969.81 examples/s]
+
+[1ATruncating train dataset:   0%|          | 0/232 [00:00<?, ? examples/s]
+[1ATruncating train dataset: 100%|██████████| 232/232 [00:00<00:00, 4677.27 examples/s]
+
+[1ADropping fully masked examples from train dataset:   0%|          | 0/232 [00:00<?, ? examples/s]Dropping fully masked examples from train dataset: 100%|██████████| 232/232 [00:00<00:00, 9353.02 examples/s]
+
+[1AAdding EOS to eval dataset:   0%|          | 0/58 [00:00<?, ? examples/s]
+[1AAdding EOS to eval dataset: 100%|██████████| 58/58 [00:00<00:00, 18038.68 examples/s]
+
+[1ATokenizing eval dataset:   0%|          | 0/58 [00:00<?, ? examples/s]
+[1ATokenizing eval dataset:  55%|█████▌    | 32/58 [00:00<00:00, 303.78 examples/s]
+[1ATokenizing eval dataset: 100%|██████████| 58/58 [00:00<00:00, 272.60 examples/s]
+
+[1ABuilding labels for eval dataset:   0%|          | 0/58 [00:00<?, ? examples/s]Building labels for eval dataset: 100%|██████████| 58/58 [00:00<00:00, 1883.24 examples/s]
+
+[1ATruncating eval dataset:   0%|          | 0/58 [00:00<?, ? examples/s]
+[1ATruncating eval dataset: 100%|██████████| 58/58 [00:00<00:00, 4384.66 examples/s]
+
+[1ADropping fully masked examples from eval dataset:   0%|          | 0/58 [00:00<?, ? examples/s]
+[1ADropping fully masked examples from eval dataset: 100%|██████████| 58/58 [00:00<00:00, 6474.41 examples/s]
+[RANK 0] Detected kernel version 4.19.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248046}.
+
+[1A  0%|          | 0/87 [00:00<?, ?it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+/usr/local/lib/python3.11/site-packages/triton/knobs.py:504: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+
+[1A  1%|          | 1/87 [00:11<15:49, 11.05s/it]
+[1A  2%|▏         | 2/87 [00:20<14:15, 10.06s/it]
+[1A  3%|▎         | 3/87 [00:29<13:11,  9.42s/it]
+[1A  5%|▍         | 4/87 [00:37<12:33,  9.07s/it]
+[1A  6%|▌         | 5/87 [00:46<12:11,  8.92s/it]
+[1A                                              
+{'loss': '0.4899', 'grad_norm': '0.9023', 'learning_rate': '0.0001908', 'entropy': '0.3952', 'mean_token_accuracy': '0.8806', 'num_tokens': '5.976e+04', 'epoch': '0.1724'}
+[1A
+[1A  6%|▌         | 5/87 [00:46<12:11,  8.92s/it]
+[1A  7%|▋         | 6/87 [00:54<11:38,  8.63s/it]
+[1A  8%|▊         | 7/87 [01:02<11:29,  8.62s/it]
+[1A  9%|▉         | 8/87 [01:11<11:15,  8.55s/it]
+[1A 10%|█         | 9/87 [01:20<11:30,  8.85s/it]
+[1A 11%|█▏        | 10/87 [01:28<10:49,  8.43s/it]
+[1A                                               
+{'loss': '0.4132', 'grad_norm': '0.8281', 'learning_rate': '0.0001793', 'entropy': '0.4464', 'mean_token_accuracy': '0.9093', 'num_tokens': '1.159e+05', 'epoch': '0.3448'}
+[1A
+[1A 11%|█▏        | 10/87 [01:28<10:49,  8.43s/it]
+[1A 13%|█▎        | 11/87 [01:36<10:33,  8.34s/it]
