@@ -1,0 +1,144 @@
+{"receipt_id": "HO-001", "line_id": "HO-001-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-001", "line_id": "HO-001-L2", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-001", "line_id": "HO-001-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-001", "line_id": "HO-001-L4", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-002", "line_id": "HO-002-L1", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-002", "line_id": "HO-002-L2", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-002", "line_id": "HO-002-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-002", "line_id": "HO-002-L4", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-003", "line_id": "HO-003-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-003", "line_id": "HO-003-L2", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-003", "line_id": "HO-003-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-003", "line_id": "HO-003-L4", "category": "household_goods", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-004", "line_id": "HO-004-L1", "category": "alcohol", "acceptable_alternatives": ["gift"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-004", "line_id": "HO-004-L2", "category": "gift", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": {"kind": "client", "name": "J. Okafor"}}
+{"receipt_id": "HO-004", "line_id": "HO-004-L3", "category": "gift", "acceptable_alternatives": ["office_supplies", "service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-005", "line_id": "HO-005-L1", "category": "personal_electronics", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-005", "line_id": "HO-005-L2", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-005", "line_id": "HO-005-L3", "category": "personal_electronics", "acceptable_alternatives": ["computer_accessory"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-005", "line_id": "HO-005-L4", "category": "personal_electronics", "acceptable_alternatives": ["other", "mobile_handset"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-006", "line_id": "HO-006-L1", "category": "personal_electronics", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-006", "line_id": "HO-006-L2", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-006", "line_id": "HO-006-L3", "category": "personal_electronics", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-006", "line_id": "HO-006-L4", "category": "office_supplies", "acceptable_alternatives": ["other"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-006", "line_id": "HO-006-L5", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-007", "line_id": "HO-007-L1", "category": "computer_accessory", "acceptable_alternatives": ["personal_electronics", "clothing"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-007", "line_id": "HO-007-L2", "category": "personal_electronics", "acceptable_alternatives": ["other", "mobile_handset"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-007", "line_id": "HO-007-L3", "category": "personal_electronics", "acceptable_alternatives": ["computer_accessory"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-007", "line_id": "HO-007-L4", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-008", "line_id": "HO-008-L1", "category": "personal_care", "acceptable_alternatives": ["health_otc"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-008", "line_id": "HO-008-L2", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-008", "line_id": "HO-008-L3", "category": "health_otc", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-008", "line_id": "HO-008-L4", "category": "personal_care", "acceptable_alternatives": ["health_otc"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-008", "line_id": "HO-008-L5", "category": "health_otc", "acceptable_alternatives": ["personal_care"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-009", "line_id": "HO-009-L1", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-009", "line_id": "HO-009-L2", "category": "household_goods", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-009", "line_id": "HO-009-L3", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-009", "line_id": "HO-009-L4", "category": "health_otc", "acceptable_alternatives": ["food_beverage"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-010", "line_id": "HO-010-L1", "category": "lodging", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-010", "line_id": "HO-010-L2", "category": "lodging", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-010", "line_id": "HO-010-L3", "category": "food_beverage", "acceptable_alternatives": ["alcohol", "lodging", "other"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-010", "line_id": "HO-010-L4", "category": "laundry_service", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-010", "line_id": "HO-010-L5", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-011", "line_id": "HO-011-L1", "category": "lodging", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-011", "line_id": "HO-011-L2", "category": "lodging", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-011", "line_id": "HO-011-L3", "category": "ground_transport", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-011", "line_id": "HO-011-L4", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-011", "line_id": "HO-011-L5", "category": "laundry_service", "acceptable_alternatives": ["personal_care", "other"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-012", "line_id": "HO-012-L1", "category": "ground_transport", "acceptable_alternatives": ["other"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-012", "line_id": "HO-012-L2", "category": "ground_transport", "acceptable_alternatives": ["other", "service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-013", "line_id": "HO-013-L1", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-013", "line_id": "HO-013-L2", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-013", "line_id": "HO-013-L3", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-014", "line_id": "HO-014-L1", "category": "ground_transport", "acceptable_alternatives": ["gift_card"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-014", "line_id": "HO-014-L2", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-014", "line_id": "HO-014-L3", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-015", "line_id": "HO-015-L1", "category": "gift_card", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-015", "line_id": "HO-015-L2", "category": "service_fee", "acceptable_alternatives": ["gift_card"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-015", "line_id": "HO-015-L3", "category": "gift", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-016", "line_id": "HO-016-L1", "category": "ground_transport", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-016", "line_id": "HO-016-L2", "category": "tobacco", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-016", "line_id": "HO-016-L3", "category": "office_supplies", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-016", "line_id": "HO-016-L4", "category": "tobacco", "acceptable_alternatives": ["household_goods", "other"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-017", "line_id": "HO-017-L1", "category": "gift", "acceptable_alternatives": ["clothing"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-017", "line_id": "HO-017-L2", "category": "clothing", "acceptable_alternatives": ["office_supplies", "gift", "other"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-017", "line_id": "HO-017-L3", "category": "gift", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": {"kind": "client", "name": "Northwind Ltd"}}
+{"receipt_id": "HO-018", "line_id": "HO-018-L1", "category": "clothing", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": {"kind": "client", "name": "Mme Lefèvre"}}
+{"receipt_id": "HO-018", "line_id": "HO-018-L2", "category": "gift", "acceptable_alternatives": ["service_fee", "office_supplies"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-019", "line_id": "HO-019-L1", "category": "gift", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-019", "line_id": "HO-019-L2", "category": "service_fee", "acceptable_alternatives": ["office_supplies"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-019", "line_id": "HO-019-L3", "category": "gift", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-020", "line_id": "HO-020-L1", "category": "food_beverage", "acceptable_alternatives": ["gift"], "genuinely_ambiguous": false, "gift_recipient": {"kind": "government_official", "name": "Lic. Ramírez"}}
+{"receipt_id": "HO-020", "line_id": "HO-020-L2", "category": "gift", "acceptable_alternatives": ["other", "personal_care", "food_beverage", "household_goods"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-021", "line_id": "HO-021-L1", "category": "jewelry", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": {"kind": "employee", "name": "P. Wagner"}}
+{"receipt_id": "HO-021", "line_id": "HO-021-L2", "category": "service_fee", "acceptable_alternatives": ["gift", "jewelry", "other"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-022", "line_id": "HO-022-L1", "category": "jewelry", "acceptable_alternatives": ["personal_electronics"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-022", "line_id": "HO-022-L2", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-022", "line_id": "HO-022-L3", "category": "tobacco", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-023", "line_id": "HO-023-L1", "category": "software_subscription", "acceptable_alternatives": ["computer_accessory"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-023", "line_id": "HO-023-L2", "category": "software_subscription", "acceptable_alternatives": ["gift_card"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-024", "line_id": "HO-024-L1", "category": "software_subscription", "acceptable_alternatives": ["other", "gift_card"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-024", "line_id": "HO-024-L2", "category": "software_subscription", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-025", "line_id": "HO-025-L1", "category": "personal_electronics", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-025", "line_id": "HO-025-L2", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-025", "line_id": "HO-025-L3", "category": "other", "acceptable_alternatives": ["computer_accessory", "personal_electronics"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-025", "line_id": "HO-025-L4", "category": "personal_electronics", "acceptable_alternatives": ["computer_accessory"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-025", "line_id": "HO-025-L5", "category": "mobile_handset", "acceptable_alternatives": ["other", "personal_electronics"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-026", "line_id": "HO-026-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-026", "line_id": "HO-026-L2", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-026", "line_id": "HO-026-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-026", "line_id": "HO-026-L4", "category": "food_beverage", "acceptable_alternatives": ["health_otc"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-026", "line_id": "HO-026-L5", "category": "tobacco", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L2", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L4", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L5", "category": "food_beverage", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-027", "line_id": "HO-027-L6", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-028", "line_id": "HO-028-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-028", "line_id": "HO-028-L2", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-028", "line_id": "HO-028-L3", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-028", "line_id": "HO-028-L4", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-028", "line_id": "HO-028-L5", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L2", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L3", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L4", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L5", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-029", "line_id": "HO-029-L6", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-030", "line_id": "HO-030-L1", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-030", "line_id": "HO-030-L2", "category": "alcohol", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-030", "line_id": "HO-030-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-030", "line_id": "HO-030-L4", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-030", "line_id": "HO-030-L5", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-031", "line_id": "HO-031-L1", "category": "other", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-032", "line_id": "HO-032-L1", "category": "other", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-033", "line_id": "HO-033-L1", "category": "other", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-034", "line_id": "HO-034-L1", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-034", "line_id": "HO-034-L2", "category": "office_supplies", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-034", "line_id": "HO-034-L3", "category": "office_supplies", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-034", "line_id": "HO-034-L4", "category": "computer_accessory", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-034", "line_id": "HO-034-L5", "category": "office_supplies", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-035", "line_id": "HO-035-L1", "category": "entertainment_venue", "acceptable_alternatives": ["other"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-035", "line_id": "HO-035-L2", "category": "service_fee", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-036", "line_id": "HO-036-L1", "category": "other", "acceptable_alternatives": ["ground_transport", "airfare", "entertainment_venue"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-037", "line_id": "HO-037-L1", "category": "airfare", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-037", "line_id": "HO-037-L2", "category": "airfare", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-037", "line_id": "HO-037-L3", "category": "airfare", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-037", "line_id": "HO-037-L4", "category": "airfare", "acceptable_alternatives": ["service_fee"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-038", "line_id": "HO-038-L1", "category": "lodging", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-038", "line_id": "HO-038-L2", "category": "lodging", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-038", "line_id": "HO-038-L3", "category": "laundry_service", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-038", "line_id": "HO-038-L4", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-038", "line_id": "HO-038-L5", "category": "household_goods", "acceptable_alternatives": ["laundry_service"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-039", "line_id": "HO-039-L1", "category": "gift", "acceptable_alternatives": ["alcohol", "food_beverage"], "genuinely_ambiguous": true, "gift_recipient": null}
+{"receipt_id": "HO-039", "line_id": "HO-039-L2", "category": "household_goods", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-039", "line_id": "HO-039-L3", "category": "food_beverage", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-040", "line_id": "HO-040-L1", "category": "laundry_service", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-040", "line_id": "HO-040-L2", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-040", "line_id": "HO-040-L3", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-041", "line_id": "HO-041-L1", "category": "personal_care", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-041", "line_id": "HO-041-L2", "category": "household_goods", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-041", "line_id": "HO-041-L3", "category": "health_otc", "acceptable_alternatives": ["personal_care", "food_beverage"], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-041", "line_id": "HO-041-L4", "category": "health_otc", "acceptable_alternatives": [], "genuinely_ambiguous": false, "gift_recipient": null}
+{"receipt_id": "HO-041", "line_id": "HO-041-L5", "category": "personal_care", "acceptable_alternatives": ["health_otc"], "genuinely_ambiguous": false, "gift_recipient": null}
