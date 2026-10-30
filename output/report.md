@@ -65,7 +65,7 @@ Riverside Inn (MCC 7011) · Lodging · GLOBAL · 701.04 USD = $701.04 · attende
 | line | description | USD | category | restricted | confidence |
 |---|---|---|---|---|---|
 | RCP-005-L1 | Room charge, 3 nights | 567.0 | lodging | False | 0.9 |
-| RCP-005-L2 | Occupancy tax | 68.04 | lodging | False | 0.9 |
+| RCP-005-L2 | Occupancy tax | 68.04 | other: Occupancy tax | False | 0.9 |
 | RCP-005-L3 | Self parking, 3 nights | 66.0 | ground_transport | False | 0.9 |
 
 Rules considered: DOC-02, DOC-03, REG-05, TIME-01, TIME-02, TIME-04, EXC-03
@@ -104,9 +104,9 @@ Le Petit Marche (MCC 5812) · Meals - Team · EMEA · 46.0 EUR = $49.68 · atten
 
 | line | description | USD | category | restricted | confidence |
 |---|---|---|---|---|---|
-| RCP-008-L1 | Salade nicoise (en: Salade nicoise) | 35.64 | food_beverage | False | 0.9 |
-| RCP-008-L2 | Eau minerale 50cl (en: Eau minerale 50cl) | 8.64 | food_beverage | False | 0.9 |
-| RCP-008-L3 | Cafe expresso (en: Cafe expresso) | 5.4 | food_beverage | False | 0.9 |
+| RCP-008-L1 | Salade nicoise (en: Nicoise salad) | 35.64 | food_beverage | False | 0.9 |
+| RCP-008-L2 | Eau minerale 50cl (en: Mineral water 50cl) | 8.64 | food_beverage | False | 0.9 |
+| RCP-008-L3 | Cafe expresso (en: Espresso coffee) | 5.4 | food_beverage | False | 0.9 |
 
 Rules considered: DOC-02, DOC-03, DOC-04, MEAL-01, MEAL-02, REG-03, REG-04, REG-05, TIME-01, TIME-03, TIME-04, EXC-03
 
@@ -147,7 +147,7 @@ Cellar Door Fine Wines (MCC 5921) · Client Entertainment · GLOBAL · 79.0 USD 
 
 | line | description | USD | category | restricted | confidence |
 |---|---|---|---|---|---|
-| RCP-011-L1 | Vino tinto Rioja Reserva 750ml (en: Vino tinto Rioja Reserva 750ml) | 72.0 | alcohol | True | 0.9 |
+| RCP-011-L1 | Vino tinto Rioja Reserva 750ml (en: Red wine Rioja Reserva 750ml) | 72.0 | alcohol | True | 0.9 |
 | RCP-011-L2 | Sparkling water 6-pack | 7.0 | food_beverage | False | 0.9 |
 
 Rules considered: ALC-01, ALC-02, ALC-03, MCC-01, DOC-02, DOC-03, MEAL-01, MEAL-02, REG-05, TIME-01, TIME-03, EXC-03
@@ -399,7 +399,7 @@ Gasthaus Zur Linde (MCC 5812) · Meals - Individual · EMEA · 35.0 EUR = $37.8 
 
 | line | description | USD | category | restricted | confidence |
 |---|---|---|---|---|---|
-| RCP-025-L1 | Schweinebraten mit Knoedel (en: Roast pork with dumplings) | 19.98 | food_beverage | False | 0.9 |
+| RCP-025-L1 | Schweinebraten mit Knoedel (en: Pork roast with dumplings) | 19.98 | food_beverage | False | 0.9 |
 | RCP-025-L2 | Weisswein 0,2l (en: White wine 0.2l) | 14.04 | alcohol | True | 0.9 |
 | RCP-025-L3 | Mineralwasser 0,5l (en: Mineral water 0.5l) | 3.78 | food_beverage | False | 0.9 |
 
