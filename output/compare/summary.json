@@ -1,0 +1,147 @@
+{
+  "total_spend_usd": 0.030416,
+  "cap_usd": 1.0,
+  "models": [
+    {
+      "model": "openai/gpt-oss-safeguard-20b",
+      "slug": "openai-gpt-oss-safeguard-20b",
+      "latency_s": 26.71,
+      "calls": 32,
+      "cache_hits": 0,
+      "spend_usd": 0.00611,
+      "failures": 0,
+      "failure_reasons": {},
+      "request_extras": {
+        "temperature": 0,
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "disposition_acc": [
+        28,
+        28
+      ],
+      "false_positives_of_pass": [
+        0,
+        9
+      ],
+      "missed_of_flag": [
+        0,
+        16
+      ],
+      "category_acc": [
+        63,
+        65
+      ],
+      "macro_f1": 0.9625730994152046,
+      "restricted_f1": 0.975609756097561
+    },
+    {
+      "model": "anthropic/claude-haiku-5.5",
+      "slug": "anthropic-claude-haiku-5.5",
+      "latency_s": 58.53,
+      "calls": 32,
+      "cache_hits": 0,
+      "spend_usd": 0.012354,
+      "failures": 0,
+      "failure_reasons": {},
+      "request_extras": {
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "disposition_acc": [
+        28,
+        28
+      ],
+      "false_positives_of_pass": [
+        0,
+        9
+      ],
+      "missed_of_flag": [
+        0,
+        16
+      ],
+      "category_acc": [
+        65,
+        65
+      ],
+      "macro_f1": 1.0,
+      "restricted_f1": 1.0
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "slug": "openai-gpt-6-luna",
+      "latency_s": 62.03,
+      "calls": 32,
+      "cache_hits": 0,
+      "spend_usd": 0.003528,
+      "failures": 0,
+      "failure_reasons": {},
+      "request_extras": {
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "disposition_acc": [
+        28,
+        28
+      ],
+      "false_positives_of_pass": [
+        0,
+        9
+      ],
+      "missed_of_flag": [
+        0,
+        16
+      ],
+      "category_acc": [
+        65,
+        65
+      ],
+      "macro_f1": 1.0,
+      "restricted_f1": 1.0
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash",
+      "slug": "deepseek-deepseek-v4.1-flash",
+      "latency_s": 36.75,
+      "calls": 32,
+      "cache_hits": 0,
+      "spend_usd": 0.008424,
+      "failures": 0,
+      "failure_reasons": {},
+      "request_extras": {
+        "temperature": 0,
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "disposition_acc": [
+        28,
+        28
+      ],
+      "false_positives_of_pass": [
+        0,
+        9
+      ],
+      "missed_of_flag": [
+        0,
+        16
+      ],
+      "category_acc": [
+        65,
+        65
+      ],
+      "macro_f1": 1.0,
+      "restricted_f1": 1.0
+    }
+  ],
+  "caveats": [
+    "Single run per model (temperature 0 where accepted, otherwise the provider default): no variance estimate.",
+    "Only 28 scored receipts (9 pass, 16 flag, 3 review); one receipt is 3.6 points of disposition accuracy.",
+    "The engine was written with these answers in view, so differences between models isolate the classifier, but absolute numbers are optimistic and not a held-out estimate.",
+    "A model that fails closed on a receipt is scored on its fail-closed fallback (all lines other, review).",
+    "Spend is the usage.cost OpenRouter reports; latency is wall time of the whole classify call, cache misses only."
+  ]
+}
