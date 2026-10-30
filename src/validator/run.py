@@ -1,9 +1,10 @@
 """CLI: load -> normalise -> classify (cached; translates too) -> retrieve + engine -> report.
 Writes <out>/report.jsonl and <out>/report.md.
 
-    python -m validator.run [--receipts PATH] [--out DIR] [--provider anthropic|openrouter] [--model M] [--budget USD]
+    python -m validator.run [--receipts PATH] [--out DIR] [--provider openrouter|anthropic] [--model M] [--budget USD]
 
---provider defaults to openrouter when only OPENROUTER_API_KEY is set and --out is given, else anthropic.
+--provider defaults to openrouter (model openai/gpt-oss-safeguard-20b); anthropic only when --out is given and
+ANTHROPIC_API_KEY is the only key set.
 SAFETY: without an explicit --out the run writes the committed output/ and is cache-only (never calls a model); a
 provider/model other than the committed cache's is refused. Pass --out DIR for anything else. A warm cache needs no API key and costs nothing. Any classifier failure (no key for a cache miss, API error, spend guard) stops the run with a non-zero exit and writes no report, instead
 of one where every failed receipt is "review".
@@ -15,7 +16,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from validator.classifier import BUDGET_USD, DEFAULT_MODEL, classify, default_provider
+from validator.classifier import BUDGET_USD, DEFAULT_MODEL, DEFAULT_PROVIDER, MODELS, classify, default_provider
 from validator.engine import run_engine
 from validator.loader import INPUT, load_receipts
 from validator.normaliser import normalise_receipt
@@ -77,16 +78,16 @@ def main(argv=None, client=None) -> int:
     ap = argparse.ArgumentParser(prog="python -m validator.run")
     ap.add_argument("--receipts", type=Path, default=INPUT)
     ap.add_argument("--out", type=Path, default=None, help="default: output/ (committed results; cache-only runs)")
-    ap.add_argument("--provider", choices=("anthropic", "openrouter"), default=None)
-    ap.add_argument("--model", help="default: claude-haiku-5-5 (anthropic) or anthropic/claude-haiku-5.5 (openrouter)")
+    ap.add_argument("--provider", choices=("openrouter", "anthropic"), default=None)
+    ap.add_argument("--model", help=f"default: {MODELS['openrouter']} (openrouter) or {MODELS['anthropic']} (anthropic)")
     ap.add_argument("--budget", type=float, default=BUDGET_USD, help="max USD of model calls this run")
     ap.add_argument("--cache", type=Path, default=ROOT / ".cache" / "classifier")
     a = ap.parse_args(argv)
     default_out = a.out is None
     a.out = ROOT / "output" if default_out else a.out
     if a.provider is None:
-        a.provider = "anthropic" if default_out else default_provider()
-    if default_out and (a.provider != "anthropic" or a.model not in (None, DEFAULT_MODEL)):
+        a.provider = DEFAULT_PROVIDER if default_out else default_provider()
+    if default_out and (a.provider != DEFAULT_PROVIDER or a.model not in (None, DEFAULT_MODEL)):
         sys.exit(f"refusing to write the committed output/ for provider {a.provider} model {a.model or 'default'}: "
                  f"its cache differs from the committed one. Pass --out DIR to keep the results elsewhere.")
     if default_out:

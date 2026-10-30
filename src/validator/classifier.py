@@ -52,10 +52,14 @@ from validator.rules.gifts import RECIPIENT_KINDS
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE_DIR = ROOT / ".cache" / "classifier"
-DEFAULT_MODEL = "claude-haiku-5-5"  # small on purpose; configurable
-# Same model on OpenRouter; id, $0.10/$0.50 per MTok, structured_outputs and no temperature checked 2026-10-26
-# at https://openrouter.ai/api/v1/models
-OPENROUTER_MODEL = "anthropic/claude-haiku-5.5"
+# Default: OpenRouter with openai/gpt-oss-safeguard-20b (the committed cache and output/ come from it; chosen in
+# scripts/compare_models.py, output/compare/SUMMARY.md). Its request carries temperature 0 and reasoning effort when
+# every structured-output endpoint lists them (_openrouter_options). Anthropic (Haiku 5.5) stays available as an option.
+DEFAULT_PROVIDER = "openrouter"
+OPENROUTER_MODEL = "openai/gpt-oss-safeguard-20b"  # small on purpose; configurable
+ANTHROPIC_MODEL = "claude-haiku-5-5"
+DEFAULT_MODEL = OPENROUTER_MODEL
+MODELS = {"openrouter": OPENROUTER_MODEL, "anthropic": ANTHROPIC_MODEL}  # default model per provider
 OPENROUTER_URL = "https://openrouter.ai/api/v1"
 # v2: description_en, other_kind / note. v3: prescription_medication, state-owned enterprise employees count as
 # officials (GIFT-04), receipt text is data and never instructions.
@@ -251,22 +255,22 @@ def _client(provider: str):
 
 
 def default_provider() -> str:
-    """openrouter only when its key is the one set; with both keys (or none) anthropic, as before."""
-    return "openrouter" if os.environ.get("OPENROUTER_API_KEY") and not os.environ.get("ANTHROPIC_API_KEY") else "anthropic"
+    """anthropic only when its key is the one set; with both keys (or none) openrouter, the default."""
+    return "anthropic" if os.environ.get("ANTHROPIC_API_KEY") and not os.environ.get("OPENROUTER_API_KEY") else DEFAULT_PROVIDER
 
 
-def cache_key(model: str, payload: str, provider: str = "anthropic") -> str:
-    # the anthropic key is unchanged (no provider prefix) so the committed cache stays valid
+def cache_key(model: str, payload: str, provider: str = DEFAULT_PROVIDER) -> str:
+    # the anthropic key has no provider prefix (as when Anthropic was the default), so its old entries stay valid
     tag = "" if provider == "anthropic" else provider + "\0"
     return hashlib.sha256((tag + model + PROMPT_VERSION + SYSTEM + json.dumps(SCHEMA, sort_keys=True) + EFFORT
                            + payload).encode()).hexdigest()
 
 
-def classify(receipts: list[dict], *, model: str | None = None, client=None, provider: str = "anthropic",
+def classify(receipts: list[dict], *, model: str | None = None, client=None, provider: str = DEFAULT_PROVIDER,
              cache_dir: str | Path = CACHE_DIR, budget_usd: float = BUDGET_USD) -> Classification:
     if provider not in ("anthropic", "openrouter"):
         raise ValueError(f"unknown provider {provider!r}")
-    model = model or (DEFAULT_MODEL if provider == "anthropic" else OPENROUTER_MODEL)
+    model = model or MODELS[provider]
     cache = Path(cache_dir)
     cache.mkdir(parents=True, exist_ok=True)
     cats, unsure, gift, english, notes, failures = {}, {}, {}, {}, {}, {}

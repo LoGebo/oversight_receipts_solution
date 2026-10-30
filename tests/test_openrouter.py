@@ -158,7 +158,7 @@ def test_cache_entry_records_provider_and_model_and_key_differs_by_provider(tmp_
     payload = "{}"
     keys = {classifier.cache_key(MODEL, payload, "openrouter"), classifier.cache_key(MODEL, payload, "anthropic")}
     assert len(keys) == 2
-    assert classifier.cache_key(MODEL, payload) == classifier.cache_key(MODEL, payload, "anthropic")  # committed cache key
+    assert classifier.cache_key(MODEL, payload) == classifier.cache_key(MODEL, payload, "openrouter")  # committed cache key
 
 
 def test_spend_guard_uses_endpoint_prices_and_stops_calls(tmp_path):
@@ -177,7 +177,7 @@ def test_default_client_sends_the_key_from_the_environment_only_in_the_header(mo
 
 
 @pytest.mark.parametrize("env, want", [({"OPENROUTER_API_KEY": "x"}, "openrouter"), ({"ANTHROPIC_API_KEY": "x"}, "anthropic"),
-                                       ({"OPENROUTER_API_KEY": "x", "ANTHROPIC_API_KEY": "y"}, "anthropic"), ({}, "anthropic")])
+                                       ({"OPENROUTER_API_KEY": "x", "ANTHROPIC_API_KEY": "y"}, "openrouter"), ({}, "openrouter")])
 def test_default_provider(monkeypatch, env, want):
     for k in ("OPENROUTER_API_KEY", "ANTHROPIC_API_KEY"):
         monkeypatch.delenv(k, raising=False)

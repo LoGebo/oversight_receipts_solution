@@ -1,11 +1,15 @@
 import json
+from functools import partial
 from pathlib import Path
 
 import anthropic
 import pytest
 
 from validator import classifier
-from validator.classifier import CATEGORIES, RESTRICTED, SYSTEM, classify
+from validator.classifier import CATEGORIES, RESTRICTED, SYSTEM
+
+# This file tests the Anthropic path (Fake is an Anthropic SDK stand-in); OpenRouter, the default, is in test_openrouter.py.
+classify = partial(classifier.classify, provider="anthropic")
 from validator.engine import run_engine
 from validator.gold import load_gold
 from conftest import RECEIPTS, Fake, line, reply
@@ -130,7 +134,7 @@ def test_cache_hit_avoids_a_second_call(tmp_path):
     good = reply(line("RCP-009-L1", "laundry_service"))
     run("RCP-009", good, cache_dir=tmp_path)
     entry = json.loads(next(tmp_path.iterdir()).read_text())
-    assert entry["model"] == classifier.DEFAULT_MODEL
+    assert entry["model"] == classifier.ANTHROPIC_MODEL
     c, fake = run("RCP-009", cache_dir=tmp_path)
     assert fake.calls == [] and c.meta["cache_hits"] == 1 and c.meta["cost_usd"] == 0
     assert c.categories == {"RCP-009-L1": "laundry_service"}
@@ -190,7 +194,7 @@ def test_prompt_holds_no_answers_or_dataset_examples():
 def test_request_holds_the_prompt_schema_and_only_the_input_fields(tmp_path):
     _, fake = run("RCP-002", reply(line("RCP-002-L1"), line("RCP-002-L2"), line("RCP-002-L3")), cache_dir=tmp_path)
     (kw,) = fake.calls
-    assert kw["model"] == classifier.DEFAULT_MODEL and kw["system"] == SYSTEM and kw["max_tokens"] == classifier.MAX_TOKENS
+    assert kw["model"] == classifier.ANTHROPIC_MODEL and kw["system"] == SYSTEM and kw["max_tokens"] == classifier.MAX_TOKENS
     assert kw["output_config"] == {"effort": classifier.EFFORT,
                                    "format": {"type": "json_schema", "schema": anthropic.transform_schema(classifier.Output)}}
     (msg,) = kw["messages"]

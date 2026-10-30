@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 
+import httpx
 import pytest
 
 from validator import classifier
@@ -168,17 +169,18 @@ def test_cache_miss_exits_without_calling(tmp_path, monkeypatch):
 
 
 def test_failed_calls_exit_even_when_calls_are_allowed(tmp_path, monkeypatch):
+    from test_openrouter import OR
     real = evaluate.classify
-    fake = Fake(*[RuntimeError("API down")] * 64)
-    monkeypatch.setattr(evaluate, "classify", lambda receipts, **kw: real(receipts, **{**kw, "client": fake}))
+    fake = OR(*[httpx.ConnectError("API down")] * 64)  # the default provider, openrouter
+    monkeypatch.setattr(evaluate, "classify", lambda receipts, **kw: real(receipts, **{**kw, "client": fake.client}))
     monkeypatch.setattr(evaluate, "ROOT", tmp_path)
     with pytest.raises(SystemExit, match="classifier failures") as e:
         evaluate.run_systems(allow_calls=True)
-    assert e.value.code != 0 and fake.calls
+    assert e.value.code != 0 and [q for q in fake.requests if q.method == "POST"]
 
 
 def test_heldout_failure_case_is_computed_from_the_record_and_the_engine():
-    rec = json.loads(evaluate.HELDOUT["v2"].read_text(encoding="utf-8"))
+    rec = json.loads(evaluate.HELDOUT["v2 Haiku"].read_text(encoding="utf-8"))
     f = evaluate.heldout_failures(rec, evaluate.load_receipts(evaluate.HELDOUT_INPUT))
     assert [x["line_id"] for x in f["wrong"]] == ["HO-008-L4", "HO-011-L5", "HO-017-L2", "HO-021-L2", "HO-026-L4"]
     assert {x["confidence"] for x in f["wrong"]} == {"medium"}  # none low: EXC-03 catches none
@@ -215,7 +217,7 @@ def test_committed_eval_md_is_what_the_generator_writes(tmp_path, monkeypatch):
     text = out.read_text(encoding="utf-8")
     assert text == (evaluate.ROOT / "output" / "EVAL.md").read_text(encoding="utf-8"), "rerun the generator"
     assert f"prompt {classifier.PROMPT_VERSION}" in text and text.count("**1. ") == text.count("**2. ") == 1
-    assert "TIME family" not in text and "uncertainty route catches 3 of 7" in text
+    assert "TIME family" not in text and "uncertainty route catches 1 of 20" in text
 
 
 def test_report_prose_follows_the_measured_values():

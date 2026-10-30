@@ -5,7 +5,8 @@ so this measures generalisation that the dataset run (whose taxonomy examples si
 Run ONCE per prompt version (a blind measurement; do not tune the prompt to it):
   set -a; . ./.env; set +a; python -m validator.evaluation.heldout [--force] [--provider P] [--model M]
 The record (meta and per-line predictions) goes to data_heldout/run_record.json, committed; an existing
-record is never overwritten without --force. The classifier cache goes to .cache/heldout/.
+record is never overwritten without --force. Earlier records are kept beside it (run_record_prompt_v1.json,
+run_record_prompt_v2.json, run_record_prompt_v3_haiku.json: Anthropic claude-haiku-5-5); evaluate.HELDOUT lists them. The classifier cache goes to .cache/heldout/.
 Any classifier failure exits non-zero and writes no record.
 """
 import argparse
@@ -36,7 +37,7 @@ def pct(n: int, d: int) -> str:
 def main(argv: list[str] | None = None, client=None) -> None:
     ap = argparse.ArgumentParser(prog="python -m validator.evaluation.heldout")
     ap.add_argument("--force", action="store_true", help="overwrite an existing record")
-    ap.add_argument("--provider", choices=("anthropic", "openrouter"), default=default_provider())
+    ap.add_argument("--provider", choices=("openrouter", "anthropic"), default=default_provider())
     ap.add_argument("--model")
     a = ap.parse_args(argv)
     if OUT.exists() and not a.force:

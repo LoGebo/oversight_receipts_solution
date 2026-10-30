@@ -13,7 +13,8 @@ def setup(tmp_path, monkeypatch):
     monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
     path = tmp_path / "in.jsonl"
     path.write_text("".join(json.dumps(RECEIPTS[r]) + "\n" for r in ("RCP-001", "RCP-028")), encoding="utf-8")
-    args = ["--receipts", str(path), "--out", str(tmp_path / "out"), "--cache", str(tmp_path / "cache")]
+    # Fake is the Anthropic SDK stand-in, so these runs pick the anthropic option (the default is openrouter)
+    args = ["--receipts", str(path), "--out", str(tmp_path / "out"), "--cache", str(tmp_path / "cache"), "--provider", "anthropic"]
     fake = Fake(reply(*(line(f"RCP-001-L{i}") for i in (1, 2, 3)), line("RCP-001-L4", "service_fee")),
                 reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc")))
     return args, fake, tmp_path / "out"
@@ -40,7 +41,8 @@ def test_md_shows_the_english_rendering_of_non_english_lines_only(tmp_path, monk
     fake = Fake(reply(line("RCP-008-L1", en="Nicoise salad"), line("RCP-008-L2", en="Mineral water 50cl"),
                       line("RCP-008-L3", en="Espresso coffee")),
                 reply(line("RCP-028-L1", "health_otc", en="EN-COPY"), line("RCP-028-L2", "health_otc")))
-    assert run.main(["--receipts", str(path), "--out", str(tmp_path / "out"), "--cache", str(tmp_path / "c")], client=fake) == 0
+    assert run.main(["--receipts", str(path), "--out", str(tmp_path / "out"), "--cache", str(tmp_path / "c"),
+                     "--provider", "anthropic"], client=fake) == 0
     md = (tmp_path / "out" / "report.md").read_text(encoding="utf-8")
     assert "Salade nicoise (en: Nicoise salad)" in md and "EN-COPY" not in md and "Rules considered: " in md
     rows = [json.loads(x) for x in (tmp_path / "out" / "report.jsonl").read_text(encoding="utf-8").splitlines()]
@@ -71,8 +73,8 @@ def test_openrouter_rows_and_summary_carry_provider_model_and_reported_spend(set
               chat(reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc")), cost=0.0022))
     assert run.main([*args, "--provider", "openrouter"], client=fake.client) == 0
     rows = [json.loads(x) for x in (out / "report.jsonl").read_text(encoding="utf-8").splitlines()]
-    assert {(r["provider"], r["model"]) for r in rows} == {("openrouter", "anthropic/claude-haiku-5.5")}
-    assert "provider openrouter model anthropic/claude-haiku-5.5 | calls 2, cache hits 0 | spend $0.0033" in capsys.readouterr().out
+    assert {(r["provider"], r["model"]) for r in rows} == {("openrouter", "openai/gpt-oss-safeguard-20b")}
+    assert "provider openrouter model openai/gpt-oss-safeguard-20b | calls 2, cache hits 0 | spend $0.0033" in capsys.readouterr().out
     run.main([*args, "--provider", "openrouter"])  # warm cache, no key: no network
     assert "calls 0, cache hits 2 | spend $0.0000" in capsys.readouterr().out
 
@@ -116,14 +118,14 @@ def _inp(tmp_path):
     return ["--receipts", str(path), "--cache", str(tmp_path / "cache")]
 
 
-@pytest.mark.parametrize("extra", [["--provider", "openrouter"], ["--model", "other-model"]])
+@pytest.mark.parametrize("extra", [["--provider", "anthropic"], ["--model", "other-model"]])
 def test_default_out_refuses_other_provider_or_model(committed, tmp_path, extra):
     with pytest.raises(SystemExit, match="Pass --out"):
         run.main([*_inp(tmp_path), *extra], client=Fake())
     assert committed.read_text(encoding="utf-8") == "COMMITTED"
 
 
-def test_openrouter_key_only_defaults_to_cache_only_anthropic_and_never_calls(committed, tmp_path, monkeypatch):
+def test_openrouter_key_only_defaults_to_cache_only_openrouter_and_never_calls(committed, tmp_path, monkeypatch):
     monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test")
     with pytest.raises(SystemExit, match="cache-only"):  # cache miss under the default out: no live call, nothing written
         run.main(_inp(tmp_path))
@@ -139,9 +141,10 @@ def test_default_out_ignores_an_api_key_on_a_miss(committed, tmp_path, monkeypat
 
 
 def test_default_out_still_runs_offline_from_a_warm_cache(committed, tmp_path):
+    from test_openrouter import OR, chat
     args = _inp(tmp_path)
-    fake = Fake(reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc")))
-    run.main([*args, "--out", str(tmp_path / "x")], client=fake)
+    fake = OR(chat(reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc"))))
+    assert run.main([*args, "--out", str(tmp_path / "x")], client=fake.client) == 0  # the default provider warms it
     assert run.main(args) == 0 and committed.read_text(encoding="utf-8") != "COMMITTED"
 
 

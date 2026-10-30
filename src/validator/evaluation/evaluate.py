@@ -30,7 +30,11 @@ from validator.rules.documentation import EXTENSIONS
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "output" / "EVAL.md"
-HELDOUT = {"v1": ROOT / "data_heldout" / "run_record_prompt_v1.json", "v2": ROOT / "data_heldout" / "run_record_prompt_v2.json",
+# Run label -> record, oldest first; the last is the main one (the default classifier). v1-v3 Haiku were Anthropic
+# runs of claude-haiku-5-5; "v3" is the same prompt v3 on OpenRouter's openai/gpt-oss-safeguard-20b.
+HELDOUT = {"v1 Haiku": ROOT / "data_heldout" / "run_record_prompt_v1.json",
+           "v2 Haiku": ROOT / "data_heldout" / "run_record_prompt_v2.json",
+           "v3 Haiku": ROOT / "data_heldout" / "run_record_prompt_v3_haiku.json",
            "v3": ROOT / "data_heldout" / "run_record.json"}
 HELDOUT_INPUT = ROOT / "data_heldout" / "receipts_input.jsonl"
 SEED, B =20261026, 10_000
@@ -92,8 +96,9 @@ def mcnemar(b: int, c: int) -> float:
 # ---------- systems ----------
 
 class _NoNetwork:
-    @property
-    def messages(self):
+    """Client stand-in for either provider: any use (a cache miss) fails without touching the network."""
+
+    def __getattr__(self, name):
         raise RuntimeError("cache miss: evaluate.py makes no model calls without --allow-calls")
 
 
@@ -101,7 +106,7 @@ def run_systems(allow_calls: bool = False) -> tuple[dict, dict, dict, dict, list
     """{system: results}, {system: line categories or None}, LLM info, gold, receipts."""
     receipts, gold = load_receipts(), load_gold()
     c = classify(receipts, client=None if allow_calls else _NoNetwork(), cache_dir=ROOT / ".cache" / "classifier")
-    if c.meta["calls"] and not allow_calls:
+    if (c.meta["calls"] or c.meta["failures"]) and not allow_calls:
         sys.exit(f"classifier cache misses for {sorted(c.meta['failures'])}: rerun with --allow-calls (costs money)")
     if c.meta["failures"]:
         sys.exit(f"classifier failures {c.meta['failures']}: the measurement would score fail-closed fallbacks")
@@ -325,7 +330,7 @@ def heldout_section(records: dict) -> list[str]:
     out = ["The held-out set is hand-made receipts whose items, merchants and phrasing appear neither in the dataset "
            "nor in the taxonomy's examples, so it measures what the dataset run cannot: generalisation of the classifier. "
            "**One annotator** wrote its expected labels, acceptable alternatives and ambiguity flags: they are one "
-           "person's judgement, not an agreed answer key. Each prompt version was run once."]
+           "person's judgement, not an agreed answer key. Each prompt version was run once per model."]
     if len(vs) > 1:
         prev, ex = vs[-2], "Exact category, all lines"
         out[0] += (f" Each later run used the same lines after the earlier results had been seen, and the set was used to "
@@ -340,7 +345,7 @@ def heldout_section(records: dict) -> list[str]:
     wrong = Counter(x["confidence"] for x in records[vs[-1]]["lines"] if not x["exact"])
     out += ["", f"Calibration ({vs[-1]}): the non-exact lines were rated " + ", ".join(f"{b} {n}" for b, n in sorted(wrong.items()))
             + f"; only `low` raises EXC-03, so {wrong['low']} of {sum(wrong.values())} would have reached a reviewer through "
-            "the uncertainty route. Rating a wrong answer `medium` is the classifier error the engine cannot see."]
+            "the uncertainty route. Rating a wrong answer `medium` or `high` is the classifier error the engine cannot see."]
     if len(vs) > 1:
         old = {x["line_id"]: x for x in records[prev]["lines"]}
         changed = [(old[x["line_id"]], x) for x in records[vs[-1]]["lines"]
@@ -377,9 +382,10 @@ def case2(records: dict, ho_receipts: list[dict] | None) -> list[str]:
             f"{len(flips)} cross the restricted boundary ({', '.join(x['line_id'] for x in flips) or 'none'}). "
             f"Fed to the engine with the annotator's recipients held fixed, the predicted categories change the rule "
             f"outcome on {len(f['by_category'])} receipt(s), compared with the annotator's categories: {changed(f['by_category'])}. "
-            f"Separately, a recipient was attached to {len(spur)} line(s) that state none ("
-            + ", ".join(f"{x['line_id']} {x['description_raw']!r}: {x['gift_got'][0]} {x['gift_got'][1]}" for x in spur)
-            + f"); with the annotator's categories held fixed this gives: {changed(f['by_recipient'])}. "
+            + (f"Separately, a recipient was attached to {len(spur)} line(s) that state none ("
+               + ", ".join(f"{x['line_id']} {x['description_raw']!r}: {x['gift_got'][0]} {x['gift_got'][1]}" for x in spur)
+               + f"); with the annotator's categories held fixed this gives: {changed(f['by_recipient'])}. "
+               if spur else "No recipient was attached to a line that states none. ")
             + ("Had the copied recipient been a government official, GIFT-04 (critical) would cite "
                + ", ".join(f"{lid} ({cat[lid]})" for lid in f["gift04_if_official"]) + ". "
                if f["gift04_if_official"] else "")
@@ -522,8 +528,10 @@ def report(ms: dict, results: dict, extra: dict, gold: dict, receipts: list[dict
     L += [f"| {i} | {desc[i]} | {a[i][1]} | {a[i][2]} | {c_lines[i][2]} |" for i in sorted(a_only + c_only)]
     L.append("")
     L += [f"Disposition, paired: LLM right where keyword wrong on {disc[0]} receipts, keyword right where LLM wrong on {disc[1]}. "
-          + ("Exact McNemar not run: fewer than 10 discordant receipts, so the paired difference is not testable at this n."
-             if sum(disc) < 10 else f"Exact McNemar two-sided p = {mcnemar(*disc):.4f}."), ""]
+          + (f"Exact McNemar (two-sided exact binomial test on the {sum(disc)} discordant receipts, p = 0.5 under no difference): "
+             f"p = {mcnemar(*disc):.4f}. The exact test is valid at any number of discordant pairs; with this few it can only "
+             f"detect a lopsided split, and it says nothing about receipts unlike these {len(scored)}."
+             if sum(disc) else "No discordant receipts: the paired test has nothing to compare."), ""]
     L += ["Measures where the keyword baseline beats the LLM (point estimates): " + (", ".join(better) or "none") + ".", ""]
 
     L += ["## LLM confidence bands (scored lines)", "", "| Band | Lines | Category correct |", "|---|---|---|"]
@@ -540,11 +548,15 @@ def report(ms: dict, results: dict, extra: dict, gold: dict, receipts: list[dict
     a_bad = [r for r in scored if not A["ok"][r]]
     b_n = ("the one receipt the engine gets wrong" if len(b_wrong) == 1
            else f"the {len(b_wrong)} receipts the engine gets wrong")
+    a_line_errs = "; ".join(f"{x[5]} {desc[x[5]]!r} -> {x[2]}, correct {x[1]} (receipt disposition "
+                            f"{'still right' if A['ok'][x[0]] else 'wrong'})" for x in a_wrong)
     L += ["## Two failure cases", "",
           (f"A LLM gets none of the {len(scored)} scored receipts wrong, so case 1 is {b_n} "
            if not a_bad else f"A LLM gets {len(a_bad)} of the {len(scored)} scored receipts wrong ({', '.join(a_bad)}); case 1 is {b_n} ")
-          + "when fed perfect categories, and case 2 comes from the held-out set, where the classifier does make errors. "
-          "The keyword baseline's errors (above) belong to a system this project replaces.", "",
+          + "when fed perfect categories, and case 2 comes from the held-out set, where the classifier makes more errors. "
+          + (f"On the scored receipts the classifier gave a wrong category on {len(a_wrong)} of {n_lines} lines: {a_line_errs}. "
+             if a_wrong else "")
+          + "The keyword baseline's errors (above) belong to a system this project replaces.", "",
           f"**1. {', '.join(b_wrong) or '(none)'} under B ORACLE. Stage: classification, as the input to the rule logic.** "
           + " ".join(f"Correct {gold[r]['labels']['disposition']} with {', '.join(e['rule_id'] for e in gold[r]['labels']['expected_exceptions'])}; "
                      f"B gives {results['B ORACLE'][r].disposition} with {', '.join(fired_rules(results['B ORACLE'][r])) or 'nothing fired'}; "
@@ -586,18 +598,14 @@ def report(ms: dict, results: dict, extra: dict, gold: dict, receipts: list[dict
     cost = (f" (the last held-out run cost ${last['meta']['cost_usd'] / len({x['receipt'] for x in last['lines']}):.5f} per receipt)"
             if last else "")
     L += [f"This dataset is {pct(want['flag'] / len(scored))} flag; a real expense stream has a few percent. "
-          f"{pf['n'] - pf['k']} false flag(s) among {pf['n']} non-flag receipts is compatible with a false-alarm rate of up to "
-          f"{pct(1 - pf['cp'][0])}; with sensitivity and specificity both at their lower bounds, the share of A's flags that are real (PPV) at "
-          f"{', '.join(pct(p) for p in PREVALENCES)} prevalence falls to {', '.join(lows)}: the false-positive numbers above "
-          f"say little about what reviewers would see. The keyword baseline's measured specificity "
-          f"({pct(C['spec_flag']['p'])}) already gives a point PPV of {pct(ppv(C['sens_flag']['p'], C['spec_flag']['p'], PREVALENCES[1]))} at "
-          f"{pct(PREVALENCES[1])}. Before production I would measure per-rule precision on a random, not enriched, sample "
-          f"of real receipts checked by auditors, the review-queue workload (flag + review per 1,000 receipts), drift in "
-          f"the classifier's confidence bands and category mix over time, and cost per receipt{cost}.", "",
-          "PPV = sens·p / (sens·p + (1−spec)(1−p)). Sensitivity and specificity are the measured ones below; "
-          "the PPV range plugs in both lower CP bounds and both upper CP bounds (PPV rises in both). "
-          "A specificity of 100% means no false alarm was *observed* among few negatives, not that there are none; "
-          "the lower bound is what to plan with.", ""]
+          f"{pf['n'] - pf['k']} false flag(s) among {pf['n']} non-flag receipts still allows a false-alarm rate of up to "
+          f"{pct(1 - pf['cp'][0])}, so at {', '.join(pct(p) for p in PREVALENCES)} prevalence the share of A's flags that "
+          f"are real (PPV) could fall to {', '.join(lows)} (both lower bounds; the keyword baseline's point PPV at "
+          f"{pct(PREVALENCES[1])} is {pct(ppv(C['sens_flag']['p'], C['spec_flag']['p'], PREVALENCES[1]))}). "
+          f"Before production: per-rule precision on a random sample of real receipts checked by auditors, review-queue "
+          f"workload, drift in confidence bands and category mix, and cost per receipt{cost}.", "",
+          "PPV = sens·p / (sens·p + (1−spec)(1−p)); the range plugs in both lower and both upper CP bounds. "
+          "A specificity of 100% means no false alarm was *observed* among few negatives; plan with the lower bound.", ""]
     for label, sk, pk in ((f"Alarm = `flag`; condition = correct answer is flag (negatives: {want['pass']} pass + {want['review']} review)",
                            "sens_flag", "spec_flag"),
                           (f"Alarm = `flag` or `review` (a human looks); condition = correct answer is not pass (negatives: {want['pass']} pass)",
