@@ -94,3 +94,60 @@ def test_md_table_cells_escape_pipes_and_newlines():
     md = run.to_markdown([rep], {"RCP-028": r})
     (row,) = [x for x in md.splitlines() if x.startswith("| RCP-028-L1 ")]
     assert row.startswith("| RCP-028-L1 | Lozenges \\| 24ct honey | ") and row.count(" | ") == 5
+
+
+# ---- guard: the committed output/ is never rewritten by a run that is not the committed cache's ----
+
+@pytest.fixture
+def committed(tmp_path, monkeypatch):
+    """run.ROOT pointed at a temp dir holding a sentinel output/report.jsonl; returns the sentinel path."""
+    monkeypatch.setattr(run, "ROOT", tmp_path)
+    for k in ("ANTHROPIC_API_KEY", "OPENROUTER_API_KEY"):
+        monkeypatch.delenv(k, raising=False)
+    (tmp_path / "output").mkdir()
+    sentinel = tmp_path / "output" / "report.jsonl"
+    sentinel.write_text("COMMITTED", encoding="utf-8")
+    return sentinel
+
+
+def _inp(tmp_path):
+    path = tmp_path / "in.jsonl"
+    path.write_text(json.dumps(RECEIPTS["RCP-028"]) + "\n", encoding="utf-8")
+    return ["--receipts", str(path), "--cache", str(tmp_path / "cache")]
+
+
+@pytest.mark.parametrize("extra", [["--provider", "openrouter"], ["--model", "other-model"]])
+def test_default_out_refuses_other_provider_or_model(committed, tmp_path, extra):
+    with pytest.raises(SystemExit, match="Pass --out"):
+        run.main([*_inp(tmp_path), *extra], client=Fake())
+    assert committed.read_text(encoding="utf-8") == "COMMITTED"
+
+
+def test_openrouter_key_only_defaults_to_cache_only_anthropic_and_never_calls(committed, tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test")
+    with pytest.raises(SystemExit, match="cache-only"):  # cache miss under the default out: no live call, nothing written
+        run.main(_inp(tmp_path))
+    assert committed.read_text(encoding="utf-8") == "COMMITTED"
+
+
+def test_default_out_ignores_an_api_key_on_a_miss(committed, tmp_path, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test")
+    fake = Fake(reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc")))
+    with pytest.raises(SystemExit, match="cache-only"):
+        run.main(_inp(tmp_path), client=fake)
+    assert not fake.calls and committed.read_text(encoding="utf-8") == "COMMITTED"
+
+
+def test_default_out_still_runs_offline_from_a_warm_cache(committed, tmp_path):
+    args = _inp(tmp_path)
+    fake = Fake(reply(line("RCP-028-L1", "health_otc"), line("RCP-028-L2", "health_otc")))
+    run.main([*args, "--out", str(tmp_path / "x")], client=fake)
+    assert run.main(args) == 0 and committed.read_text(encoding="utf-8") != "COMMITTED"
+
+
+def test_explicit_out_allows_openrouter(committed, tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test")
+    args = [*_inp(tmp_path), "--out", str(tmp_path / "x")]
+    with pytest.raises(SystemExit, match="classifier failed"):  # provider openrouter was chosen: it tried (and failed) live
+        run.main(args, client=Fake())
+    assert committed.read_text(encoding="utf-8") == "COMMITTED"

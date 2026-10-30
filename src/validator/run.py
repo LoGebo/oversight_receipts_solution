@@ -3,8 +3,9 @@ Writes <out>/report.jsonl and <out>/report.md.
 
     python -m validator.run [--receipts PATH] [--out DIR] [--provider anthropic|openrouter] [--model M] [--budget USD]
 
---provider defaults to openrouter when only OPENROUTER_API_KEY is set, else anthropic. A warm cache needs no
-API key and costs nothing. Any classifier failure (no key for a cache miss, API error, spend guard) stops the run with a non-zero exit and writes no report, instead
+--provider defaults to openrouter when only OPENROUTER_API_KEY is set and --out is given, else anthropic.
+SAFETY: without an explicit --out the run writes the committed output/ and is cache-only (never calls a model); a
+provider/model other than the committed cache's is refused. Pass --out DIR for anything else. A warm cache needs no API key and costs nothing. Any classifier failure (no key for a cache miss, API error, spend guard) stops the run with a non-zero exit and writes no report, instead
 of one where every failed receipt is "review".
 """
 import argparse
@@ -14,7 +15,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from validator.classifier import BUDGET_USD, classify, default_provider
+from validator.classifier import BUDGET_USD, DEFAULT_MODEL, classify, default_provider
 from validator.engine import run_engine
 from validator.loader import INPUT, load_receipts
 from validator.normaliser import normalise_receipt
@@ -75,21 +76,33 @@ def to_markdown(reports: list[dict], receipts: dict[str, dict]) -> str:
 def main(argv=None, client=None) -> int:
     ap = argparse.ArgumentParser(prog="python -m validator.run")
     ap.add_argument("--receipts", type=Path, default=INPUT)
-    ap.add_argument("--out", type=Path, default=ROOT / "output")
-    ap.add_argument("--provider", choices=("anthropic", "openrouter"), default=default_provider())
+    ap.add_argument("--out", type=Path, default=None, help="default: output/ (committed results; cache-only runs)")
+    ap.add_argument("--provider", choices=("anthropic", "openrouter"), default=None)
     ap.add_argument("--model", help="default: claude-haiku-5-5 (anthropic) or anthropic/claude-haiku-5.5 (openrouter)")
     ap.add_argument("--budget", type=float, default=BUDGET_USD, help="max USD of model calls this run")
     ap.add_argument("--cache", type=Path, default=ROOT / ".cache" / "classifier")
     a = ap.parse_args(argv)
+    default_out = a.out is None
+    a.out = ROOT / "output" if default_out else a.out
+    if a.provider is None:
+        a.provider = "anthropic" if default_out else default_provider()
+    if default_out and (a.provider != "anthropic" or a.model not in (None, DEFAULT_MODEL)):
+        sys.exit(f"refusing to write the committed output/ for provider {a.provider} model {a.model or 'default'}: "
+                 f"its cache differs from the committed one. Pass --out DIR to keep the results elsewhere.")
+    if default_out:
+        client = None  # cache-only: a miss must never become a live call that rewrites output/
 
     receipts = load_receipts(a.receipts)
     clean = [normalise_receipt(r) for r in receipts]                                     # 1 normaliser
     env = "OPENROUTER_API_KEY" if a.provider == "openrouter" else "ANTHROPIC_API_KEY"
-    no_key = client is None and not os.environ.get(env)
+    no_key = client is None and (default_out or not os.environ.get(env))
     c = classify(clean, model=a.model, provider=a.provider, client=_NoKey(env) if no_key else client,  # 2 classifier
                  cache_dir=a.cache, budget_usd=a.budget)
     m = c.meta
     if m["failures"] and no_key:
+        if default_out:
+            sys.exit(f"{len(m['failures'])} receipt(s) are not in the cache ({a.cache}) for {m['provider']} model {m['model']}: "
+                     f"the default output/ is cache-only, pass --out DIR to make live calls.")
         sys.exit(f"{env} is not set and {len(m['failures'])} receipt(s) are not in the cache "
                  f"({a.cache}) for {m['provider']} model {m['model']}: set the key or warm the cache.")
     if m["failures"]:
