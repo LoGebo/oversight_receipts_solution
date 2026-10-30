@@ -34,8 +34,6 @@ One module per policy document (`src/validator/rules/`), each rule citing its id
 | False positives (of 9 pass) / missed (of 16 flag) | 0 / 0 | 0 / 1 | 1 / 4 |
 | Macro F1 / restricted F1 | 0.965 / 1.000 | gold | 0.776 / 0.821 |
 
-![Results](docs/img/results.png)
-*Panel A is the separate four-model comparison run; the committed run of the same safeguard model got 64/65 lines (one run per model, so ±1 line is run-to-run variation).*
 
 28 receipts is tiny (a perfect score has a 95% lower bound of 87.7%). The engine was written with these receipts and answers in view, so B is a consistency check, not a generalisation estimate; only the classifier is measured blind, and the taxonomy's own examples sit in its prompt. On the 65 scored lines it makes one error (RCP-005-L2 'Occupancy tax' → `other`, correct `lodging`; the disposition is still right). On the held-out set (144 lines, independent of the dataset) it scores 124/144 exact (86.1%; 136/144 counting listed alternatives). Per-rule precision/recall, exact line citation (26/26) and the four timing receipts (4/4) are in `EVAL.md`.
 **Failure cases.** (1) RCP-022 under B: with perfect categories the engine passes it, because who received the items is stated only in the text; the classifier's recipient output fires GIFT-04, so a perfect category score would not have caught it. (2) Held-out: 20 of 144 lines differ from the annotator, e.g. "Cerveza Corona Cero" → `alcohol` (it is non-alcoholic beer); 13 of the 20 are rated `high` and only 1 `low`, so EXC-03 catches almost none (stage: classification).
