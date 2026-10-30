@@ -49,6 +49,10 @@ Rules only catch what someone thought of in advance, and fraud keeps inventing s
 
 Same 58 held-out histories and the same prompt for every system. Tuning Qwen3.5-9B took its false alarms from 73% to 8% (2/26) and its recall from 69% to 78%; Opus 4.5 reaches the same 78% recall (25/32) but with 19/26 false alarms. Measured cost of the frontier runs on these histories: $0.56 for Opus 4.5 and $0.62 for Sonnet 5.5 (about $0.01 per history), against inference on owned hardware. **What this does not show:** the frontier models saw the prompt once, with no examples (a few examples would lower their false alarms; not measured); the exam is from the same authors and style as the training data, which favours the tuned model; the anti-shortcut gate still fails (0.657) and the intervals are wide. It supports "fewer false alarms at equal recall in this exam" and nothing more.
 
+**Cost, stated plainly.** Measured with OpenRouter's `usage.cost`, reviewing 1,000 employee-months costs about $9.64 with Opus 4.5 and $10.64 with Sonnet 5.5. Our tuned model on a rented A100 in our own unbatched harness comes to roughly $7.90 (9B) and $17.24 (27B) per 1,000 (an estimate: GPU minutes × an unverified $2.50/h), i.e. **not cheaper than the API at this scale**; batching or vLLM would cut it a lot, but that is not measured. One-off training took about 15 min (9B) and 40 min (27B), roughly $0.6 and $1.7 at the same price. So the case for owning the model rests on false alarms at equal recall, on control (data stays in-house, version pinned, no provider price or behaviour changes) and on the escalate-only guard, not on a cheaper bill; a GPU kept on 24/7 also adds a fixed monthly cost that an API does not.
+
+![Cost comparison](docs/img/cost_comparison.png)
+
 ## Key decisions (`DECISIONS.md`)
 Answer key physically split from the pipeline and enforced by a test; all 32 receipts processed (group rules need context), 28 scored; baseline frozen by hash before scoring; disposition and every threshold in code, the model only classifies; fail closed (a model error gives `review`, never `pass`).
 
